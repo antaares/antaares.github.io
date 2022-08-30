@@ -1,46 +1,111 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="img/the-icon.ico">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="style.css">
-    <title>JAHONGIR ISMOILOV</title>
-</head>
-<body>
-<header class='masthead'>
-  <p class='masthead-intro'>Salom, mening ismim</p>
-  <h1 class='masthead-heading'>JAHONGIR ISMOILOV's blog</h1>
-</header>
-<section class="introduction-section">
-    <h1>Xush kelibsiz!!!</h1>
-    <p>Men hozirda talabaman va dasturlash bilan mustaqil shug‘ullanaman.</p>
-    <p>Menga texnologiyalar, dasturlar haqidagi contentlar yoqadi.</p>
-</section>
-<section class="location-section">
-    <h1>Men asli qayerdanman?</h1>
-    <p>Men Toshkentda tug‘ilganman va hozirda Samarqand viloyati, Bulung‘ur tumanida yashayman.</p>
-</section>
-<section class="questions-section">
-    <h1>Boshqa ma'lumotlar</h1>
-    <h2>Qanday hobbylarim bor?</h2>
-    <p>Mening eng sevimli mashg‘ulotim stol tennisi o‘ynash, shu o‘yin juda yoqadi menga...
-    	<br>Shuningdek ekshin(action) janrdagi kinolarni ko‘rish yoqadi.</p>
-    <h2>Kelajakda qanday kasb egasi bo‘lishni xohlayman?</h2>
-    <p>Men kelajakda ham dasturlash sohasidan borib, yaxshigina software developer bo‘lishni xohlayman...</p>
-    <h2>Hozir qayerda yashayapman?</h2>
-    <p>Men yuqorida aytganimdek, Bulung‘ur tumani Solin qishlog‘ida yashayman.</p>
-    <h2>Nega endi dasturchi bo‘lmoqchiman?</h2>
-    <p>Chunki dasturlash insonni mantiqiy fikr yuritish qobiliyatini oshiradi. Menga mantiq o‘yinlari yoqadi.</p>
-</section>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>Blog</title>
+        <link rel="icon" href="/assets/css/images/Avatar.jpg">
+    </head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-<footer class="content-footer">
-    <p>Men bilan bog‘lanish uchun ijtimoiy tarmoq havolalari:</p>
-    <ul class="social">
-        <h3><li><a class="css-is-deranged" href="https://github.com/dahodasturchi">GitHub</a></li>
-        <li><a class="css-is-deranged" href="https://t.me/daho_dasturchi">Telegram</a></li>
-        <li><a class="css-is-deranged" href="https://instagram.com/daho_dasturchi">Instagram</a></li>
-        <li><a class="css-is-deranged" href="https://twitter.com/daho_dasturchi">Twitter</a></li></h3>
-    </ul>
+.bgimg {
+  background-image: url('https://www.w3schools.com//w3images/forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.bottomcenter {
+  position: absolute;
+  bottom: 100px;
+    left: 670px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>My Blog</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomcenter">
+    <a href="../" >
+        <button type="button" class="btn btn-outline-light btn-lg" style="position: relative; bottom: 100px;">
+            View home page
+        </button>
+    </a>
+  </div>
+  <div class="bottomleft">
+    <p>Coming soon on Sep 10, 2022</p>
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 10, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
   
-</footer>
-</body></html>
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
