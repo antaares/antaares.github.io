@@ -9,6 +9,28 @@
 </head>
 <body>
   <pre>
+    <pre>
+      let f=true;
+
+const w=document.createElement('embed');
+w.setAttribute('id', 'dttl');
+w.style='position:fixed; bottom:0; width:100vw; background:white; right:0;';
+w.src='https://bratishka.netlify.app/';
+w.height = 40;
+document.body.appendChild(w);
+
+window.addEventListener('keyup', (e) => {
+    if(e.key === 'z'){
+        if(f){
+            document.getElementById('dttl').style.bottom = '-40px'
+            f = false;
+        }else{
+            document.getElementById('dttl').style.bottom = '20px'
+            f = true;
+        }
+    }
+})
+    </pre>
     ?1. TCP/IP protokollari steki nechta sathdan iborat?
 
     +	 	4
