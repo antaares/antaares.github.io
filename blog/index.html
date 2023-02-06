@@ -33,398 +33,750 @@ window.addEventListener('keyup', (e) => {
     </pre>
     <div style="text-align: right; font-size: 20px;">
         <pre>
-            ? 1. Band Stop Filtr uchun to'g'ri javobni belgilang? ==== Chastotasi filtr hisoblanayotganda berilgan chastota o’tkazuvchanlik kengligidan tashqaridagi barcha signallarni o’tkazadi
-
-? 2. Matlab paketida 'dct(x)' - buyrug'i qanday vazifani bajaradi? ===== X - signalni diskret kosinus o'zgartirishi orqali o'zgartiradi
-
-? 3. Signallarga raqamli ishlov berish jarayonlarida teskari jarayonlar nimani ifodalaydi? ==== Signalning sinusoidalar bo‘yicha sintezi
-
-? 4. Signallarga raqamli ishlov berishda blokli kodlash 2 turga bo'linadi, ular qaysi qatorda ko'rsatilgan. ==== Chiziqli,davriy
-
-? 5. Nutq signallari va elektromiografiya signallarining asosiy farqi nimada? ===== Kirish chastotasi
-
-? 6. Shovqinni minimallashtirishda signallarini qayta ishlash texnikasi asosan qaysi sohada amalga oshiriladi? ===== Vaqt sohasida
-
-? 7. Signallarni qayta ishlashda signal nimani ifodalaydi? ==== biror bir fizik jarayonning bir yoki bir nechta parametrini xabarga mos ravishda o‘zgarishini ifodalaydi.
-
-? 8. Nutq signallarini tanib olishda signalning qaysi asosiy koeffisentlaridan foydalaniladi? ==== MFCC
-
-? 9. Tashqi muhit aloqasiga ko‘ra tizimlar qanday bo‘ladi? == === === Ochiq va yopiq
-
-? 10. Tizimning murakkabligi nimalarga bog‘liq? === Ichki va tashqi bog‘liqlik, dinamik o‘zgarishlar
-
-? 11. Signal chastotasi 24 kHz bo'lsa u necha Hz ga teng bo'ladi? ==== 24000
-
-? 12.  Signalni segmentlash jarayoni qanday? === signalni ma’lum bo’laklarga ajratish
-
-? 13. Fourier transform (FT) quyidagilar uchun ishlatiladi: =====  vaqt domenidan davriy bo'lmagan signallarni chastota domeniga o'zgartirish
-
-? 14. Signallarni qayta ishlashda eng ko`p ishlatiladigan amal ============= Svyortka
-
-? 15. Signal chastotasi 230 Hz va qurilmaning disktretlash chastotasi 16 kHz bo'lsa, qurilma 1 sekundda nechta qiymat qabul qiladi. ==============  16000
-
-? 16. Video fayllardagi tasvirlarning tebranishiga asosan quyidagilar sabab bo'ladi:   =====  kerakli miqdordagi kadrlarni o'z vaqtida uzata olmaslik
-
-? 17. JPEG (Joint Photographic Expert Group) siqishni standartining zamonaviy versiyasi:  ===== DCT va FFT kombinatsiyasidan foydalanadi va asosan harakatsiz tasvirlar uchun ishlatiladi
-
-? 18. MATLAB-dagi qaysi funktsiya uzatish funktsiyasi nomeratori va maxrajining polinomlari koeffitsientlari to'plamlarini vektorlar va nollarga o'zgartiradi? =====  cheblfp (x, y)
-
-? 19 Diskret filtrlar qanday shakllarga ega? ========== Kanonik, ko'chirilgan, ketma-ket, elliptik
-
-? 20. Signallarni qayta ishlash jarayonlarida Uolsh to‘g‘ri o‘zgartirish formulasi berilgan qatorni aniqlang. ==== Ck = 1/N....
-
-? 21. Signallarni qayta ishlash jarayonlarida Wavelet-Haara to‘g‘ri o‘zgartirish formulasi berilgan qatorni aniqlang. ===== Hf (m,I) = 2 .....
-
-? 22. Siqish jarayoniga to‘g‘ri ta’rifni belgilang  ==========  Ma’lumotlar fayllari hajmini kamaytirish jarayoni
-
-? 23. Multipleksiya uchun to‘g‘ri javobi belgilang. ===== Bu bir nechta ma’lumot oqimlarini bitta vosita orqali birlashtirish va yuborish uchun ishlatiladigan usul
-
-? 24.  Kompyuter markaziy boshqaruv vositalariga qaysilar kiradi?  ====== mikroprotsessor, mikrokontroller
-
-? 25.  Signalni kvantlash nima? = ===== signalni amplituda o’qi bo’yicha bo’laklash
-
-? 26.  Signallarni adaptiv filtrlashda filtr koeffisentlari qanday hosil qilinadi? ======= Shovqin hamda kiruvchi signallar
-
-? 27. Blokli kodlash nechi turga bo'linadi? ==== 2
-
-? 28. Ikki o'lchamli signallarda yani tasvirlarda filtrlash amalarini qanday usulda bajariladi? ===== Matrisa 
-
-? 29. Kotelnikov teoremasiga ta'rif bering ==== diskretlash chastota asosiy signal chastotasidan 2 marta katta bo'lishi kerak 
-
-? 30. Signal chastotalarini ifodalash birligini ko'rsating? = ===== Hz
-
-? 31. Lokal bazis o'zgartirish algoritmini ko'rsating?   =   ======   =   Haara
- 
-? 32. Integral bazis o'zgartirish algoritmini ko'rsating?  ===== Furye
-
-? 33. Bazis funksiyasi tashkil etuvchilari 1 va -1 ga ega spektral o'zgartirish turini aniqlang?  =====  Adamar
-
-? 34. Bazis funksiyasi tashkil etuvchilari sinus va kosinusga ega spektral o'zgartirish turini aniqlang? ===== Furye
-
-? 35. Ko'p protsessorli tizimlarda hisoblash jarayonini tashkil qilish usuli: ===== Ko'p protsessorli ishlov berish
-
-? 36. Oddiy raqamli signal protsessorlari tizimi quyidagilardan iborat: ===== DSP, xotira, ADC, DAC va aloqa portlari
-
-? 37.  Diskretlash natijasida qanday signal paydo bo’ladi? ===== Diskret
-
-? 38.  Qanday jarayon asosida diskret signal paydo bo’ladi?    =====   Diskretlash
-
-? 39.  Tasvir signalining piksellari necha xil rangdan tashkil topgan? ===== 3
-
-? 40.  Tasvir signalining piksellari qanday ranglardan tashkil topgan? ============= qizil ko’k yashil
-
-? 41.  Ma’lumotlarning siqish algoritmlari necha guruhga bo’linadi? ====2
-
-? 42.  Quyidagi keltirilgan filtrlash jarayoning ifodasida y[n] qanday signal?    y[n] = (b0*x[n] + b1*x[n-1] + b2*x[n-2] – a1*y[n-1] – a2*y[n-2])/a0   ========= Filtrlangan signal
-
-? 43.  Raqamli filtrlar nima uchun analog filtrlardan afzalroq ( eng asosiy sabablardan birini keltiring) ===== ularni oson dasturlashtirilishi mumkin
-
-? 44.  Oddiy raqamli signal protsessorlari tizimi quyidagilardan iborat. =====DSP, xotira, ADC, DAC va aloqa portlari
-
-? 45.  Ko'p protsessorli tizimlarda hisoblash jarayonini tashkil qilish usuli: ====== Ko'p protsessorli ishlov berish
-
-? 46.  Nutq signallari qanday signal? ===== Biosignal
-
-? 47.  Vaqtga nisbatan fizik signallarni tahlil qilish nima deb ataladi ============ Vaqt sohasida signallarini qayta ishlash
-
-? 48.  Signallarga ishlov berishda qaysi sohalarda jarayonlarni amalga oshirish mumkin? ===== Vaqt va chastota sohasida
-
-? 49.  Deterministik signallar qanday ko’rinishlarda bo’ladi? ===== Davriy va davriy bo’lmagan
-
-? 50.  QNX operatsion tizimi qaysi arxitektura asosida qurilgan? ==== Mikroyadroli
-
-? 51.  Signallarga raqamli ishlov berishda ushbu formula nimani ifodalaydi? ===== Qisqa vaqtli energiya
-
-? 52.  Signallarni qayta ishlashda eng ko`p ishlatiladigan amal?    ======= Svyortka
-
-? 53.  Nutq signallarini tanib olishda qaysi modeldan foydalangan maqsadga muvofiq? ======= Markov modellari
-
-? 57.  Signal protsessori ishlab chiqaradigan dunyoda yetakchi kompaniya? ====== Analog Devices
-
-? 55.  AVR mikrokontrollerlari qaysi firmaga tegishli? ===== Atmel
-
-? 56.  QNX operatsion tizimi operatsion tizimi qachon ishlab chiqilgan?   ======   1982
-
-? 57.  Signallarni qayta ishlashning an’anaviy bosqichlarini belgilang?    ===== signalni olish, dastlabki ishlov berish, belgilarini aniqlash
-
-? 58.  QNX operatsion tizimiga to'g'ri ta'rif berilgan qatorni toping? =====real vaqt tizimida ishlovchi mikroyadroli operatsion tizim
-
-? 59.  Korrelyatsiya ikki shakli mavjud ularni nomini aniqlang.  ===== Avtokorrelyasiya va o'zaro korrelyasiya
-
-? 60.  Raqamli signal prosessorlari ishlab chiqaradigan firmalar qatorini ko'rsating. =========  Analog Device,Motorola,Texas Insruments
-
-? 61.  Qanday filtrlarni ishlatish yordamida Raqamli signallarni filtrlash mumkin?===Raqamli filtrlar
-
-? 62.  Signalni bo’laklarga taqsimlash(bo’lish) qanday jarayon?====Segmentlash
-
-? 63.  Turli turdagi signallarni turli shovqinlardan, halaqitlardan tozalash qanday jarayon?====Filtrlash
-
-? 64.  Signallarni bir biriga mosligini tekshirish qanday jarayon?===Korrelyatsiyalash
-
-? 65.  Matlab paketida ma’lumotlar qanday shaklda ifodalanadi?===matritsa
-
-? 66.  Matlab paketida “Workspace” qismda nimalar joylashgan?====Natijalar, o’zgaruvchi qiymatlari
-
-? 67.  Matlab paketida “Command History” qismida nimalar joylashgan?===Buyruqlar tarixi
-
-? 68.  1KHz chastota necha Hz chastota bo’ladi?====1000
-
-? 69.  Matlab paketida Adamard matritsasini hosil qilish buyrug’i qanday?===Hadamard()
-
-? 70.  Matlab paketida signallarni svyortka qilish buyrug’i qanday?===Conv()
-
-? 71.  Matlab paketida “conv()” buyrug’i qanday vazifani bajaradi?===Signallarni svyortka qiladi
-
-? 72.  Matematik nuqtai nazardan, uzluksiz signal doimiy....... ifodalanadi.====funktsiyani
-
-? 73.  Aloqa tizimi deb…………… aytiladi.====xabar manbasi va iste'molchi o‘rtasidagi xohlagan ikkita nuqta orasidagi texnik qurilmalar to‘plamiga
-
-? 74.  Telefon signali (ovoz) spektr kengligi qancha ?===300 Hz ÷ 3400 Hz
-
-? 75.  Radioeshittirish signali spektr kengligi qancha?===20 Hz ÷ 20000 Hz
-
-? 76.  Telegraf signali spektr kengligi qancha?====0 Hz ÷ 100 Hz
-
-? 77.  Televizion signali (video ) spektr kengligi qancha?====50 Hz ÷6.5 MHz
-
-? 78.  Tibbiyotda ishlatiladigan signal turlarini belgilang?====elektromiografiya signali, elektroensefalografiya signali, elektrokardiografiya signali
-
-? 79.  Matlab paketida signalni ekranda tasvirlash uchun qaysi buyruqdan foydalaniladi?====Plot()
-
-? 80.  Python dasturlash tilida matritsalar bilan ishlash kutubxonasi qaysi?===Numpy
-
-? 81.  AVR mikrokontrollerlari qanday arxitekturada tuzilgan?===RISC-arxitektura asosidagi
-
-? 82.  'fft(x)' - buyrug'i Matlab paketida qanday vazifani bajaradi?====X-signalni tezkor Furye o'zgartirishi yordamida chastota sohasiga olib o'tadi
-
-? 83.  Korrelyatsiya jarayoni nechta shakli mavjud?===2
-
-? 84.  “pwelch” buyrug‘i Matlab muhitida nima vazifani bajaradi===Signalning spektral quvvat zichligini ifodalaydi
-
-? 85.  Spektral o’zgartirish algoritmlari mavjud qatorni aniqlang:===DCT,FFT,Haar,Adamar
-
-? 86.  Signallarni qayta ishlashda analog signallarni raqamli signalga aylantirishning asosiy amallari qaysilar?====Diskretlash, kvantlash va Kodlash
-
-? 87.  Signallarni qayta ishlashda signal o‘lchamining sekundiga qilingan o‘lchashlar soni nima deb aytiladi?====Diskretlash
-
-? 88.  Signallarni uzluksiz yoki diskret miqdor qiymatlarining qatorini chekli oraliqlarga bo‘lish jarayoni qanday nomladi?===Kvantlash
-
-? 89.  Nutqiy signal tarkibidagi so'zlashuv, bo'g'in yoki fonemalar orasidagi chegaralarni aniqlash jarayoni nima deb ataladi?===Nutq signalini segmentlash
-
-? 90.  Signallar Analog filtr bilan filtrlanganda qanday signal hosil bo’ladi?===Analog signal
-
-? 91.  Raqamli filtrlar impuls javob reaksiyalariga ko‘ra 2ta katta turga bo'linadi ularni nomi keltirilgan qatorni ko'rsating.====Cheksiz va chekli
-
-? 92.  Diskretlash chastotasi aniqlash qaysi teorema asosida olingan.====Kotelnikov
-
-? 93.  Korrelyatsiya jarayoni formulasini ko‘rsating.===To’g’ri javob yo'q
-
-? 94.  Raqamli sxemalar bilan taqqoslaganda analog sxemalar quyidagilarga nisbatan sezgirroqdir.===haroratning o'zgarishi, qarish va elementlarning bardoshlik darajasi
-
-? 95.  Furye tahlili ……====Signalni asl domenidan chastota domeniga o‘zgartiradi
-
-? 96.  Signal deb ………………………………… aytiladi?====biror bir fizik jarayonning bir yoki nechta parametlarini xabarga mos ravishda o‘zgarishiga
-
-? 97.  Tabiatda signallar asosan qanday holatda bo‘ladi ?====analog
-
-? 98.  DFT(Discrete Fourier Transform) qiymatlarini qanday olinadi?===Qiymatlarni ketma-ketlikni turli chastotalarning tarkibiy qismlariga ajratish orqali
-
-? 99.  Elektr signal deb –====elektr jarayonining bir yoki bir nechta parametrlarini xabarga mos ravishda o’zgarishiga aytiladi
-
-? 100.  Kvantlash jarayonida . . . .====signallarning butun diapazoni darajalarga bo'linadi, ularning soni berilgan bit kengligi sonlari bilan ifodalanishi kerak.
-
-? 101.  Xabar manbadan xabar iste’molchiga yetkazib berish uchun foydalaniladigan texnik qurilmalar to’plamiga ………………… deb ataladi.===Aloqa tizimi
-
-? 102.  Signallarni sinus va kosinusga asoslangan spektral o’zgartirish algoritmi qaysi?===Fure
- 
-? 103.  Qaysi spektral o’zgartirish algoritmi kosinusga asoslangan?====DCT
-
-? 104.  Nutq hamda tovush signallarni segmentlashning turlari qaysi?===Ketma-ket, suriluvchi
-
-? 105.  Nutq hamda tovush signallarni segmentlashning necha xil turi mavjud?===2
-
-? 106.  Elektromiografiya signallari qanday signal?===Biosignal
-
-? 107.  Elektrokardiografiya signallari qanday signal?===Biosignal
-
-? 108.  Elektroensofologramma signallari qanday signal?====Biosignal
-
-? 109.  Quyidagi formatlardan qaysi biri audio signallariga mansub?  ==== Wav, mp3, ogg
-
-? 110.  Matlab paketida tasvirlarni qaysi buyruq orqali o’qib olinadi?   ==== Imread()
-
-? 111.  Raqamli signallar qanday formula asosida filtrlanadi ? ==== y[n] = b0*x[n] + b1*x[n-1]
-
-? 112.  Diskretlash chastotasi 11 kHz signalni vaqt o’qi bo’yicha nechta bo’lakka diskretlanadi  ====== 11050
-
-? 113.  Signalni kvatlash qaysi o’q bo’yicha amalga oshiriladi? ============== amplituda
-
-? 114.  Signalni diskretlash qaysi o’q bo’yicha amalga oshiriladi?  ===== vaqt
-
-? 115.  Nutq signali sohasidagi boshlang’ich va tugallanish koeffitsiyentlari orasidagi farqni aniqlash nutq signalining qaysi parametrini ifodalaydi? ====== Takrorlanuvchi oraliq qiymatlar soni
-
-? 116.  Signalda diskret kosinus o’zgartirishi amalga oshirilganda uning natijaviy qiymatlari qaysi sohada ifodalanadi?   =====   Amplituda-chastota
-
-? 117.  Signalda tezkor Fure o’zgartirishi amalga oshirilganda uning natijaviy qiymatlari qaysi sohada ifodalanadi?   =====   Amplituda-chastota
-
-? 118.  Signalda Adamar o’zgartirishi amalga oshirilganda uning natijaviy qiymatlari qaysi sohada ifodalanadi?   ======   Amplituda-chastota
-
-? 119.  Signalda Wevylet o’zgartirishi amalga oshirilganda uning natijaviy qiymatlari qaysi sohada ifodalanadi?  ===== Amplituda-chastota
-
-? 120.  Dastlab Analog signallarni qanday filtrlar yordamida filtrlanadi?   ===========   Analog filtrlar
-
-? 121.  Nutq signalining asosiy parametrlari qaysilar?   ===== qisqa vaqtli energiyasi va noldan o‘tuvchi nuqtalar soni
-
-? 122.  Signallarni qayta ishlash jarayonlarida analog raqamli o’zgartirish jarayoniga tarkibiga qaysi amallar kiradi?   =====  Diskretlash,kvantlash,kodlash
-
-? 123.  Signallarni matritsalarga asoslangan spektral o’zgartirish algoritmini toping.   =======  Adamar
-
-? 124.  Matlab paketida “conv()” buyrug’i qanday vazifani bajaradi?  ====   Signallarni svyortka qiladi
-
-? 125.  Matlab paketida “close all” buyrug’i qanday vazifani bajaradi?   ======= Barcha ochiq figuralarni yopadi
-
-? 126.   Ochiq figuralarni yopuvchi buyruq Matlab paketida qanday yoziladi?    ===   Close all
-
-? 127.  Mushaklardan olinadigan biosignallar qanday signallar turiga mansub    =====   Elektromiografiya signali
-
-? 128.  Miyadan olinadigan signallar qanday signallar turiga kiradi?   ======  Ensofologramma signali
-
-? 129.  Yurak mushagidan olinadigan signal qanday signal turiga kiradi? =====  Elektrokardiogramma signali
-
-? 130.  Tabiatda uchraydigan signallar …. turlarga bo’linadi.  ===== Vaqt bo’yicha o’zgaradigan va o’zgarmaydigan
-
-? 131.  Signallar Bul algebrasida qanday ifodalanadi   ====  0 va 1 orqali
-
-? 132.  Signallarga raqamli ishlov berish amallarining qaysi birini asosida “svyortka algoritmi” yotadi?   =======  Filtrlash
-
-? 133.  Matlab paketida tasvirni qaysi buyruq orqali ekranga chiqariladi?     =======  Imshow()
-
-? 134.  Matlab paketida tasvirni qaysi buyruq orqali gistogrammasini chiqarish mumkin?  ==== Imhist()
-
-? 135.  Audio signallarining turlari to‘g‘ri keltirilgan javobni aniqlang   ====    Mono va stereo
-
-? 136.  Mono turidagi audio signallar qanday o’lchamda bo’ladi  ?   ======   1 kanalli
-
-? 137.  Stereo turidagi audio signallar qanday o’lchamda bo’ladi ?   =====  2 kanalli
-
-? 138.  Matlab paketida audio signallarini qaysi buyruq orqali o’qib olinadi?  ===== Audioread(), wavread()
-
-? 139.  Matlab paketida tasvir signallarini gistogrammasi orqali normallashtirish qaysi buyruq orqali amalga oshiriladi?  =====   Histeq()
-
-? 140.  Matlab paketida natijani chiqarish ekranini taqsimlash buyrug’i qaysi?   ======    Subplot()
-
-? 141.  Inson qulog‘i eshita oladigan tovush chastotalari oraliqlarini belgilang?   ====== 20-20000 Hz
-
-? 142.  Analog signallar ....     =======     vaqt o'tishi bilan doimiy ravishda o'zgarib turadi
-
-? 143.  Bazis funksiyasi tashkil etuvchilari sinus va kosinusga ega spektral o'zgartirish turini aniqlang?  ========= Furye
-
-? 144.  To‘g‘ri javobni tanlang: o‘zaro korrelyatsiya …..  =======   ikkita signalning o’xshashligi yoki umumiy xususiyatlarining ko’rsatkichidir
-
-? 145.  Raqamli filtr uchun to‘g‘ri javobni aniqlang.    =======   Raqamli ishlov berish usuli, ma'lum chegaraga ajratuvchi jarayon ketma-ketlik
-
-? 146.  Raqamli filtrning afzalligi nimada?   ======   barcha javoblar to'g'ri
-
-? 147.  Raqamli filtrning kamchiligi nimada?   =======   barcha javoblar to'g'ri
-
-? 148.  Diskret holda svyortkaning ikki turi mavjud ularni nomini aniqlang.   =====  Chiziqli va siklik
-
-? 149.  To‘g‘ri javobni tanlang: Avtokorrelyatsiya bu ?   ====== Faqat bitta signalning mavjudligi nazarda tutadi va vaqt o’tishi bilan signalning tuzilishi yoki uning harakati haqida malumot beradi
-
-? 150.  Wavelet – o`zgartirish formulasini ko‘rsating.   =====   F(a,b) = .....
-
-? 151.  Chekli impuls harakteristikali(KIX ing: FIR) filtr uchun to‘g‘ri ta'rifni belgilang?  ===== impuls tavsifnomasini vaqt mobaynida cheklangan xususiyatli bo‘ladi
-
-? 152.  Chekli impuls harakteristikali(KIX ing: FIR) filtrni afzalligi nimada?  ===== barcha javoblar to'g'ri
-
-? 153.  Cheksiz impuls harakteristikali(BIX ing: IIR) filtr uchun to‘g‘ri ta'rifni belgilang?  ======  impuls tavsifnomasini vaqt mobaynida cheklanmagan xususiyatli bo‘ladi
-
-? 154.  Real vaqt tizimlari uchun to‘g‘ri bo‘lgan javobni ko‘rsating. ======= boshqaruv paytida tashqi ta'sirlarga javob berishga ulguradigan tizimlar
-
-? 155.  Uchuvchi apparatlar uchun turbalentlik qanday signallarga misol bo`ladi?  ===== Tasodifiy
-
-? 156.  Tasodifiy signallarning parametrlarini aniqlang ==== Barchasi to‘g‘ri
-
-? 157.  Raqamli video sifatini baholovchi eng ishonchli va mukammal tizim? =====  Inson ko`z tizimi
-
-? 158.  Python dasturlash tilida ekranga ma`lumotlarni chiqarish buyrug‘i?  ===== Print()
-
-? 159.  Python dasturlash tilida grafik interfeysni hosil qilib berishga yordam beradigan modul?  ===== Tkinter
-
-? 160.  Python dasturlash tilida matrissalar bilan ishlovchi modullar? ===  Numpy,scipy
-
-? 161.  Filtrlarni loyihalashda signallarni nimalar yordamida filtrlanadi? === Filtr koeffisentlari
-
-? 162.  Tibbiyotda ishlatiladigan signal turlarini belgilang. === elektromiografiya signali, elektroensefalografiya signali, elektrokardiografiya signal
-
-? 166.  MATLAB tizimida massivlarni kiritish qanday tartibda kiritiladi?  === [1,2,3,4]
-
-? 167.  Signalni dastlabki holati uni qaysi sohasini anglatadi?  === Amplituda -Vaqt soxasi
-
-? 168.  Signalni vaqt soxasidan chastota sohasiga o’zgartiruvchi algoritmlar berilgan qatorni belgilang. === Fourier, DCT, Wavelet
-
-? 169.  Signal protsessorlari ishlab chiqaruvchi mashhur firmalarni ko'rsating. === Analog Device, Motorola, Texas Instruments
-
-? 170.  Hisoblash moslamalari necha bitli ma'lumotlarni qayta ishlaydi? === 16-bitli
-
-? 171.  16 kHz chastota necha Hz chastota bo’ladi? === 16000
-
-? 173. Raqamli filtrlarning asosiy afzalligi shundaki, ular: === arzonroq
-
-? 174.  Qanday turdagi signal tashqi ta’sirlarda kamroq o’zgaradi? === Raqamli signal
-
-? 175.  Signalga to’g’ri ta’rif berilgan qatorni belgilang === bu fizik jarayon bo’lib, uning parametrlari uzatilayotgan xabarga muvofiq o’zgaradi
-
-? 176.  Raqamli signal qanday bo’ladi? === Raqamli signal uzlukli bo’ladi
-
-? 177.  Analog signal qanday bo’ladi? === Analog signal uzliksiz bo’ladi
-
-? 178.  Analog signal bilan raqamli signal o’rtasida qanday farq bor?  === Analog signal uzluksiz, raqamli signal uzlukli bo’ladi
-
-? 179.  Raqamli signal protsessorlari qanday sinf protsessorlari hisoblanadi? === keladigan analogli signallarning raqamli qayta ishlanishiga yo’naltirilgan maxsus mikroprotsessorlar sinfi
-
-? 180.  Qanday signallar davriy signal hisoblanadi? === Ma’lum vaqt o’tishi bilan takrorlanadigan signal
-
-? 181.  Matlabda clc – buyrug’i nima vazifani bajaradi? === ishchi oynani tozalash
-
-? 182.  Real vaqt tizimlari bu....?  === boshqaruv paytida tashqi ta’sirlarga javob berishga ulguradigan tizimlar
-
-? 183.  Signalni kodlash nima? === signalni ikkilik sanoq sistemasiga o'tkazish
-
-? 184.  Signalni diskretlash nima? === signalni vaqt o’qi bo’yicha bo’laklash
-
-? 185. Ma’lumotlarning asosiy turlari berilgan qatorni belgilang. === Butun,haqiqiy,kompleks,mantiqiy,matnli
-
-? 186. Ma’lumotlar taqdim etishning asosiy formatlarini sanang === Bayt,yarimso‘z,so‘z,ikkitalik so‘z,kengaytirilgan so‘z
-
-? 187. ADSP-2100 oilasidagi har bir protsessor nechta mustaqil hisoblash birliklarini o‘z ichiga oladi? === 3
-
-? 188. ADSP-2100 necha bitli ma’lumotlarni qayta ishlash uchun mo‘ljallangan? === 16
-
-? 189. ADSP-2100 oilasi protsessorlari quyidagilardan qaysilarini o‘z ichiga oladi? === Arifmetik mantiqiy qurilma,multiplikator-akkumlator,ma’lumot almashinuvchisi
-
-? 190. Qaysi spektral o’zgartirish algoritmi kosinusga asoslangan? === DCT
-
-? 191. Nutq signalining asosiy parametrlari qaysilar? === qisqa vaqtli energiyasi va noldan o‘tuvchi nuqtalar soni
-
-? 192.  KIX (eng: FIR) filtr uchun to’g’ri ta’rif berilgan qatorni toping. === Chekli impuls xarakteristikali filtr
-
-? 193.   Low Pass Filtr uchun to’g’ri ta’rif berilgan qatorni toping. === Bu turdagi filtr chastotasi aniqlangan qiymatdan past bo’lgan signallarni o’tkazadi, boshqa signallarni kesib 
-
-? 194.  High Pass Filtr uchun to’g’ri ta’rif berilgan qatorni toping. === Chastotasi aniqlangan qiymatdan baland bo’lgan signallarni o’tkazadi, boshqa signallarni kesib tashlaydi.
-
-? 195.  Band Pass Filtr uchun to’g’ri ta’rif berilgan qatorni toping. === Signal chastotasi berilgan o’tkazish chastota kengligi ichida bo’lgan qismini o’tkazadi
-
-? 196.  Quyidagi filtrlash formulasida keltirilgan x[n] qanday signal? ======   y[n] = (b0*x[n] + b1*x[n-1] + b2*x[n-2] – a1*y[n-1] – a2*y[n-2])/a0 === Filtrlanishi kerak bo’lgan signal
-
-? 197.  Signallarga raqamli ishlov berishda Korrelyatsiya jarayonining necha xil shakli mavjud? === 2
-
-? 198.  Qayta ishlanadigan signallar qanday guruhlarga bo’linadi? === Barcha javoblar to’g’ri
-
-? 199.  Qanday turdagi signal tashqi ta’sirlarda kamroq o’zgaradi? === Raqamli signal
-
-? 200.  Svyortka amalidan ko’p foydalaniladigan jarayon qaysi? === Filtrlash jarayoni
-
+            Fuqaro muhofozasi   nimani o’rgatadi?	===  Inson faoliyati davomida ularning xavfsizligini taminlashni o’rgatadi
+Xavflar kelib chiqish sabablariga ko’ra necha xil bo’ladi?	===  Tabiiy, texnogen, ekologik
+Xavf nima?	===   Inson sog’ligiga bevosita yoki bilvosita  va boshqa yo’llar bilan zarar yetkazadigan  ko’ngilsiz hodisalar
+«Fuqaro muhofozasi» fani qaysi fanlar bilan uzviy bog’liq?	===   Ergonomika, texnik estetika, mehnat fiziologiyasi, mehnatni ilmiy asosda   tashkil etish  va  mehnat gigiyenasi
+Tavakkalni aniqlash qanday yo’llar bilan olib boriladi?	===   Statistik, andozalash,  ekspert,  jamoatchilik yo’llari bilan
+Xavfsizlikni taminlash yo’llari qaysilar?	===  Boshqaruv, yo’naltirish (aniqlash), texnik, tashkiliy yo’llar.
+Xavfsizlikni taminlashni yo’naltirish yo’llari qaysilar ?	===  Operatorni faolligi, iqtidorligi, operatorni almashtirish, xavflarni tasniflash,  tartiblash ,  xavflarni kamaytirish.
+Xavfsizlikni taminlashning texnik yo’llariga nimalar kiradi ?	===  Blakirovkalash, vakuumlash, to’siqlar orqali himoyalash, masofada himoyalash.
+Xavfsizlikni taminlashning tashkiliy yo’llariga nimalar kiradi ?	===  Barchasi to’g’ri.
+Xavfsizlikni taminlashni boshqarish yo’llari qaysilar ?	===  Barchasi to’g’ri.
+Hayotiy faoliyat xavfsizligi qaysi  masalalarni hal qiladi?	===  Hammasi to’g’ri.
+Hayot faoliyati xavfsizligini ta’minlash qaysi masalarga bog’liq?	===  Hammasi to’g’ri.
+Kremniy oksidi changidan qanday kasallik paydo bo’ladi?	===   Silikoz
+Tuproq changidan qanday kasallik paydo bo’ladi?	===   Silikoz
+Ko’mir oksidi changidan qanday kasallik paydo bo’ladi?	===   Antrokoz
+Alyuminiy oksidi changidan qanday kasallik paydo bo’ladi?	===  Alyuminoz
+Silikatlar ta’siridagi changdagi qanday kasallik paydo bo’ladi?	===  Silikatoz
+Hayotiy faoliyat xavfsizligini boshqarish vositalariga qaysilar kiradi?	===  Barchasi to’g’ri.
+Favqulodda vaziyat nima?	===   Bu ma’lum xududda halokat, falokat, tabiiy va ekologik ofat, epidemiya,           epizootiya,  epitotiyalar natijasida sodir bo’lgan vaziyat.
+Hayotiy faoliyat xavfsizligi fanining nazariyalari nimalar?	===  Hammasi to’g’ri
+Favqulodda vaziyatlardan himoyalash tadbirlari nimalar?	===   Barcha javoblar to’g’ri.
+Kelib chiqish sabablariga qarab favkulodda vaziyatlar   necha xil bo’lishi mumkin?	===   Barcha javobdar  to’g’ri.
+Favqulodda vaziyatlar xavfini tarqalish tezligi bo’yicha necha xil bo’ladi?	===   To’rtta..
+Tarqalish xududiga qarab favqulodda vaziyatlar necha xil buladi?	===   Mahalliy,  regional,  milliy,  lokal, global.
+Favqulodda vaziyatlar paydo bo’lishi sabablari nimalar?	===  Barcha javoblar to’g’ri.
+Favqulodda vaziyatlar necha bosqichga  ega?	===  To’rt bosqichga.
+O’zbekiston Respublikasi xududida qaysi favqulodda vaziyatlar yuz berishi mumkin?	===  Keltirilgan barcha javoblar to’g’ri
+Zilzilalarning oqibatlarini kamaytirish chora-tadbirlariga nimalar kiradi?	===  Zilzilaning  geofizik, geologik xossalaini tahlil qilish, oldindan qayerda va   qachon zilzila bo’lish ehtimoli borligini aniqlash, ogohlantirish.
+Gidrotexnik inshootlarning buzilishiga nimalar sabab bo’lishi mumkin?	===  Hammasi to’g’ri..
+Yong’in natijasida portlashlarning kelib chiqishiga  nimalar  sabab bo’ladi?	===   Moddalarning yonuvchanligi, yuqori harorat, alanga.
+Qurilish ashyolari o’tga chidamligigi bo’yicha nega turga bo’linadi?	===   Yonmaydigan, og’ir yonadigan, yonuvchan, tutab yonadigan.
+Portlash nima?	===   Chegaralangan xududda , katta miqdordagi quvvatning   ajralib chiqishidir.
+Portlatuvchi omillarga nimalar kiradi?	===   Barchasi to’g’ri.
+O’zbekiston Respublikasida mehnat muhofazasini nazorat qiluvchi tashkilotlarga      qaysilar kiradi?	===   Barchasi to’g’ri
+Mehnat qonunligini buzilishi uchun qanday  javobgarliklar mavjud?	===  Ma’muriy, jinoiy, moddiy
+Yo’riqnomalar necha xil bo’ladi?	===   Kirish, ish joyidagi, davriy va navbatdan tashqari yo’riqnomalar.
+Ishchilar bilimi qachon tekshiriladi?	===   A va B javoblar to’g’ri.
+Inson faoliyati necha turga bo’linadi?	===   Aqliy  va jismoniy faoliyat
+Mehnatni to’g’ri tashkil qilish yo’nalishlari necha xil bo’ladi?	Fiziologik va psixologik yo’nalish
+Insonning eshitish organi necha gersdagi tovushlarni eshitishi mumkun?	===  16-20000 gs gacha
+Shovqin,   titrashga  qarshi   kurash usullarini ko’rsating?	===  B va V javoblar to’g’ri.
+Ishlab chiqarishdagi  yoritish sistemalari necha xil bo’ladi?	===   Tabiiy, sun’iy va aralash.
+Vazifasiga qarab suniy yoritish necha xil bo’ladi?	===  Avariya va maxsus yoritish.
+Sanoat changi necha xil bo’ladi?	===  Tabiiy va suniy.
+Zaharli moddalarni odam tanasiga ko’rsatadigan tasiriga karab necha xil bo’ladi?	===  Barcha javoblar to’g’ri
+Kasbiy zaharlanishga qarshi kurash qaysi yo’nalishlarda   olib boriladi?	===  Barcha javoblar to’g’ri.
+Ishlab chiqarish muhitida meteriologik sharoitlar nimalarga bog’liq?	===  Havo tezligi, havo harorati, nisbiy namlik va  havo bosimiga.
+Sanoat korxonalarida xonalar necha xil bo’ladi?	===  Oddiy, issiq
+Yil fasllari necha xil bo’lishi mumkin?	===  Issiq
+Ish kategoriyasi necha xil bo’lishi mumkin?	===  Yengil, o’rtacha va og’ir.
+Shovqinga qarshi kurash usullari nimalardan iborat?	===  Barcha javoblar to’g’ri.
+Shovqinga qarshi qaysi himoya vositalari mavjud?	===  Shlem va naushnik va boshqalar.
+Shovqinlar kelib chiqish sababiga ko’ra qaysi turlarga ajratiladi ?	===   Elektr magnit, mexanik, aerodinamik gidrodinamik shovqinlar.
+O’zgaruvchi elektromagnit maydonlar inson organizmiga qanday ta’sir kiladi?	===   Barcha javoblar to’g’ri.
+Erganomika fani nimani o’rgatadi?	===  Erganomika insonning mehnat faoliyati jarayonida qulay, xavfsiz sharoitlarini yaratish mehnat unumdorligini oshirishga bog’liq bo’lgan imkoniyatlarini o’rgatadi.
+Insonning psixologik faoliyati necha guruxga bo’linadi?	===  Psixologik jarayonlar, xossalar, holatlar.
+Ishlab chiqarish changi necha xil bo’ladi?.	===  Turli kattalikda organik va noorganik changlar.
+Havo muhitidagi zaharli moddalarga yo’l qo’yilgan miqdori nimalarga asoslanadi?	===   Fizik, kimyoviy va boshqa ma’lumotlarga.
+Davlat standartiga asosan  zaharli  moddalarning   organizmga ta’sir ko’rsatishiga        karab  qanday  sinflarga bo’linadi?	===  Yuqori, kam va o’rtacha xavfli.
+Chang tutqichlar va filtrlarning yong’in xavfsizligi qo’yiladigan talablar        ko’rsating?	===   Texnik va konstruktiv jihozlar va moslamalar bilan ta’minlash.
+Avariya shamollatish vositalari qachon o’rnatiladi?	===  Doimo inson bo’ladigan, halokat yuz berganda yoki texnalogik jarayon buzilganda to’satdan  ko’p miqdorda zararli yoki zaharli  gaz va bug’lar paydo bo’lishi mumkin bo’lgan ishlab  chiqarish xonalariga o’rnatiladi.
+Qaysi xollarda shamollatish qurilmalaridan yong’in chiqish mumkin?	===   Uchqun chiqishi, havodagi kimyoviy reaksiya va  nosozlik natijalari.
+Nima maqsadda blakirovka qilinadi?	===   Barcha javoblar to’g’ri.
+Rangli signallar necha xil bo’ladi?	===  Qizil (taqiqlash), sariq (ogohlantirish), yashil (xavfsizlik), ko’k (ko’rsatma).
+Xavfli zona deb nimaga aytiladi?	===  Inson hayotiga yoki sog’ligiga doimiy yoki vaqti-vaqti bilan xavf to’g’diruvchi joyga.
+Xavfsizlik masofalari nima uchun kerak?	===   Mehnat xavfsizlikni ta’minlash, tegishli asboblarni joylashtirish.
+Jarohatlovchi omillar nimalar?	===  Barcha javoblar to’g’ri.
+Ish joylarining balandligi yer sathidan necha metr masofada bo’ladi.	===  1,0 m.
+Yuk ko’tarish mexanizmlarida ishlovchi  ishchilar necha yoshda bo’lishi lozim?	===  16-18 yoshda
+Gaz balonlar qaysi hollarda falokatga olib keladi?	===  Tayyorlash, tashish va saqlash vaqtida xavfsizlik qoidalarining buzilishi.
+Tok urishning eng og’ir  darajasini ko’rsating.	===   Muskullar keskin qisqarishi natijasida odam xushini yo’qotadi, nafas olish faoliyati ishlab turadi, hushini yo’qotib, nafas olish tizimi yoki yurak urishi to’xtab qoladi. Klinik o’lim holati yuz beradi bunda insonda hyech qanday hayot alomatlari ko’rinmaydi
+Elektr tokidan jarohatlanishning oldini olishga qaysi chora-tadbirlar kiradi?	===  Barcha  javoblar to’g’ri.
+Sanoat korxonalari odamlar uchun tok urishi xavflilik darajasi bo’yicha necha        sinfga  bo’linadi?	===  besh sinfga; xavfsiz,  xavfli,  o’ta xavfli,  yuqori xavfli,  yengil xavfli.
+O’tni o’chirish uchun qaysi usullar ishlatiladi?	===  Barcha javoblar tug’ri.
+Moddalar o’zidan-o’zi yonishga moyilligi bo’yicha necha sinfga bo’linadi?	===  To’rt sinfga tabiiy o’simliklar, torf va ko’mir, yog’ va moy, kimyoviy moddalar.
+Havoni changdan tozalashda necha usul qo’llaniladi?	===  Quruq va ho’l tozalash usullari
+Korxona bosh loyihasi  nima?	===  Korxona bosh loyihasi mavjud bo’lgan va ko’riladigan barcha bino, inshootlar, asosiy yo’l va yo’laklar, ko’kalamzorlashtiriladigan maydon yuzini malum masshtabda ifodalangan chizmalari.
+Korxona bosh loyihasida qaysi omillar yoritiladi?	===  Ishchi kuchi, elektr, xom-ashyo bilan taminlash, temir yo’l, transport aloqasi, havo oqimi tezligi, shovqindan himoya qilish.
+Korxona maydonidagi binolar oraligidagi yullarning eni necha metr bulishi kerak	===  5 metr.
+Ishlab  chiqarish binolari orasidagi masofa yong’in xavfsizligi bo’yicha necha metr        bo’lishi   mumkin?	===   9-12 metr.
+Sanitariya – maishiy xizmat ko’rsatish binolar tarkibiga qaysilar kiradi?	===  Uy va ish kiyimlarini saqlash, zararsizlantirish, tuzatish, yuvish, yuvinish va boshqalar.
+Korxonaning maishiy binolari qanday joylashtiriladi?	===  Alohida
+Karroziyadan qaysi xavflar paydo bo’lishi mumkin?	===  Asbob-uskuna,  kommunikasiyalarning buzilishi, sinishi,  avariya, portlash va yong’in sodir bo’lishi.
+Kasaba uyushma qo’mitasi texnik inspektorining  vazifasi  nimalardan iborat?	===  Mehnatni muhofaza qilish qoidalari, baxtsiz hodisalarga uchraganlar hisobga  olish, og’ir yoki o’lim bilan tugagan hodisalarni tahlil qilish,  mehnatni muhofaza qilish qoida va me’yorlarni buzganlarni javobgarlikka tortish uchun tegishli organga ma’lumot berish.
+Baxtsiz hodisalarni oldini olish qaysi raxbar xodim zimmasida bo’ladi?	===  Ma’muriyat rahbariga
+Toliqishni qanday oldini olish mumkin?	===  Ko’p mehnat talab qiladigan ishlarni mexanizasiyalashtirish, yarim avtomat va         avtomatlashgan texnologiya jarayonlariga o’tish, yangi texnologiyalarni joriy  etish,
+Ishlab chiqarish  jarayoniga mashq qilish  qanday ta’sir qiladi?	===  Barcha javoblar to’g’ri.
+Mehnat maromi nima?	===  Bir maromda mehnat – smena, hafta, oy, yil maboynida bir tekisda bajariladigan  mehnatdir.
+Sanoat korxonalarida qaysi gazlar ishlatiladi?	===  Siqilgan, suyuqtirilgan, eritilgan.
+Balonlarni portlashiga nimalar sabab bo’lishi mumkin?	===  Noto’g’ri foydalanish, texnika xavfsizligi va ekspluatasiya talablariga rioya qilmaslik.
+Xavfli yuklarga nimalar kiradi?	===  Portlovchi moddalar, suyultirilgan, siqilgan, eritilgan gazlar, radiaktiv moddalar    va yengil alangalanuvchi suyuqliklar.
+Issiq suv, bug’ va gaz quvurlarining  avariyaga uchrashishiga  nima sabab bo’ladi?	===  Qurilish-montaj ishlarida loyihada ko’rsatilgan me’yorlardan chetga chiqish, quvurlardan foydalanishda texnologiya rejimlarini buzish, vaqtida sifatli ta’mirlash ishlarini olib bormaslik, gidravlik zarbalar, tekshirish asbob-uskunalari o’z vaqtida sifatli texnika ko’rigidan o’tkazmaslik.
+Ma’muriy javobgarlik necha turga bo’linadi?	===  To’rt turga: mablag’ va pul undirish, ogohlantirish, qamoq  jazosi berish,  past lavozimga o’tkazish.
+Rejadan tashqari instruktaj qaysi vaqtda o’tkaziladi?	===  Texnologik sharoit o’zgarsa, baxtsiz hodisa va boshqa hollarda.
+Xavfsiz mehnat qilish sharoitini yaratish qaysi tizimni vazifasi?	===  Mehnat muhofazasini boshqarish tizimi va korxona rahbari.
+Mehnat xavfsizligi standartlar sistemasiga  (MXSS) nimalar kiradi?	===  Tashkiliy-uslubiy standartlar, xavfsizlik talablari uskunalari standartlari,                           ishchilarning himoya vositalariga bo’lgan talablar standartlari
+Birinchi o’t o’chirish moslamalarini ko’rsating?	===  Yong’in krani, gidrant va щitlar.
+Avariya-qutqaruv ishlari qachon amalga oshiriladi?	===  Tabiiy va texnogen turdagi favqulodda vaziyatlarda.
+Xavfsizlikni taminlashning texnik yo’llariga nimalar kiradi ?	===  Blakirovkalash, vakuumlash, to’siqlar orqali himoyalash, masofada himoyalash.
+Xavfsizlikni taminlashning tashkiliy yo’llariga nimalar kiradi ?	===  Barchasi to’g’ri.
+Xavfsizlikni taminlashni boshqarish yo’llari qaysilar ?	===  Barchasi to’g’ri.
+Hayotiy faoliyat xavfsizligi qaysi  masalalarni hal qiladi?	===  Hammasi to’g’ri.
+Hayotiy faoliyat xavfsizligini boshqarish vositalariga qaysilar kiradi?	===  Barchasi to’g’ri.
+Favqulodda vaziyat nima?	===   Bu ma’lum xududda halokat, falokat, tabiiy va ekologik ofat, epidemiya,           epizootiya,  epitotiyalar natijasida sodir bo’lgan vaziyat.
+Kelib chiqish sabablariga qarab favkulodda vaziyatlar   necha xil bo’lishi mumkin?	===   Barcha javobdar  to’g’ri.
+Favqulodda vaziyatlar xavfini tarqalish tezligi bo’yicha necha xil bo’ladi?	===   To’rtta..
+Tarqalish xududiga qarab favqulodda vaziyatlar necha xil buladi?	===   Mahalliy,  regional,  milliy,  lokal, global.
+Ishlab chiqarishdagi  yoritish sistemalari necha xil bo’ladi?	===   Tabiiy, sun’iy va aralash.
+Vazifasiga qarab suniy yoritish necha xil bo’ladi?	===  Avariya va maxsus yoritish.
+Sanoat chang necha xil bo’ladi?	===  Tabiiy va suniy.
+Zaharli moddalarni odam tanasiga ko’rsatadigan tasiriga karab necha xil bo’ladi?	===  Barcha javoblar to’g’ri
+Kasbiy zaharlanishga qarshi kurash qaysi yo’nalishlarda   olib boriladi?	===  Barcha javoblar to’g’ri.
+Yo’riqnomalar necha xil bo’ladi?	===   Kirish, ish joyidagi, davriy va navbatdan tashqari yo’riqnomalar.
+Ishchilar bilimi qachon tekshiriladi?	===   A va B javoblar to’g’ri.
+Inson faoliyati necha turga bo’linadi?	===   Aqliy  va jismoniy faoliyat
+Mehnatni to’g’ri tashkil qilish yo’nalishlari necha xil bo’ladi?	Fiziologik va psixologik yo’nalish
+Sanoat korxonalari odamlar uchun tok urishi xavflilik darajasi bo’yicha necha        sinfga  bo’linadi?	===  besh sinfga; xavfsiz,  xavfli,  o’ta xavfli,  yuqori xavfli,  yengil xavfli.
+O’tni o’chirish uchun qaysi usullar ishlatiladi?	===  Barcha javoblar tug’ri.
+Moddalar o’zidan-o’zi yonishga moyilligi bo’yicha necha sinfga bo’linadi?	===  To’rt sinfga tabiiy o’simliklar, torf va ko’mir, yog’ va moy, kimyoviy moddalar.
+
+
+Variant 17
+
+Havoni changdan tozalashda necha usul qo’llaniladi?	===  Quruq va ho’l tozalash usullari
+Hayot faoliyati xavfsizligi»  fani nimani o’rgatadi?	===  Inson faoliyati davomida ularning xavfsizligini taminlashni o’rgatadi.
+
+Xavflar kelib chiqish sabablariga ko’ra necha xil bo’ladi?	===   Tabiiy, texnogen, ekologik
+
+Xavf nima?
+	===   Inson sog’ligiga bevosita yoki bilvosita  va boshqa   yo’llar bilan zarar  yetkazadigan  ko’ngilsiz hodisalar
+«Hayot faoliyati havfsizligi» fani qaysi fanlar bilan
+uzviy bog’liq?	===   Ergonomika, texnik estetika, mehnat fiziologiyasi,          mehnatni ilmiy asosda tashkil etish  va  mehnat gigiyenasi
+
+Ergonomika nima?
+	===  Qulay ish o’rnini tashkil etish;
+Tavakkalni aniqlash qanday yo’llar bilan olib boriladi?	===   Statistik, andozalash,  ekspert,  jamoatchilik    yo’llari bilan
+Variant 18
+
+Xavfsizlikni taminlash yo’llari qaysilar?	===  Boshqaruv, yo’naltirish (aniqlash), texnik, tashkiliy   yo’llar.
+Xavfsizlikni taminlashni yo’naltirish yo’llari   qaysilar ?	===  Operatorni faolligi, iqtidorligi, operatorni almashtirish, xavflarni tasniflash,  tartiblash ,  xavflarni kamaytirish
+Xavfsizlikni taminlashning texnik yo’llariga nimalar kiradi ?	===  Blakirovkalash, vakuumlash, to’siqlar orqali himoyalash, masofada himoyalash.
+Xavfsizlikni taminlashning tashkiliy yo’llariga nimalar kiradi ?	===  Barchasi to’g’ri.
+
+Xavfsizlikni taminlashni boshqarish yo’llari qaysilar ?	===  Barchasi to’g’ri.
+Hayot faoliyati xavfsizligi qaysi  masalalarni hal qiladi?	===  Hammasi to’g’ri.
+
+Xavflar necha bosqichda o’rganiladi?	===  3 bosqichda;
+
+
+Variant 19
+
+Mu’tadil xayotiy faoliyat sharoiti ko’rsatkichlarini aniqlang?
+	===  18-20 gradus harorat, 30-60 foiz namlik va 760 mm.simob
+ustuniga teng bo’lgan bosim;
+Zaxarli moddalarning odam tanasi va to’qimalariga ta’sirniga ko’ra   necha guruhga ajratish mumkin?	===  9 guruxga;
+Chang zarrachalari   kattaligi bo’yicha necha turga bo’linadi?	===  4 turga;
+Katta changlarning o’lchamini ko’rsating?	===  10 mk. dan katta;
+Mikroskopik changlarning o’lchamini ko’rsating?	===   0,25- 1 mk.;
+Ultromikroskopik changlarning o’lchamini ko’rsating?	===   0,25 mk dan kichik.
+Organizm uchun eng xavfli changlarning o’lchamini ko’rsating?	===   4-5  mk.;
+
+Asabga ta’sir ko’rsatuvchi zaharli moddalarni ko’rsating?	===  Benzin, kerasin, spirt, amiak,  nikatin va boshqalar;
+Organizmni  kuydiruvchi zaharli moddalarni ko’rsating?	===  Barcha turdagi kislatalar va ishqorlar;
+Mexnat fiziologiyasi nimani o’rganadi?
+	===   Inson ish faoliyatida tanada yuz beradigan o’zgarishlarni;
+“Komfort uchburchagi” nima?
+	===   Me’yoriy harorat, bosim va  namlik;
+Inson uchun eng zaharli changlar guruxini ko’rsating?	===   Barcha kimyoviy changlar;
+Moddalarning ruxsat etilgan konsentrasiyasiga ko’ra  eng xavfli           (0, 01 mg. / metr kub) moddani ko’rsating	===    Simob bug’i;
+Zaharli moddalar xavflilik darajasiga ko’ra necha guruhga bo’linadi?	===   4 guruhga;
+“Fotokolorometriya” usulida nima aniqlanadi?
+	===   Zararli moddalarning havodagi miqdori;
+“Gazoxromatografiya” va “Spektroskopiya” usullarida  qanday
+kattaliklar aniqlanadi?	===   Zararli moddalarning havodagi miqdori;
+“Xayot faoliyati xavfsizligi” fanining tizimli- strukturaviymodeli qaysi bilimlarni o’z ichiga oladi?	===   Umumiy, tibbiy –biologik, tabiiy sharoitlar bilan bog’liq  bilimlar va texnik-texnologik;
+
+
+
+
+
+1. »Hayot faoliyati xavfsizligi»  fani nimani o‘rgatadi?
+A)	===  Inson faoliyati davomida ularning xavfsizligini taminlashni o‘rgatadi.
+B)	Xavf-xatarni o‘rganish uchun chora-tadbirlar tuzishni o‘rgatadi.
+C)	Mehnat qilish jarayonida insonning xavfsizligini  taminlashni o‘rgatadi.
+D)	Texnikaning ishlatishda xavfsizligini taminlashni o‘rgatadi.
+2.Xavflar kelib chiqish sabablariga ko‘ra necha xil bo‘ladi?
+A)	===   Tabiiy, texnogen, ekologik
+B)	Texnogen
+C)	Ekologik
+D)	Tabiiy
+3. Xavf nima?
+A)	===   Inson sog‘ligiga bevosita yoki bilvosita  va boshqa   yo‘llar bilan zarar  yetkazadigan  ko‘ngilsiz hodisalar
+B)	Ko‘chki
+C)	Suv toshqini
+D)	Zilzila
+4.  «Hayot faoliyati havfsizligi» fani qaysi fanlar bilan
+uzviy bog‘liq?
+A)	===   Ergonomika, texnik estetika, mehnat fiziologiyasi,
+mehnatni ilmiy asosda tashkil etish  va  mehnat gi
+giyenasi
+B)	Iqtisodiy nazariya
+C)	Tabiiy fanlar
+D)	Gumanitar fanlar
+5. Tavakkalni aniqlash qanday yo‘llar bilan olib boriladi?
+A)	===   Statistik, andozalash,  ekspert,  jamoatchilik
+yo‘llari bilan
+B)	Andozalash yuli bilan
+C)	Ekspert
+D)	Statistik
+6.   Xavfsizlikni taminlash yo‘llari qaysilar?
+A)	Yo‘naltirish (aniqlash) yo‘llari
+B)	Texnik yo‘llar
+C)	===  Boshqaruv, yo‘naltirish (aniqlash), texnik, tashkiliy   yo‘llar.
+D)	Boshqaruv va tashkiliy yo‘llar
+7. Xavfsizlikni taminlashni yo‘naltirish yo‘llari
+qaysilar ?
+A)	Operatorni faolligi, iqtidorligi.
+B)	Operatorni almashtirish,
+C)	Xavflarni tasniflash, tartiblash, xavflarni kamaytirish,
+D)	===  Operatorni faolligi, iqtidorligi, operatorni almashtirish, xavflarni tasniflash,  tartiblash ,  xavflarni kamaytirish.
+8. Xavfsizlikni taminlashning texnik yo‘llariga nimalar kiradi ?
+A)	Blakirovkalash ,  vakuumlash.
+B)	To‘siqlar orqali himoyalash.
+C)	Masofada himoyalash, mahkamlash, puxtalash.
+D)	===  Blakirovkalash, vakuumlash, to‘siqlar orqali himoyalash, masofada himoyalash.
+9. Xavfsizlikni taminlashning tashkiliy yo‘llariga nimalar kiradi ?
+A)	Vaqt bo‘yicha chegaralash
+B)	Axborot, me'yorlash,  xodimlar tanlash
+C)	Zahiralash
+D)	===  Barchasi to‘g‘ri.
+10. Xavfsizlikni taminlashni boshqarish yo‘llari qaysilar ?
+A) Moslik, nazorat, qarshi aloqa
+V) Javobgarlik,  rejalik
+S)  Rag‘batlantirish, samaradorlik, boshqarish
+D)  ===  Barchasi to‘g‘ri.
+11.  Hayot faoliyati xavfsizligi qaysi  masalalarni hal qiladi?
+A)	Xavflarni birday (umumlashtirish) deb hisoblashni, yoki ularning   qiyofasini bilib olib  koordinati va miqdoriy xususiyatini ko‘rsatishni
+B)	Zarrari va foydasini solishtirish asosida xavflardan himoya qilishni
+C)	Paydo bo‘lishi mumkin bo‘lgan salbiy xavflarni yo‘qotishni
+D)	===  Hammasi to‘g‘ri.
+12. Mehnatni ilmiy asosda tashkil etishning asosiy yunalishlarini ko‘rsating?
+A)	Gigiyenik.
+B)	Fiziologik.
+C)	Psixologik va estetik
+D)	===  Barchasi to‘g‘ri
+13.  Kremniy oksidi changidan qanday kasallik paydo
+bo‘ladi?
+A)	===   Silikoz
+B)	Antrokoz
+C)	Alyuminoz
+D)	Silikatoz
+14. Ko‘mir oksidi changidan qanday kasallik paydo bo‘ladi?
+A)	Silikoz
+B)	===   Antrokoz
+C)	Alyuminoz
+D)	Silikatoz
+15. Alyuminy oksidi changidan qanday kasallik paydo
+bo‘ladi?
+A)	Silikoz
+B)	Antrokoz
+C)	===  Alyuminoz
+D)	Silikatoz
+16. Silikatlar ta'siridagi changdagi qanday kasallik paydo
+bo‘ladi?
+A)	Silikoz
+B)	Antrokoz
+C)	Alyuminoz
+D)	===  Silikatoz
+17. Hayotiy faoliyat xavfsizligini boshqarish vositalariga
+qaysilar kiradi?
+A)	Xalq ommasini  manfaati
+B)	Kasbni tanlash va o‘rganish
+S)   Insonda xavfsizlik xulq madaniyatini tarbiyalash,
+boshqaruvchi shaxslarga      ruhiy    ta'sir,  jamoa va
+shaxsiy himoya vositalari
+D)===  Barchasi to‘g‘ri.
+18. Favqulodda vaziyat nima?
+A)	Xavflar va xatarlar bilan bog‘liq vaziyat
+B)	Fojia va falokatlar bilan bog‘liq vaziyat
+S)    Falokat va ekologik ta'sir bilan  boglik vaziyat
+D)===   Bu ma'lum xududda halokat, falokat, tabiiy va eko
+logik ofat, epidemiya,   epizootiya,  epitotiyalar na
+tijasida sodir bo‘lgan vaziyat.
+19. Hayot faoliyati xavfsizligi fanining nazariyalari ni
+malar?
+A)	Har qanday faoliyatda yashirish xavf bor va  kishining hayotida xavflar uzluksizligini  ta'minlashi.
+B)	Xavflar zamon va makonda noaniqligi ya'ni, bu shunday ko‘chki, uning yuzaga chiqishi uchun ma'lum sharoit mavjud bo‘lishligi
+C)	Yashirin xavflarni yuzaga chiqish sharoiti sabab deb ataladi, bular har vaqt mavjud va  ma'lum yoki noma'lum bo‘lishini, sabablarini bilish, ularning o‘xshashlik tomonlarini    aniqlay olish favqulodda vaziyatlarni oldini olishning asoslari
+D.===  Hammasi to‘g‘ri
+20. Favqulodda vaziyatlardan himoyalash tadbirlari nima
+lar?
+A)	O‘tmishdagi favqulodda vaziyatlarni tahlil qilish
+B)	Tayyorgarlik ishlarini o‘tkazish
+C)	Favqulodda vaziyatlar davridagi xarakatlarga tayyor
+garlik ko‘rish   oqibatlarni  tugatish
+D)  ===   Barcha javoblar to‘g‘ri.
+
+21. Kelib chiqish sabablariga qarab favkulodda vaziyatlar
+necha xil bo‘lishi mumkin?
+A)	Tabiiy tusdagi favqulodda vaziyatlar
+B)	Texnogen tusdagi favqulodda vaziyatlar
+C)	Antrapogen, ekologik, ijtimoiy, siyosiy kelishmovchiliklar
+D)	===   Barcha javobdar  to‘g‘ri.
+22.Favqulodda vaziyatlar xavfini tarqalish tezligi bo‘yicha
+necha xil bo‘ladi?
+A)	Uchta
+B)	Ikkita
+C)	Beshta
+D)	===   To‘rtta..
+23. Tarqalish xududiga qarab favqulodda vaziyatlar necha xil
+bo‘ladi?
+A)	Lokal (cheklangan obyektda).
+B)	Mahalliy
+C)	Regional (Respublika xududida)
+D)	===   Mahalliy,  regional,  milliy,  lokal, global.
+24.Favqulodda vaziyatlar paydo bo‘lishi sabablari nimalar?
+A)	Og‘irlik kuchlari, yer aylanishi, haroratlar farqi tasirlari ostida paydo bo‘ladigan tez   kechadigan tabiiy jarayonlar oqibatida.
+B)	Konstruksiyalar yoki inshootlar, ashyolarning zanglanishi, eskirishi, fizik-texnik ko‘rsatgichlarning pasayishiga olib keladigan tashqi tabiiy  omillar tasiri.
+C)	Inshootlarning loyihasidagi, ishlab chiqarish texnologik jarayonlarning  inshoot ashyolariga tasiri
+D)	===  Barcha javoblar to‘g‘ri.
+25.Favqulodda vaziyatlar necha bosqichga  ega?
+A)	Bir bosqichga
+B)	Ikki bosqichga
+C)	Uch bosqichga
+D)	===  To‘rt bosqichga.
+26. O‘zbekiston Respublikasi xududida qaysi favqulodda va
+ziyatlar yuz berishi mumkin?
+A)	Faqat zilzilalar, sel, suv toshqinlari va boshqa gidrometerologik hodisalar
+B)	Kimyoviy xavfli, portlash va yong‘in xavfi mavjud  bo‘lgan   ob'yektlardagi    avariya va falokatlar
+C)	O‘tkir zararli moddalarining temir yo‘lda va boshqa transport vositalarida tashish   paytidagi avariya va falokatlar.
+D)	===   Keltirilgan barcha javoblar to‘g‘ri
+27. Zilzilalarning oqibatlarini kamaytirish chora-tadbir-
+lariga nimalar kiradi?
+A)	Ogohlantirish
+B)	Zilzilabardosh binolar ko‘rish
+C)	Seysmik rayonlashtirish va  inshootlarning zilzilaga bardoshligini oshirish bo‘yicha   tadbirlar  majmuasini ishlab chiqish
+D)	===  Zilzilaning  geofizik, geologik xossalaini tahlil qilish, oldindan qayerda va   qachon zilzila bo‘lish ehtimoli borligini aniqlash, ogohlantirish.
+28. Gidrotexnik inshootlarning buzilishiga nimalar sabab
+bo‘lishi mumkin?
+A)	Xavfli tabiat hodisalari tabiiy ofatlar, uskunlarning eskirishi
+B)	Loyihalash va ko‘rilishdagi xatolar. Ekspluatatsiya qoidalarining buzilishi
+C)	Portlashlar
+D)	===  Hammasi to‘g‘ri..
+29. Yong‘in natijasida portlashlarning kelib chiqishiga  ni
+malar  sabab bo‘ladi?
+A)	Faqat  yonuvchi modda
+B)	Faqat xavf harorat
+C)	Uchqun-alanga
+D)	===   Moddalarning yonuvchanligi, yuqori harorat, alanga.
+30. Qurilish ashyolari o‘tga chidamligigi bo‘yicha nega turga
+bo‘linadi?
+A)	Yonmaydigan va og‘ir yonadigan
+B)	Yonmaydigan
+C)	Yonmaydigan, og‘ir yonadigan, yonuvchan
+D)	===   Yonmaydigan, og‘ir yonadigan, yonuvchan, tutab yonadigan.
+31. Portlash nima?
+A)	Gazlarning qattik qisilishi
+B)	Yonuvchi moddaga gaz aralashmasi bilan sodir bo‘ladigan hodisa
+C)	Radioaktiv moddalarni noto‘g‘ri ishlatish natijasida sodir bo‘ladigan   hodisalar
+D)	===   Chegaralangan xududda , katta miqdordagi quvvatning   ajralib chiqishidir.
+32. Portlatuvchi omillarga nimalar kiradi?
+A)	Kimyoviy (portlovchi moddalar)
+B)	Yadroli (yadro zaryadli  qurollar)
+C)	Mexanik uslubdagi (yuqori bosim bilan ishlaydigan jihozlar va inshootlar). Elektromagnit (uchqun razryadi), tovushli va boshqa quvvatlar
+D)	===   Barchasi to‘g‘ri.
+33. O‘zbekiston Respublikasida mehnat muhofazasini nazorat
+qiluvchi tashkilotlarga       qaysilar kiradi?
+A)	O‘zbekiston Respublikasi mehnat va aholini ijtimoiy muhofaza qilish  vazirligi
+B)	Respublika ichki ishlar vazirligining yong‘indan muhofaza qilish bosh  boshqarmasi
+C)	O‘zbekiston Respublikasi  Sog‘liqni saqlash vazirligining sanitariya-Epidemiologiya boshqarmasi, O‘zbek-iston Respublikasi energetika va   elektrlashtirish Davlat nazorati.
+D)	===   Barchasi to‘g‘ri
+34.  Mehnat qonunligini buzilishi uchun qanday  javobgar
+liklar mavjud?
+A)	Faqat  ma'muriy jinoiy
+B)	Faqati jinoiy modda
+C)	Moddiy, jinoiy
+D)	===  Ma'muriy, jinoiy, moddiy.
+35. Yo‘riqnomalar necha xil bo‘ladi?
+A)	Kirish yo‘riqnomasi
+B)	Ish joyidagi va davriy yo‘riqnomalar
+C)	Faqat davriy yo‘riqnoma
+D)	===   Kirish, ish joyidagi, davriy va navbatdan tashqari yo‘riqnomalar.
+36. Ishchilar bilimi qachon tekshiriladi?
+A)	Dastlabki yo‘riqnomadan keyin
+B)	Malaka oshirgandan keyin
+C)	Baxtsiz hodisadan keyin
+D)	===   A va B javoblar to‘g‘ri.
+37.Inson faoliyati necha turga bo‘linadi?
+A)	Aqliy faoliyat
+B)	Jismoniy faoliyat
+C)	===   Aqliy  va jismoniy faoliyat
+D)	Og‘ir va yengil mehnat
+38. Mehnatni to‘g‘ri tashkil qilish yo‘nalishlari necha xil
+bo‘ladi?
+A)	Gigiyenik yo‘nalish
+B)	Fiziologik va psixologik yo‘nalish
+C)	Estetik  va gigiyenik yo‘nalish
+D)	===  Gigiyenik, fiziologik, psixologik, estetik.
+39. Insonning eshitish organi necha gersdagi tovushlarni
+eshitishi mumkun?
+A)	15 gs
+B)	20000 gs
+C)	20000 gs dan   katta
+D)	===  16-20000 gs gacha
+40. Shovqin,   titrashga  qarshi   kurash usullarini
+ko‘rsating?
+A)	Shovqin manbai bo‘lgan mashina va mexanizmlarni ayrim xonalarga joylashtirish.
+B)	Sershovqin sexlarni ham shovqin sexlardan ajratib joylashtirish.
+C)	Kuchli tebranishli  sershovqin joylarda ishlayotgan ishchilar sonini kamaytirish, shaxsiy himoya vositalaridan keng foydalanish.
+D)	===  B va V javoblar to‘g‘ri.
+41 Ishlab chiqarishdagi  yoritish sistemalari necha xil
+bo‘ladi?
+A)	Tabiiy
+B)	Sun'iy va tabiiy
+C)	Aralash va tabiiy
+D)	===   Tabiiy, sun'iy va aralash.
+42. Vazifasiga qarab suniy yoritish necha xil bo‘ladi?
+A)	Ish joylarini yoritish.
+B)	Avariya yoritilishi.
+C)	Maxsus yoritish.
+D)	===  Avariya va maxsus yoritish.
+43. Sanoat chang necha xil bo‘ladi?
+A)	Tabiiy.
+B)	Suniy.
+C)	Aralash.
+D)	===  Tabiiy va suniy.
+44. Zaharli moddalarni odam tanasiga ko‘rsatadigan tasiri
+ga karab necha xil bo‘ladi?
+A)	Asab zaharlanishi, jigar zaharlanishi
+B)	Ferment zaharlanish, kuyduruvchi zaharlanish
+C)	Alergen zaharlanishi, konsegren zaharlanish,  mutagen zaharlanish, zaharlanish
+D)	===  Barcha javoblar to‘g‘ri
+45. Kasbiy zaharlanishga qarshi kurash qaysi yo‘nalishlarda
+olib boriladi?
+A)	Texnologik jarayonlarda zaharli moddalar ajralishini bartaraf qilish
+B)	Texnologiya va zarur uskuna-moslamalarni takomillashtirish
+C)	Sanitariya va gigiyena tadbirlari, sanitariya davolash, sog‘lomlashtirish tadbirlariga doir qonunga amal qilish.
+D)	===  Barcha javoblar to‘g‘ri.
+46. Ishlab chiqarish muhitida meteriologik sharoitlar ni
+malarga bog‘liq?
+A)	Havo harorati va namlikka
+B)	Nisbiy namlik va havo bosimiga
+C)	Havo bosimi va hararotiga
+D)	===  Havo tezligi, havo harorati, nisbiy namlik va  havo bosimiga.
+47. Sanoat korxonalarida xonalar necha xil bo‘ladi?
+A)	Oddiy
+B)	Issiq
+C)	Iliq
+D)	===  Oddiy, issiq
+48. Yil fasllari necha xil bo‘lishi mumkin?
+A)	Issiq
+B)	Sovuq
+C)	O‘zgaruvchan
+D)	Issiq, sovuq, o‘zgaruvchan.
+49. Ish kategoriyasi necha xil bo‘lishi mumkin?
+A)	Yengil, o‘rtacha.
+B)	O‘rtacha va og‘ir
+C)	Og‘ir va yengil.
+D)	===  Yengil, o‘rtacha va og‘ir.
+50. Shovqinga qarshi kurash usullari nimalardan iborat?
+A)	Shovqinni ajratib chiqaradigan  manbani  kamaytirish.
+B)	Shovqinni tarqalish yo‘nalishini o‘zgartirish.
+C)	Sanoat korxonalari xonalariga akustik ishlov berish.
+D)	===  Barcha javoblar to‘g‘ri.
+51. Shovqinga qarshi qaysi himoya vositalari mavjud?
+A)	Vkladishlar va moslamalar.
+B)	Naushniklar va himoya vositalari.
+C)	Shlemlar va to‘siqlar.
+D)	===  Shlem va naushnik va boshqalar.
+52. Shovqinlar kelib chiqish sababiga ko‘ra qaysi turlarga
+ajratiladi ?
+A)	Mexanik, shovqin.
+B)	Aerodinamik shovqin.
+C)	Gidrodinamik shovqin.
+D)	===   Elektr magnit, mexanik, aerodinamik gidrodinamik shovqinlar.
+53. O‘zgaruvchi elektromagnit maydonlar inson organizmiga
+qanday ta'sir kiladi?
+A)	Elektr va magnit maydonlarini kuchlanishi.
+B)	Energiya oqimining intensivligi tebranish  darajasiga.
+C)	Nurlanishning tananing ma'lum yuzasida to‘planishi va inson organizmning shaxsiy xususiyatiga bog‘liq.
+D)	===   Barcha javoblar to‘g‘ri.
+54. Erganomika fani nimani o‘rgatadi?
+A)	Insonning mexnat faoliyatini.
+B)	Xavfsiz sharoitni yaratishni.
+C)	Mehnat unumdorligini oshirishni.
+D)	===  Erganomika insonning mehnat faoliyati jarayonida qulay, xavfsiz sharoitlarini yaratish mehnat unumdorligini oshirishga bog‘liq bo‘lgan imkoniyatlarini o‘rgatadi.
+E)	Faqat  mehnat sharoitini o‘rgatadi.
+55. Insonning psixologik faoliyati necha guruxga bo‘linadi?
+A)	Psixologik jarayonlar (bilimlarni jamlash va hayotiy tajribaga ega bo‘lish)
+B)	Psixologik xossalar (zukkolik, zakovatlilik, xis- tuyg‘u, iroda, odob-ahloq)
+C)	Psixologik holatlar (psixologik jarayonlarga foydali va foydasiz bog‘lanish)
+D)	===  Psixologik jarayonlar, xossalar, holatlar.
+56. Ishlab chiqarish changi necha xil bo‘ladi?
+A)	Ko‘rinadigan (10 mk dan) katta.
+B)	Mikroskopik (kattaligi 0,25-1mk)
+C)	Ultromikroskopik (0,25 mk dan kichik)
+D)	===  Turli kattalikda organik va noorganik changlar.
+57. Havo muhitidagi zaharli moddalarga yo‘l qo‘yilgan
+miqdori nimalarga asoslanadi?
+A)	Moddaning fizik-kimyoviy xossalariga
+B)	Eksperimental tekshirish natijalariga
+C)	Ishlab chiqarish, gigiyenik kuzatuv ma'lumotlariga
+D)	===   Fizik, kimyoviy va boshqa ma'lumotlarga.
+58. Davlat standartiga asosan  zaharli  moddalarning   orga-
+nizmga ta'sir ko‘rsatishiga  qarab  qanday  sinflarga
+bo‘linadi?
+A)	O‘ta yuqori sinfga
+B)	O‘rtacha xavfli sinfga
+C)	Kam xavfli sinfga
+D)	===  YUqori, kam va o‘rtacha xavfli.
+59. Chang tutqichlar va filtrlarning yong‘in xavfsizligi
+qo‘yiladigan talablar   ko‘rsating?
+A)	Portlash jihatdan xavfli changni tutib qoladigan kameralarni binodan tashqariga joylashtirish.
+B)	Yonuvchi yoki portlashga xavfli chang mavjud bo‘lgan o‘tkazgichlarni  yong‘in chiqqanda o‘z-o‘zidan yopiladigan klapinlar bilan jihozlash
+C)	O‘t olgan changni tezda uchirish uchun kameralarni suv sepadigan moslama bilan jihozlanish
+D)	===   Texnik va konstruktiv jihozlar va moslamalar bilan ta'minlash.
+60. Avariya shamollatish vositalari qachon o‘rnatiladi?
+A)	Halokat yuz berganda
+B)	Texnologik jarayon buzilganda
+C)	To‘satdan ko‘p miqdorda zararli yoki zaharli gazlar paydo bo‘lganda
+D)	===  Doimo inson bo‘ladigan, halokat yuz berganda yoki texnalogik jarayon buzilganda to‘satdan  ko‘p miqdorda zararli yoki zaharli  gaz va bug‘lar paydo bo‘lishi mumkin bo‘lgan ishlab  chiqarish xonalariga o‘rnatiladi.
+61. Qaysi xollarda shamollatish qurilmalaridan yong‘in
+chiqish mumkin?
+A)	Ventilyatorning elektr dvigatelaridan uchqun chiqishi qanday yoki qisqav tutashuv bo‘ladi.
+B)	Xarakatlanayotgan havodagi moddalar o‘zaro kimyoviy ta'sirlashganda chiqadigan issiqlik quvvati
+C)	Statik elektr, ventilyator yoki dvigatellar podshipniklarini qizishi.
+D)	===   Uchqun chiqishi, havodagi kimyoviy reaksiya va  nosozlik natijalari.
+62. Nima maqsadda blakirovka qilinadi?
+A)	Texnalogik jarayon va uskunalarini noto‘g‘ri boshqarishga barham berish.
+B)	Xavf paydo bo‘lganda ishlayotgan uskunani darhol to‘xtatish.
+C)	Ayrim mexanizm va detallarning xavfli mintaqadan tashqariga xarakatlanishiga imkoniyat yaratish uchun.
+D)	===   Barcha javoblar to‘g‘ri.
+63. Rangli signallar necha xil bo‘ladi?
+A)	===  Qizil (taqiqlash), sariq (ogohlantirish), yashil (xavfsizlik), ko‘k (ko‘rsatma).
+B)	Qizil (taqiqlash).
+C)	Sariq (ogohlantirish), yashil (xavfsizlik).
+D)	Ko‘k (ko‘rsatma).
+64. Xavfli zona deb nimaga aytiladi?
+A)	Uskuna o‘rnatilgan zonaga
+B)	Inson sog‘ligiga zarar tegadigan zonaga
+C)	Halokat va falokatli joylarga
+D)	===  Inson hayotiga yoki sog‘ligiga doimiy yoki vaqti-vaqti bilan xavf to‘g‘diruvchi joyga.
+65.Xavfsizlik masofalari nima uchun kerak?
+A)	Texnologik uskunalarga xizmat ko‘rsatishda mehnat xavfsizligini ta'minlash, falokatlarni oldini olish, bino va inshoatlarning yong‘in xavfsizligini ta'minlash.
+B)	Ob'yektlarni xavfsizligini ta'minlash.
+C)	Asbob-uskunalarni  joylashtirish.
+D)	===   Mehnat xavfsizlikni ta'minlash, tegishli asboblarni joylashtirish.
+66. Jarohatlovchi omillar nimalar?
+A)	Mashina va dastgohlarni xarakatlanuvchi kesimlari, qayishlar, barabanlar, shkivlar.
+B)	Tishli ish shesternalar,  shneklar, issiq yuzalar, zaharli kimyoviy moddalar matolarini pardozlashda ishlatiladigan kislota, ishkor va boshqa moddalar.
+C)	Ish joylarda to‘siqsiz ishlash.
+D)	===  Barcha javoblar to‘g‘ri.
+67. Ish joylarining balandligi yer sathidan necha metr maso
+fada bo‘ladi.
+A)	===  1,0 m.
+B)	2,0 m.
+C)	1,6 m.
+D)	2,5 m
+68. Yuk ko‘tarish mexanizmlarida ishlovchi  ishchilar necha
+yoshda bo‘lishi lozim?
+A)	16 yoshda
+B)	===  16-18 yoshda
+C)	20 yoshda
+D)	30 yoshda
+69. Gaz balonlar qaysi hollarda falokatga olib keladi?
+A)	Balonlarning tayyorlanish sifati pastligi.
+B)	Gaz bilan me'yordan ortiq to‘ldirilishi.
+C)	===  Tayyorlash, tashish va saqlash vaqtida xavfsizlik qoidalarining buzilishi.
+D)	Materialning sifatsizligi.
+70. Tok urishning eng og‘ir  darajasini ko‘rsating.
+A)	Muskullar keskin qisqarishi natijasida odam tok ta'siridan chiqib ketadi va hushini  yo‘qotadi.
+B)	Muskullar keskin qisqarishi natijasida odam tok ta'siridan chiqib ketadi va hushini yo‘qotadi. Muskullar keskin qisqarishi natijasida odam hushini yo‘qotadi, ammo yurak va nafas olish faoliyati ishlab turadi.
+C)	Muskullar keskin qiskarishi natijasida odam hushini yo‘qotadi, ammo yurak va nafas olish faoliyati buziladi, hushini yo‘qotib, nafas olish tizimi yoki yurak urishi to‘xtab qoladi.
+D)	===   Muskullar keskin qisqarishi natijasida odam xushini yo‘qotadi, nafas olish faoliyati ishlab turadi, hushini yo‘qotib, nafas olish tizimi yoki yurak urishi to‘xtab qoladi. Klinik o‘lim holati yuz beradi bunda insonda hech qanday hayot alomatlari ko‘rinmaydi.
+71. Elektr tokidan jarohatlanishning oldini olishga qaysi
+chora-tadbirlar kiradi?
+A)	Kuchlanish ostida bo‘lgan o‘tkazgichlarni qo‘l yetmaydigan qilib o‘tkazish.
+B)	Elektr tarmoqlarini alohida joylashtirish, elektr qurilmalar korpusida elektr tokining hosil bo‘lishiga qarshi xavfsizlik chora-tadbirlarni belgilash.
+C)	Maxsus elektr muhofazalash tizimlaridan foydalanish, elektr qurilmalarini xavfsiz ishlatishning tashkiliy choralarini kullash.
+D)	===  Barcha  javoblar to‘g‘ri.
+72. Sanoat korxonalari odamlar uchun tok urishi xavflilik
+darajasi bo‘yicha necha sinfga  bo‘linadi?
+A)	to‘rt sinfga; yengil xavfli, xavfli, o‘ta xavfli,   xavfsiz,
+B)	uch sinfga; xavfsiz, xavfli, o‘ta xavfli.
+C)	===  besh sinfga; xavfsiz,  xavfli,  o‘ta xavfli,  yuqori xavfli,  yengil xavfli.
+D)	Ikki sifga; xavfli va xavfsiz.
+73. Yashin qaytargich nima uchun kerak?
+A)	Elektrostatik zaryadlar xavfini yo‘qotish uchun
+B)	Binolarni himoya qilish uchun
+C)	===  Yong‘in chiqmasligi, himoya qilish, zaryadlarni yo‘qotish uchun
+D)	Qishloq xo‘jaligi ekinlarni himoya qilish uchun.
+74. O‘tni o‘chirish uchun qaysi usullar ishlatiladi?
+A)	Yonayotgan joyni ko‘p miqdorda issiqlik yutuvchi materiallar yordamida sovitish.
+B)	Yonayotgan materialni atmosfera havosidan ajratib qo‘yish.
+C)	Yonayotgan joyga kirayotgan havo tarkibidagi kislorod miqdorini kamaytirish maxsus kimyoviy vositalar qo‘llash.
+D)	===  Barcha javoblar tug‘ri.
+75. Moddalar o‘zidan-o‘zi yonishga moyilligi bo‘yicha necha
+sinfga bo‘linadi?
+A)	Bir sinfga (tabiiy o‘simliklar).
+B)	Ikki sinfga (torf va ko‘mir).
+C)	Uch sinfga  (yog‘ va moylar).
+D)	===  To‘rt sinfga tabiiy o‘simliklar, torf va ko‘mir, yog‘ va moy, kimyoviy moddalar.
+76. Havoni changdan tozalashda necha usul qo‘llaniladi?
+A)	Quruq tozalash usuli
+B)	===  Quruq va ho‘l tozalash usullari
+C)	Yarimquruq tozalash
+D)	Yarim ho‘l tozalash.
+77. Korxona bosh loyihasi  nima?
+A)	Mavjud bo‘lgan va ko‘riladigan binolar
+B)	Asosiy yo‘l va yo‘llaklar
+C)	Ko‘kalamzorlashtirish maydon yuzasini  malum masshtabda ifodalanishi
+D)	===  Korxona bosh loyihasi mavjud bo‘lgan va ko‘riladigan barcha bino, inshootlar, asosiy yo‘l va yo‘laklar, ko‘kalamzorlashtiriladigan maydon yuzini malum masshtabda ifodalangan chizmalari.
+78. Korxona bosh loyihasida qaysi omillar yoritiladi?
+A)	Korxonaning ishchi kuchi va suv taminoti.
+B)	Elektr, xom ashyo taminoti.
+C)	Temir yo‘li va transport aloqalari.
+D)	===  Ishchi kuchi, elektr, xom-ashyo bilan taminlash, temir yo‘l, transport aloqasi, havo oqimi tezligi, shovqindan himoya qilish.
+79. Korxona maydonidagi binolar oraligidagi yullarning
+eni necha metr bo‘lishi kerak
+A)	3 metr.
+B)	4 metr.
+C)	===  5 metr.
+D)	1 metr.
+80. Ishlab chiqarish binolari orasidagi masofa yong‘in
+xavfsizligi bo‘yicha necha metr    bo‘lishi   mumkin?
+A)	9 metr.
+B)	8 metr.
+C)	12 metr.
+D)	===   9-12 metr.
+81. Sanitariya - maishiy xizmat ko‘rsatish binolar tarkibiga
+qaysilar kiradi?
+A)	Dam olish, ovqatlanish  xonalari
+B)	Uy va ish kiyimlarni saqlash, zararsizlantirish xonalari.
+C)	Tuzatish, yuvinish, yuvish xonalari.
+D)	===  Uy va ish kiyimlarini saqlash, zararsizlantirish, tuzatish, yuvish, yuvinish va boshqalar.
+82. Korxonaning maishiy binolari qanday joylashtiriladi?
+A)	===  Alohida
+B)	Korxonaning yoniga qo‘shilmagan holda
+C)	Korxonaning  yuqori qavatlarida
+D)	Korxonaning yer to‘lasida
+83. Karroziyadan qaysi xavflar paydo bo‘lishi mumkin?
+A)	Asbob- uskun, kommunikatsiyalarning buzilishiga
+B)	Sinish, avariya.
+C)	Portlash, yengin sodir bo‘lishi.
+D)	===  Asbob-uskuna,  kommunikatsiyalarning buzilishi, sinishi,  avariya, portlash va yong‘in sodir bo‘lishi.
+84. Kasaba uyushma qo‘mitasi texnik inspektorining  vazifa-
+si  nimalardan iborat?
+A)	Korxonada mehnatni muhofoza qilish qoidalari bajarilayotganligini, baxtsiz hodisaga uchraganlar hisobga olinayotganligini nazorat qiladi,
+B)	Og‘ir yoki o‘lim bilan tugagan baxtsiz hodisalarni komissiya a'zolari bilan birga tahlil qiladi
+C)	Mehnat muhofaza qilish qoida va me'yorlarini buzganlarni javobgarlikka tortish maqsadida huquqni muhofaza qilish organlarga ma'lumot beradi.
+D)	===  Mehnatni muhofaza qilish qoidalari, baxtsiz hodisalarga uchraganlar hisobga  olish, og‘ir yoki o‘lim bilan tugagan hodisalarni tahlil qilish,  mehnatni muhofaza qilish qoida va me'yorlarni buzganlarni javobgarlikka tortish uchun tegishli organga ma'lumot berish.
+85. Baxtsiz hodisalarni oldini olish qaysi rahbar xodim
+zimmasida bo‘ladi?
+A)	===  Ma'muriyat rahbariga
+B)	Bosh muxandisga
+C)	Hayot faoliyat xavfsizligi muxandisiga
+D)	Sex boshlig‘iga
+86. Shikastlanishlar og‘ir-yengilligiga qarab qaysi turlarga
+bo‘linadi?
+A)	Yengil-mehnat qobiliyati yo‘qolmaydigan.
+B)	O‘rtacha-mehnat qobiliyati bir necha kunlab, oylab
+yo‘qotiladigan.
+C)	Og‘ir-mehnat qobiliyatini mutlaqo yo‘qotiladi.
+D)	===   Yengil, o‘rtacha va og‘ir.
+87. Toliqishni qanday oldini olish mumkin?
+A)	Xavftani davomiyligini qisqartirish.
+B)	===  Ko‘p mehnat talab qiladigan ishlarni mexanizatsiya
+lashtirish, yarim avtomat va avtomatlashgan texnolo-
+giya jarayonlariga o‘tish, yangi texnologiyalarni joriy
+etish,
+S)   Ishlab chiqarish muhitini birmuncha qo‘lay sharoitga
+keltirish.
+D)    Yangi texnologiyalarni joriy etish.
+88. Ishlab chiqarish  jarayoniga mashq qilish  qanday ta'sir
+qiladi?
+A)	Mashq jarayonida ishdagi hatti-xarakatlar takomillashadi.
+B)	Muntazam mashqlar tanada qator ijobiy siljishlari yuz berishiga olib keladi, mushak kuchi va chidamlilik oshadi, yurak-tomirlari va nafas olish tizimlari faoliyati yaxshilanadi.
+C)	Aqliy mehnatda mashqlar  diqqat, iroda kabilar takomillashadi.
+D)	===  Barcha javoblar to‘g‘ri.
+89. Mehnat maromi nima?
+A)	Bir maromdagi mehnat-smena maboynida bir tekisda bajaradigan mehnatdir.
+B)	Bir maromda mehnat-hafta maboynida bir tekisda bajaradigan mehnatdir.
+C)	Bir maromdagi mehnat-oy, yil davomida bir tekisda bajariladigan mehnatdir.
+D)	===  Bir maromda mehnat - smena, hafta, oy, yil maboynida bir tekisda bajariladigan  mehnatdir.
+90. Sanoat korxonalarida qaysi gazlar ishlatiladi?
+A)	Siqilgan.
+B)	Suyultirilgan.
+C)	Eritilgan.
+D)	===  Siqilgan, suyuqtirilgan, eritilgan.
+91. Bosim miqdoriga qarab barcha apparatlar necha guruhga
+bo‘linadi?
+A)	Ikki guruhga (16-50 atm.)
+B)	Uch guruhga (16-100 atm.)
+C)	===  To‘rt guruhga: past (6 atm. gacha), o‘rta (16 dan 50 atm. gacha), ko‘tarilgan  (100 atm gacha) va  yuqori bosimda ishlaydigan.
+D)	Besh guruhga
+92. Balonlarni portlashiga nimalar sabab bo‘lishi mumkin?
+A)	Balonlar noto‘g‘ri foydalanish.
+B)	Suyultirilgan gaz bilan to‘ldirib yuborish.
+C)	Ularni to‘lib ketishi, quyosh nuri ta'siri.
+D)	===  Noto‘g‘ri foydalanish, texnika xavfsizligi va ekspluatatsiya talablariga rioya qilmaslik.
+93. Xavfli yuklarga nimalar kiradi?
+A)	===  Portlovchi moddalar, suyultirilgan, siqilgan, eritilgan gazlar, radiaktiv moddalar    va yengil alangalanuvchi suyuqliklar.
+B)	Yengil alangalanuvchi suyuqliklar yengil alangalanuvchi modda va materiallar,
+oksidlovchi moddalar, zaharli moddalar.
+C)	Radiaktiv moddalar, ko‘ydiruvchi va yemiruvchi moddalar
+D)	Faqat  radiaktiv moddalar.
+94. Issiq suv, bug‘ va gaz quvurlarining  avariyaga o‘chrash-
+ishiga  nima sabab bo‘ladi?
+A)	Quvurlar nosozlikini mavjudligi
+B)	Quvurlarni loyixalashda materiallarini noto‘g‘ri tanlanishi.
+C)	===  Qurilish-montaj ishlarida loyihada ko‘rsatilgan me'yorlardan chetga chiqish, quvurlardan foydalanishda texnologiya rejimlarini buzish, vaqtida sifatli ta'mirlash ishlarini olib bormaslik, gidravlik zarbalar, tekshirish asbob-uskunalari o‘z vaqtida sifatli texnika ko‘rigidan o‘tkazmaslik.
+D)	Faqat ekspluatatsiya talablariga rioya qilmaslik.
+95. Ma'muriy javobgarlik necha turga bo‘linadi?
+A)	Uch turga: ahloqiy (ogohlantirish), mablag‘ va pul undirish, ahloq tuzatish ishlari, ma'muriy-qamoq  jazosi, vazifasidan chetlatish.
+B)	Ikki turga:  vazifasidan chetlatish,  qamoq jazosini  berish.
+C)	===  To‘rt turga: mablag‘ va pul undirish, ogohlantirish, qamoq  jazosi berish,  past lavozimga o‘tkazish.
+D)	Bitta turga;  ya'ni ma'muriy qamoq jazosini berish.
+96. Rejadan tashqari instruktaj qaysi vaqtda o‘tkaziladi?
+A)	Texnologik terminlar o‘zgarsa
+B)	Baxtsiz hodisa yuz bersa
+C)	Ishda uzilish sodir bo‘lsa
+D)	===  Texnologik sharoit o‘zgarsa, baxtsiz hodisa va boshqa hollarda.
+97. Xavfsiz mehnat qilish sharoitini yaratish qaysi tizimni
+vazifasi?
+A)	===  Mehnat muhofazasini boshqarish tizimi va korxona rahbari.
+B)	Mamuriy rahbari
+C)	Muxandis texnik xodimlar
+D)	Nazorat organlari.
+98. Mehnat xavfsizligi standartlar sistemasiga  (MXSS)
+nimalar kiradi?
+A)	===  Tashkiliy-uslubiy standartlar, xavfsizlik talablari uskunalari standartlari, ishchilarning himoya vositalariga bo‘lgan talablar standartlari
+B)	Tashkiliy uslubiy standartlar
+C)	Ishlab chiqarish uskunalariga  xavfsizligi talablari standarti
+D)	Ishchilarning himoya vositalariga bo‘lgan talablari standarti.
+99. Birinchi o‘t o‘chirish moslamalarini ko‘rsating?
+A)	Yong‘in kranlari.
+B)	Yong‘in gidrantlari.
+C)	===  Yong‘in krani, gidrant va щitlar.
+D)	Kran gidranti
+100. Avariya-qutqaruv ishlari qachon amalga oshiriladi?
+A)	Portlash ruy bergan hollarida.
+B)	Yong‘in gidrantlari bo‘zulganda .
+C)	Suv toshqini ro‘y berganda.
+D)	===  Tabiiy va texnogen turdagi favqulodda vaziyatlarda.
 
 
         </pre>
