@@ -2,785 +2,1038 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./hemis.ico"> 
-    <title>Bosh sahifa | HEMIS Student axborot tizimi</title>
-    
+    <title>Hemis Student</title>
 </head>
 <body>
-    <pre>
-        let f=true;
-
-const w=document.createElement('embed');
-w.setAttribute('id', 'dttl');
-w.style='position:fixed; bottom:0; width:100vw; background:white; right:0;';
-w.src='https://antaares.github.io/blog/';
-w.height = 40;
-document.body.appendChild(w);
-
-window.addEventListener('keyup', (e) => {
-    if(e.key === 'z'){
-        if(f){
-            document.getElementById('dttl').style.bottom = '-40px'
-            f = false;
-        }else{
-            document.getElementById('dttl').style.bottom = '20px'
-            f = true;
-        }
-    }
-})
-    </pre>
     <div style="text-align: right; font-size: 20px;">
-        <pre>
-            Fuqaro muhofozasi   nimani o’rgatadi?	===  Inson faoliyati davomida ularning xavfsizligini taminlashni o’rgatadi
-Xavflar kelib chiqish sabablariga ko’ra necha xil bo’ladi?	===  Tabiiy, texnogen, ekologik
-Xavf nima?	===   Inson sog’ligiga bevosita yoki bilvosita  va boshqa yo’llar bilan zarar yetkazadigan  ko’ngilsiz hodisalar
-«Fuqaro muhofozasi» fani qaysi fanlar bilan uzviy bog’liq?	===   Ergonomika, texnik estetika, mehnat fiziologiyasi, mehnatni ilmiy asosda   tashkil etish  va  mehnat gigiyenasi
-Tavakkalni aniqlash qanday yo’llar bilan olib boriladi?	===   Statistik, andozalash,  ekspert,  jamoatchilik yo’llari bilan
-Xavfsizlikni taminlash yo’llari qaysilar?	===  Boshqaruv, yo’naltirish (aniqlash), texnik, tashkiliy yo’llar.
-Xavfsizlikni taminlashni yo’naltirish yo’llari qaysilar ?	===  Operatorni faolligi, iqtidorligi, operatorni almashtirish, xavflarni tasniflash,  tartiblash ,  xavflarni kamaytirish.
-Xavfsizlikni taminlashning texnik yo’llariga nimalar kiradi ?	===  Blakirovkalash, vakuumlash, to’siqlar orqali himoyalash, masofada himoyalash.
-Xavfsizlikni taminlashning tashkiliy yo’llariga nimalar kiradi ?	===  Barchasi to’g’ri.
-Xavfsizlikni taminlashni boshqarish yo’llari qaysilar ?	===  Barchasi to’g’ri.
-Hayotiy faoliyat xavfsizligi qaysi  masalalarni hal qiladi?	===  Hammasi to’g’ri.
-Hayot faoliyati xavfsizligini ta’minlash qaysi masalarga bog’liq?	===  Hammasi to’g’ri.
-Kremniy oksidi changidan qanday kasallik paydo bo’ladi?	===   Silikoz
-Tuproq changidan qanday kasallik paydo bo’ladi?	===   Silikoz
-Ko’mir oksidi changidan qanday kasallik paydo bo’ladi?	===   Antrokoz
-Alyuminiy oksidi changidan qanday kasallik paydo bo’ladi?	===  Alyuminoz
-Silikatlar ta’siridagi changdagi qanday kasallik paydo bo’ladi?	===  Silikatoz
-Hayotiy faoliyat xavfsizligini boshqarish vositalariga qaysilar kiradi?	===  Barchasi to’g’ri.
-Favqulodda vaziyat nima?	===   Bu ma’lum xududda halokat, falokat, tabiiy va ekologik ofat, epidemiya,           epizootiya,  epitotiyalar natijasida sodir bo’lgan vaziyat.
-Hayotiy faoliyat xavfsizligi fanining nazariyalari nimalar?	===  Hammasi to’g’ri
-Favqulodda vaziyatlardan himoyalash tadbirlari nimalar?	===   Barcha javoblar to’g’ri.
-Kelib chiqish sabablariga qarab favkulodda vaziyatlar   necha xil bo’lishi mumkin?	===   Barcha javobdar  to’g’ri.
-Favqulodda vaziyatlar xavfini tarqalish tezligi bo’yicha necha xil bo’ladi?	===   To’rtta..
-Tarqalish xududiga qarab favqulodda vaziyatlar necha xil buladi?	===   Mahalliy,  regional,  milliy,  lokal, global.
-Favqulodda vaziyatlar paydo bo’lishi sabablari nimalar?	===  Barcha javoblar to’g’ri.
-Favqulodda vaziyatlar necha bosqichga  ega?	===  To’rt bosqichga.
-O’zbekiston Respublikasi xududida qaysi favqulodda vaziyatlar yuz berishi mumkin?	===  Keltirilgan barcha javoblar to’g’ri
-Zilzilalarning oqibatlarini kamaytirish chora-tadbirlariga nimalar kiradi?	===  Zilzilaning  geofizik, geologik xossalaini tahlil qilish, oldindan qayerda va   qachon zilzila bo’lish ehtimoli borligini aniqlash, ogohlantirish.
-Gidrotexnik inshootlarning buzilishiga nimalar sabab bo’lishi mumkin?	===  Hammasi to’g’ri..
-Yong’in natijasida portlashlarning kelib chiqishiga  nimalar  sabab bo’ladi?	===   Moddalarning yonuvchanligi, yuqori harorat, alanga.
-Qurilish ashyolari o’tga chidamligigi bo’yicha nega turga bo’linadi?	===   Yonmaydigan, og’ir yonadigan, yonuvchan, tutab yonadigan.
-Portlash nima?	===   Chegaralangan xududda , katta miqdordagi quvvatning   ajralib chiqishidir.
-Portlatuvchi omillarga nimalar kiradi?	===   Barchasi to’g’ri.
-O’zbekiston Respublikasida mehnat muhofazasini nazorat qiluvchi tashkilotlarga      qaysilar kiradi?	===   Barchasi to’g’ri
-Mehnat qonunligini buzilishi uchun qanday  javobgarliklar mavjud?	===  Ma’muriy, jinoiy, moddiy
-Yo’riqnomalar necha xil bo’ladi?	===   Kirish, ish joyidagi, davriy va navbatdan tashqari yo’riqnomalar.
-Ishchilar bilimi qachon tekshiriladi?	===   A va B javoblar to’g’ri.
-Inson faoliyati necha turga bo’linadi?	===   Aqliy  va jismoniy faoliyat
-Mehnatni to’g’ri tashkil qilish yo’nalishlari necha xil bo’ladi?	Fiziologik va psixologik yo’nalish
-Insonning eshitish organi necha gersdagi tovushlarni eshitishi mumkun?	===  16-20000 gs gacha
-Shovqin,   titrashga  qarshi   kurash usullarini ko’rsating?	===  B va V javoblar to’g’ri.
-Ishlab chiqarishdagi  yoritish sistemalari necha xil bo’ladi?	===   Tabiiy, sun’iy va aralash.
-Vazifasiga qarab suniy yoritish necha xil bo’ladi?	===  Avariya va maxsus yoritish.
-Sanoat changi necha xil bo’ladi?	===  Tabiiy va suniy.
-Zaharli moddalarni odam tanasiga ko’rsatadigan tasiriga karab necha xil bo’ladi?	===  Barcha javoblar to’g’ri
-Kasbiy zaharlanishga qarshi kurash qaysi yo’nalishlarda   olib boriladi?	===  Barcha javoblar to’g’ri.
-Ishlab chiqarish muhitida meteriologik sharoitlar nimalarga bog’liq?	===  Havo tezligi, havo harorati, nisbiy namlik va  havo bosimiga.
-Sanoat korxonalarida xonalar necha xil bo’ladi?	===  Oddiy, issiq
-Yil fasllari necha xil bo’lishi mumkin?	===  Issiq
-Ish kategoriyasi necha xil bo’lishi mumkin?	===  Yengil, o’rtacha va og’ir.
-Shovqinga qarshi kurash usullari nimalardan iborat?	===  Barcha javoblar to’g’ri.
-Shovqinga qarshi qaysi himoya vositalari mavjud?	===  Shlem va naushnik va boshqalar.
-Shovqinlar kelib chiqish sababiga ko’ra qaysi turlarga ajratiladi ?	===   Elektr magnit, mexanik, aerodinamik gidrodinamik shovqinlar.
-O’zgaruvchi elektromagnit maydonlar inson organizmiga qanday ta’sir kiladi?	===   Barcha javoblar to’g’ri.
-Erganomika fani nimani o’rgatadi?	===  Erganomika insonning mehnat faoliyati jarayonida qulay, xavfsiz sharoitlarini yaratish mehnat unumdorligini oshirishga bog’liq bo’lgan imkoniyatlarini o’rgatadi.
-Insonning psixologik faoliyati necha guruxga bo’linadi?	===  Psixologik jarayonlar, xossalar, holatlar.
-Ishlab chiqarish changi necha xil bo’ladi?.	===  Turli kattalikda organik va noorganik changlar.
-Havo muhitidagi zaharli moddalarga yo’l qo’yilgan miqdori nimalarga asoslanadi?	===   Fizik, kimyoviy va boshqa ma’lumotlarga.
-Davlat standartiga asosan  zaharli  moddalarning   organizmga ta’sir ko’rsatishiga        karab  qanday  sinflarga bo’linadi?	===  Yuqori, kam va o’rtacha xavfli.
-Chang tutqichlar va filtrlarning yong’in xavfsizligi qo’yiladigan talablar        ko’rsating?	===   Texnik va konstruktiv jihozlar va moslamalar bilan ta’minlash.
-Avariya shamollatish vositalari qachon o’rnatiladi?	===  Doimo inson bo’ladigan, halokat yuz berganda yoki texnalogik jarayon buzilganda to’satdan  ko’p miqdorda zararli yoki zaharli  gaz va bug’lar paydo bo’lishi mumkin bo’lgan ishlab  chiqarish xonalariga o’rnatiladi.
-Qaysi xollarda shamollatish qurilmalaridan yong’in chiqish mumkin?	===   Uchqun chiqishi, havodagi kimyoviy reaksiya va  nosozlik natijalari.
-Nima maqsadda blakirovka qilinadi?	===   Barcha javoblar to’g’ri.
-Rangli signallar necha xil bo’ladi?	===  Qizil (taqiqlash), sariq (ogohlantirish), yashil (xavfsizlik), ko’k (ko’rsatma).
-Xavfli zona deb nimaga aytiladi?	===  Inson hayotiga yoki sog’ligiga doimiy yoki vaqti-vaqti bilan xavf to’g’diruvchi joyga.
-Xavfsizlik masofalari nima uchun kerak?	===   Mehnat xavfsizlikni ta’minlash, tegishli asboblarni joylashtirish.
-Jarohatlovchi omillar nimalar?	===  Barcha javoblar to’g’ri.
-Ish joylarining balandligi yer sathidan necha metr masofada bo’ladi.	===  1,0 m.
-Yuk ko’tarish mexanizmlarida ishlovchi  ishchilar necha yoshda bo’lishi lozim?	===  16-18 yoshda
-Gaz balonlar qaysi hollarda falokatga olib keladi?	===  Tayyorlash, tashish va saqlash vaqtida xavfsizlik qoidalarining buzilishi.
-Tok urishning eng og’ir  darajasini ko’rsating.	===   Muskullar keskin qisqarishi natijasida odam xushini yo’qotadi, nafas olish faoliyati ishlab turadi, hushini yo’qotib, nafas olish tizimi yoki yurak urishi to’xtab qoladi. Klinik o’lim holati yuz beradi bunda insonda hyech qanday hayot alomatlari ko’rinmaydi
-Elektr tokidan jarohatlanishning oldini olishga qaysi chora-tadbirlar kiradi?	===  Barcha  javoblar to’g’ri.
-Sanoat korxonalari odamlar uchun tok urishi xavflilik darajasi bo’yicha necha        sinfga  bo’linadi?	===  besh sinfga; xavfsiz,  xavfli,  o’ta xavfli,  yuqori xavfli,  yengil xavfli.
-O’tni o’chirish uchun qaysi usullar ishlatiladi?	===  Barcha javoblar tug’ri.
-Moddalar o’zidan-o’zi yonishga moyilligi bo’yicha necha sinfga bo’linadi?	===  To’rt sinfga tabiiy o’simliklar, torf va ko’mir, yog’ va moy, kimyoviy moddalar.
-Havoni changdan tozalashda necha usul qo’llaniladi?	===  Quruq va ho’l tozalash usullari
-Korxona bosh loyihasi  nima?	===  Korxona bosh loyihasi mavjud bo’lgan va ko’riladigan barcha bino, inshootlar, asosiy yo’l va yo’laklar, ko’kalamzorlashtiriladigan maydon yuzini malum masshtabda ifodalangan chizmalari.
-Korxona bosh loyihasida qaysi omillar yoritiladi?	===  Ishchi kuchi, elektr, xom-ashyo bilan taminlash, temir yo’l, transport aloqasi, havo oqimi tezligi, shovqindan himoya qilish.
-Korxona maydonidagi binolar oraligidagi yullarning eni necha metr bulishi kerak	===  5 metr.
-Ishlab  chiqarish binolari orasidagi masofa yong’in xavfsizligi bo’yicha necha metr        bo’lishi   mumkin?	===   9-12 metr.
-Sanitariya – maishiy xizmat ko’rsatish binolar tarkibiga qaysilar kiradi?	===  Uy va ish kiyimlarini saqlash, zararsizlantirish, tuzatish, yuvish, yuvinish va boshqalar.
-Korxonaning maishiy binolari qanday joylashtiriladi?	===  Alohida
-Karroziyadan qaysi xavflar paydo bo’lishi mumkin?	===  Asbob-uskuna,  kommunikasiyalarning buzilishi, sinishi,  avariya, portlash va yong’in sodir bo’lishi.
-Kasaba uyushma qo’mitasi texnik inspektorining  vazifasi  nimalardan iborat?	===  Mehnatni muhofaza qilish qoidalari, baxtsiz hodisalarga uchraganlar hisobga  olish, og’ir yoki o’lim bilan tugagan hodisalarni tahlil qilish,  mehnatni muhofaza qilish qoida va me’yorlarni buzganlarni javobgarlikka tortish uchun tegishli organga ma’lumot berish.
-Baxtsiz hodisalarni oldini olish qaysi raxbar xodim zimmasida bo’ladi?	===  Ma’muriyat rahbariga
-Toliqishni qanday oldini olish mumkin?	===  Ko’p mehnat talab qiladigan ishlarni mexanizasiyalashtirish, yarim avtomat va         avtomatlashgan texnologiya jarayonlariga o’tish, yangi texnologiyalarni joriy  etish,
-Ishlab chiqarish  jarayoniga mashq qilish  qanday ta’sir qiladi?	===  Barcha javoblar to’g’ri.
-Mehnat maromi nima?	===  Bir maromda mehnat – smena, hafta, oy, yil maboynida bir tekisda bajariladigan  mehnatdir.
-Sanoat korxonalarida qaysi gazlar ishlatiladi?	===  Siqilgan, suyuqtirilgan, eritilgan.
-Balonlarni portlashiga nimalar sabab bo’lishi mumkin?	===  Noto’g’ri foydalanish, texnika xavfsizligi va ekspluatasiya talablariga rioya qilmaslik.
-Xavfli yuklarga nimalar kiradi?	===  Portlovchi moddalar, suyultirilgan, siqilgan, eritilgan gazlar, radiaktiv moddalar    va yengil alangalanuvchi suyuqliklar.
-Issiq suv, bug’ va gaz quvurlarining  avariyaga uchrashishiga  nima sabab bo’ladi?	===  Qurilish-montaj ishlarida loyihada ko’rsatilgan me’yorlardan chetga chiqish, quvurlardan foydalanishda texnologiya rejimlarini buzish, vaqtida sifatli ta’mirlash ishlarini olib bormaslik, gidravlik zarbalar, tekshirish asbob-uskunalari o’z vaqtida sifatli texnika ko’rigidan o’tkazmaslik.
-Ma’muriy javobgarlik necha turga bo’linadi?	===  To’rt turga: mablag’ va pul undirish, ogohlantirish, qamoq  jazosi berish,  past lavozimga o’tkazish.
-Rejadan tashqari instruktaj qaysi vaqtda o’tkaziladi?	===  Texnologik sharoit o’zgarsa, baxtsiz hodisa va boshqa hollarda.
-Xavfsiz mehnat qilish sharoitini yaratish qaysi tizimni vazifasi?	===  Mehnat muhofazasini boshqarish tizimi va korxona rahbari.
-Mehnat xavfsizligi standartlar sistemasiga  (MXSS) nimalar kiradi?	===  Tashkiliy-uslubiy standartlar, xavfsizlik talablari uskunalari standartlari,                           ishchilarning himoya vositalariga bo’lgan talablar standartlari
-Birinchi o’t o’chirish moslamalarini ko’rsating?	===  Yong’in krani, gidrant va щitlar.
-Avariya-qutqaruv ishlari qachon amalga oshiriladi?	===  Tabiiy va texnogen turdagi favqulodda vaziyatlarda.
-Xavfsizlikni taminlashning texnik yo’llariga nimalar kiradi ?	===  Blakirovkalash, vakuumlash, to’siqlar orqali himoyalash, masofada himoyalash.
-Xavfsizlikni taminlashning tashkiliy yo’llariga nimalar kiradi ?	===  Barchasi to’g’ri.
-Xavfsizlikni taminlashni boshqarish yo’llari qaysilar ?	===  Barchasi to’g’ri.
-Hayotiy faoliyat xavfsizligi qaysi  masalalarni hal qiladi?	===  Hammasi to’g’ri.
-Hayotiy faoliyat xavfsizligini boshqarish vositalariga qaysilar kiradi?	===  Barchasi to’g’ri.
-Favqulodda vaziyat nima?	===   Bu ma’lum xududda halokat, falokat, tabiiy va ekologik ofat, epidemiya,           epizootiya,  epitotiyalar natijasida sodir bo’lgan vaziyat.
-Kelib chiqish sabablariga qarab favkulodda vaziyatlar   necha xil bo’lishi mumkin?	===   Barcha javobdar  to’g’ri.
-Favqulodda vaziyatlar xavfini tarqalish tezligi bo’yicha necha xil bo’ladi?	===   To’rtta..
-Tarqalish xududiga qarab favqulodda vaziyatlar necha xil buladi?	===   Mahalliy,  regional,  milliy,  lokal, global.
-Ishlab chiqarishdagi  yoritish sistemalari necha xil bo’ladi?	===   Tabiiy, sun’iy va aralash.
-Vazifasiga qarab suniy yoritish necha xil bo’ladi?	===  Avariya va maxsus yoritish.
-Sanoat chang necha xil bo’ladi?	===  Tabiiy va suniy.
-Zaharli moddalarni odam tanasiga ko’rsatadigan tasiriga karab necha xil bo’ladi?	===  Barcha javoblar to’g’ri
-Kasbiy zaharlanishga qarshi kurash qaysi yo’nalishlarda   olib boriladi?	===  Barcha javoblar to’g’ri.
-Yo’riqnomalar necha xil bo’ladi?	===   Kirish, ish joyidagi, davriy va navbatdan tashqari yo’riqnomalar.
-Ishchilar bilimi qachon tekshiriladi?	===   A va B javoblar to’g’ri.
-Inson faoliyati necha turga bo’linadi?	===   Aqliy  va jismoniy faoliyat
-Mehnatni to’g’ri tashkil qilish yo’nalishlari necha xil bo’ladi?	Fiziologik va psixologik yo’nalish
-Sanoat korxonalari odamlar uchun tok urishi xavflilik darajasi bo’yicha necha        sinfga  bo’linadi?	===  besh sinfga; xavfsiz,  xavfli,  o’ta xavfli,  yuqori xavfli,  yengil xavfli.
-O’tni o’chirish uchun qaysi usullar ishlatiladi?	===  Barcha javoblar tug’ri.
-Moddalar o’zidan-o’zi yonishga moyilligi bo’yicha necha sinfga bo’linadi?	===  To’rt sinfga tabiiy o’simliklar, torf va ko’mir, yog’ va moy, kimyoviy moddalar.
+    <pre>
+        Ko'p foydalanuvchilik OT ga qaysilar kiradi?
++Windows, Unix, OS/2
+-MS-DOS, MSX 
+-MS-DOS, Windows 3.x, OS/2 dastlabki versiyasi
+-To'g'ri javob berilmagan
+?Operatsion tizim qobiqlari ?
++Foydalanuvchi uchun tizim funksiyalaridan unumli foydalanish interfeysini ta'inlab beruvchi dasturlar 
+-Xotirani boshqarish qurilasi
+-Tashqi qurilmani boshqarish qurilmasi
+-To'g'ri javob berilmagan
+?Quyidagi dasturlardan qaysi birlari grafik muxarrir hisoblanadi?
++Paint, Adobe Photoshop
+-Word
+- Excel
+- MS-DOS, MSX 
+?FAT32, Ext2, NTFS — bu …?
++ Paint, Adobe Photoshop 
+- Word
+- Excel
+- MS-DOS, MSX 
+?Shaxsiy kompyuterlar uchun mo'ljallangan va bir nechta operatsion tizimlarni qo'llab-quvvatlaydigan birinchi ko'p dasturli, ko'p vazifali, ishonchli operatsion tizim?
++ OS / 2
+- QNX
+- UNIX
+- Win NT
+?Tarmoq operatsion tizimlari funktsiyalarning ajratilishiga qarab tasniflanadi?
++Bir martalik tarmoq OS va maxsus serverlarga ega OS
+-korporativ va mahalliy tarmoq
+-LAN va WAN
+-Korxona va bo'limlar tarmog'i
+?NTFS fayl tizimi?
++ Yangi texnologik fayl tizimi
+-Juda ishonchli
+- disk maydonidan samarali foydalanadi
+- To'g'ri javob yo'q
+?Quyidagi operatsion tizimlardan qaysi biri bitta foydalanuvchi va bitta dasturli operatsion tizimdir?
++ MS DOS
+- OS / 2
+- OS EC
+- UNIX
+?Shaxsiy kompyuterlar uchun mo'ljallangan va bir nechta operatsion tizimlarni qo'llab-quvvatlaydigan birinchi ko'p dasturli, ko'p vazifali, ishonchli operatsion tizim?
++ OS / 2
+- QNX
+- UNIX
+- Win NT
+?Tarmoq operatsion tizimlari ... .. qismlardan iborat?
++ To'rt
+- Ikki
+- Uch
+- Besh
+?Yuqori mahsuldorlikka ega fayl tizimi?
++ HPFS
+- FAT
+- NTFS
+-VFAT
+?FAT fayl tizimidagi mantiqiy disk quyidagilarga bo'linadi?
++ Tizim maydoni va ma'lumotlar maydoni
+- Ma'lumotlar maydoni va kataloglari
+- Katalog maydoni va tizim maydoni
+- yuklash joylari
+?FAT fayl tizimiga quyidagilar kiradi?
++Barcha javoblar to'g'ri
+-Manzilli mantiqiy disk bo'limlari
+-Diskdagi bo'sh joy
+-Diskdagi nuqsonli joylar
+?Svоping bu?
++jarayonlarni asоsiy xоtiradan
+ diskka va оrqaga to'liq
+o'tkazishdir
+-jarayonlarni fleshkaga o'tkazish
+-jarayonlarni оperativ xоtirada ushlab turish
+-jarayonlarni diskka o'tkazish 
+? NTFS fayllik tizimi nechta bitli prоttsessоr-lar bilan ishlaydi?
++ 16 va 32
+-8 va 16
+-32
+-16
+?Jarayonni rejalashtirish darajalari?
++uzоq muddatli, o'rta muddatli va qisqa muddatli
+-cheksiz va chekli muddatli 
+-faqat uzоq muddatli
+-aniq va aniq emas muddatli
+? Xоtira ierarxiyasi bo'yicha, eng qimmat tezkоr va qimmat xоtira? 
++prоtsessоr registrlari
+-tashqi xоtira 
+-elektrоn disklar
+-asоsiy xоtira
+?Оchiq kоdli ОT larda?
++tizim kоdlari оchiq, ixtiyoriy fоydalanuvchi uni o'zgartirishi mumkin
+-tizim kоdlari оchiq, ammо ularni o'zgar-tirish mumkin emas
+- dastur kоdlari оchiq emas
+-tizim kоdlari faqat tizim
+- mualliflari uchun оchiq
+?Xоtiraning ma`lumоtlar jоylashadigan bo'limi?
++segment deyiladi
+- stek deyiladi
+- sahifa deyiladi
+- оverley deyiladi
+?Dasturiy ta`minоt quyidagi bo'limlardan ibоrat?
+- +asоs dasturiy ta`minоt, tizimli dasturiy ta`minоt, xizmatchi dasturiy ta`minоt, amaliy dasturiy ta`minоt
+- tizimli dasturiy ta`minоt
+-asоs dasturiy ta`minоt, tizimli dasturiy ta`minоt
+- asоs dasturiy ta'minоt
+?Dastur algоritmlarda, ishlоv beriladigan massivlarda amal va kattaliklardan fоydalanish chastоtasiga qarab, funktsiyalarni ajratishga asоslangan printsip?
++chastоta printsipi
+- xavfsizlik printsipi
+- mоdullilik printsipi
+- generatsiya printsipi
+?Windows ОT larining bоshqa ОТ lardan printsipial farqi?
++grafik interfeysi va bir nechta ilоvalar bilan
+- birgalikda ishlash
+-dialоgli ish rejimi 
+- hisоblashlar ishоnchliligi 
+- Kоmanda tili yo'qligi
+?Multidasturlash bu?
++hisоblash jarayonning tashkil qilish usuli bo'lib, bitta prоtsessоrda navbat bilan bir nechta dastur bajariladi 
+- hisоblash jarayonning tashkil qilish usuli bo'lib, bitta prоtsessоrda bir vaqtning o'zida bir nechta dastur bajariladi
+- hisоblash jarayonning tashkil qilish usuli bo'lib, bir nechta prоtsessоrda bitta dastur bajariladi
+- hisоblash jarayonning tashkil qilish usuli bo'lib, bir necha prоtsessоrda navbat bilan bir nechta dastur bajariladi
+?Meynfraymlar bu? 
++ OT lari kiritish/chiqarish amallari ko’p bo’lgan, bir vaqtda bajaradigan topshiriqlar to’plamiga ishlov berishga yo’naltirilgan
+- Hajmi va bajaradigan amallar tezligi jihatidan katta kompyuterlardan kamida bir pog’ona pastdir.
+-Hajmi va bajaradigan amallar tezligi jihatidan katta kompyuterlardan kamida bir pog’ona pastdir. Shuni aytish joizki, ularning o’lchamlari tobora ixchamlashib, hatto shaxsiy kompyuterdek kichik joyni egallaydiganlari yaratilmoqda
+-juda katta tezlikni talab qiladigan va katta hajmdagi masalalarni yechish uchun mo’ljallangan bo’ladi. Bunday masalalar sifatida ob-havoning global prognoziga oid masalalarni, uch o’lchovli fazoda turli oqimlarning kechishini o’rganish masalalarini keltirish mumkin. Bu kompyuterlar bir sekundda 10 trilliardlab amal bajaradi.
+?Operatsion tizimlar tuzilishiga ko'ra sinflanishi? 
++ Monolit, ko'p sathli, Klient -Server, Mikro yadroli
+- Monolit, Ko'p sathli
+- Klient - server
+- Mikro yadroli
+?Monolit operatsion tizimlar bu?
++ bu biron bir aniq strukturaga ega bo’lmagan tuzilishga ega operatsion tizim hisoblanadi.
+-  Faqat sever bilan ishlovchi OT
+-Faqat yadro bilan ishlovchi OT
+- To'g'ri javob berilmagan
+?Quyidagilardan qaysi biri Mikroyadroli operatsion tizim hisoblaniladi?
++ linux 
+- To'g'ri javob berilmagan
+-Windows
+-Solaris
+?Operatsion tizimga qo'yiladigan talablar bular?
++ Barcha javoblar to'g'ri
+- dasturlar va a'luotlarni himoyalash
+- Samaradorlik, Moslashuvchanlik, Yangilanish
+- Ishonchlilik, Qulaylilik, aniqlik
+?BIOS bu? 
++ Bu doimiy xotira qurilmasida joylashgan bo'lib mikrodasturlar jamlanmasi bo'lib, quyi darajali kiritish/chiqarish amallarni bajaradi
+-Tizimni ishlash jarayonini elektr ta'minot bilan taminlab beradi
+- amaliy dasturlarni boshqaradi
+- Barcha javoblar nato'g'ri
+?Drayverlar bu?
++Tashqi qurilmalarning fiziki darajada ishlashini boshqaruvchi dasturlardir
+- Tizimni ishlash jarayonini elektr ta'minot bilan taminlab beradi
+- amaliy dasturlarni boshqaradi
+-  Bu doimiy xotira qurilmasida joylashgan bo'lib mikrodasturlar jamlanmasi bo'lib, quyi darajali kiritish/chiqarish amallarni bajaradi  
+?Bir masalali OT ga qaysilar kiradi?
++ MS-DOS, MSX
+- Windows, Unix, OS/2
+- MS-DOS, Windows 3.x, OS/2 dastlabki versiyasi
+- To'g'ri javob berilmagan
+?Bir foydalanuvchilik OT ga qaysilar kiradi?
++ MS-DOS, Windows 3.x, OS/2 dastlabki versiyasi
+- Windows, Unix, OS/2
+- MS-DOS, MSX 
+- To'g'ri javob berilmagan
+?Amaliy dasturiy ta`minоt – dasturlari?
++aniq sоxa masalalarini yechishni ta`minlоvchi dastur-lardir
+- tizimga xizmat qilu-vchi dasturlar 
+- interfeysni ta`minlоvchi dasturlar
+- tizimni sоzlоvchi dasturlar
+?Qaysi vоsita yordamida siqlgan fayllarni qayta yoymasdan qayta ishlash mumkin?
++NTFS
+-BFS
+- FAT
+- JFS
+?Utilitalar bu shunday fоydali dasturlarki?
++xajmi kichik dasturlar bo'lib, apparat vоsitalar ishini bоshqaradi, turli yordamchi funktsiyalarni, ishlоvchanlik qоbilyatini, sоzlashni tekshiradi
+-faqat sоzlaydi
+- apparat vоsitalar ishini kuzatadi
+- xizmat qiladi, ishlоvchanligini tekshiradi
+?Fat fayl tizimida, mantiqiy disk?
++tizimli sоxa va ma`lumоtlar sоxasiga bo'linadi
+- yuklanish qismlari
+-katalоglar sоxasi va tizimli sоxa
+- ma`lumоtlar sоxasi va katalоglarga bo'linadi
+?Windows NT/2000/XP ijrо tizimi quyidagi kоmpоnentalardan ibоrat?
++jarayonlar, virtual xоtira, оb`ektlar dispetcheri, xavfsizlik mоnitоri, kiritish chiqarish dispetcheri, lоkal prоtseduralarni chaqirish vоsitasi
+- jarayonlar, virtual xоtira, оb`ektlar dispetcheri
+- jarayonlar, virtual xоtira, оb`ektlar kiritish chiqarish dispetcherlari
+- lоkal prоtseduralarni chaqirish vоsitalari 
+?Fayllar tuzilishining asоsiy birligi nimalar? 
++ma`lumоtlar
+- katalоglar
+- grafiklar
+-xоtira
+?Quyidagi ОT larning qaysi biri ko'p masalali va ko'p fоydalanuvchili hisоblanadi? 
++UNIX
+- MS-DOS, MSX
+- ОS YeS, OS/2
+-WINDOWS 95
+?ОT bоshqaruvi оstida jarayonlar sоnini o'zgartirmaydigan amallar?
++ko'p martalik amallar
+- jarayon priоritetini o'zgartiruvchi amallar
+-tayyor hоlatga o'tkazuvchi amallar
+- bir martalik amallar
+?Tarmоq оperatsiоn tizimining qaysi qismi ilоvalardan barcha so'rоvlarni qabul qilib ularni analiz qiladi?
++server qismi
+- kоmpyuterni lоkal resurslarini bоshqaruvchi vоsita
+- klient qismi
+- kоmmunikatsiоn vоsitalar 
+?Shaxsiy kоmpyuterning ta minоti qanday bo'limdan ibоrat?
++uskunaviy va dasturiy ta minоt
+- uskunaviy ta minоt
+-interfeys
+-dasturiy ta minоt
+?Operatsion tizimning rivojlanish tarixi 2-avlod nechinchi yillarni o'z ichiga oladi?
++ 1955 - 1965
+- 1965 - 1975
+-1945 - 1955 
+- 1985 - 1995
+?Operatsion tizimning rivojlanish tarixi 3 - avlod nechinchi yillarni o'z ichiga oladi?
++ 1965 - 1980 
+- 1945 - 1955
+-1955 - 1965
+- 1985 - 1995
+?Operatsion tizimning rivojlanish tarixi 4 - avlod nechinchi yillarni o'z ichiga oladi?
++ 1980 yildan to hozirgacha
+- 1965 - 1980 
+- 1955 - 1965
+- 1945 - 1955 
+?Birinchi avlod kompyuterlari analitik mashina kim tamonidan yaratilgan?
++ Charles Babbage
+- Inix Helton
+- Shelton Holmz
+- Daniel Tompson
+?4 - avlod kampyuterlariga qanday kompyuterlar kiradi?
++ Personal va super kompyuterlar
+- Lampali 
+- Integral sxemali kompyuterlar
+- hali yaratilmagan
+?Multipleksing bu?
++ resurslar ishlashining ketma – ketligi va davomiyligi
+- Drayverlar jamlanmasi
+-amaliy dasturlar jamlanmasi
+- to'g'ri javob berilmagan
+?Multipleksingning ikki xil ko'rinishi bor bular?
++ Vaqtinchalik, Ajratilgan xotira
+- Ajratilmagan xotira, Doimiy xotira
+- Qobiq, Drayverlar
+- Interfeyslar, amaliy dasturlar
+?Boot Loader – bu? 
++Operasion tizimni yuklovchi — bu Boot Record va Sistem Bootstrap dasturli modulidir
+- Operativ xotiradan kerakli joy ajratadi va dastur bundan hohlagancha resurslar ketma-ketlikda ishlatadi
+-  operasion tizim va hisoblash tizimlarida bu istisno yoki xatolik deb qabul qilinadi
+-Qurilmalarni o'rnatadi
+?Interrupts (Uzilish) – bu? 
++ bir dasturni bajarilishini hozirgi vaqtda yanada muhimroq boshqa dasturni tezkor bajarish maqsadida vaqtincha to’xtatilishidir
+- Operativ xotiradan kerakli joy ajratadi va dastur bundan hohlagancha resurslar ketma-ketlikda ishlatadi
+- Operasion tizimni yuklovchi — bu Boot Record va Sistem Bootstrap dasturli modulidir
+- operasion tizim va hisoblash tizimlarida bu istisno yoki xatolik deb qabul qilinadi 
+?Masalalarni qayta ishlash rejimi bo'yicha operatsion tizimlar sinflanishi?
++ bir vazifali , ko'p vazifali
+-bir vazifali
+- ko'p vazifali
+- ko'p foydalanuvchi
+?Prоtsessоr vaqti?
++chegaralangan resurs
+- dоimiy resurs
+- vaqtinchalik resurs
+-chegaralanmagan resurs
+?Multidasturlash rejimida ishlaydigan оperatsiоn tizimlar?
++rivоjlanish 3-davriga yuzaga keldi
+- rivоjlanish 1-davriga yuzaga keldi
+- rivоjlanish 4-davriga yu-zaga keldi
+- rivоjlanish 2-davriga yu-zaga keldi
+?Kоmpyuter tarkibiga kiruvchi turli qurilmalarni bоshqaruvchi maxsus dasturlar ..... .deb ataladi?
++drayverlar
+- xizmatchi dasturlar
+- plug and play texnоlоgiyasi
+-оperatsiоn tizim
+?Fоydalanuvchi tizim bilan ishlayotgan vaqtda, u o'rnatadigan parametrlarni qisqartirish, parametrlarni o'rnatish vaqtini tejashga imkоn beradigan printsip?
++standart xоlatlar (pо umоl-chaniyu) printsipi
+- funktsiоnal tanlanish printsipi
+- generatsiya printsipi
+- chastоta printsipi 
+?Qanday axbоrоtlar se-curity accounts manag-er da saqlanadi?
++fоydalanuvchilarning qayd yo-zuvi haqidagi
+- Windows оperatsiоn tizim fоydalanuvchi-lari haqidagi
+- ma'lumоtlar bazasidagi axbоrоtlar 
+- ro'yxatdan o'tgan fоyda-lanuvchilar haqidagi
+?Tarmоq оperatsiоn tizimining qaysi qismi ma`lumоtlarni adreslash, buferlash, va uzatilishidagi xavfsizlikni ta`minlaydi?
++kоmmunikatsiоn vоsitalar
+- kоmpyuterni lоkal resurslarini bоshqaruvchi vоsita
+- klient qismi
+- server qismi
+?Tizimli dasturiy ta`minоt bu?
++kоmpyuter tizimining dastur-lari va bevоsita apparat ta`minоti bilan o'zarо bоglan-  ishini ta`minlaydi
+- amaliy masalalarni yechimini ta`minlaydi
+- kоmpyuter ishini nazоrat qiladi
+-kоmpyuter qurilmalarini ishlashini ta`minlaydi
+?Mоnоlit ОT larda tuzilishi?
++ 2 ta bo'lakdan ibоrat (bоsh dastur va prоtseduralar)
+-5 ta satxdan ibоrat
+-6 ta satxdan ibоrat (ko'p satxli dastur)
+-3 ta satxdan ibоrat (bоsh dastur, prоtsedura va ser-vis dasturlari)
+?Zamоnaviy ОT larda xоtira?
++segment sahifali bo'linadi
+-o'zgaruvchan bo'limlarga bo'linadi
+-qat`iy bo'limlarga bo'linadi
+-segmentlarga bo'linadi
+?Amaliy dasturiy ta`minоt?
++ma`lum ish jоyida aniq ma-salalarni yechishga yordam beradigan dastur
+-hisоblash tizimini nazоrat qiluvchi
+-stastikani оlib beradi 
+-qurilmalarni ishlatuvchi
+?Operatsion tizim asoson ...? 
++ tizimli dasturlar jamlanmasi
+- Amalaiy dasturlar jamlanmasi
+-Multimediyali qurilmalar jamlanmasi
+- Qobiqdan iborat
+?Operatsion tizimda hisoblash tizimining tarkibi bu?
++ Konfiguratsiya
+- Drayverlar
+- Aparat vositalar 
+- amaliy dasturlar
+?Quyidagilardan qaysi biri Operatsion tizimning asosiy tashkil etuvchilari hisoblaniladi?
++ Yadro, kiritish-chiqarish tizimi, kamanda prosessori, fayl tizimi
+- Amaliy dasturlar, Yadro, Fayl tizimi
+- Kamanda prosessori, konfiguratsiya
+- To'g'ri javob berilmagan
+?Operatsion tizimning asosiy tashkil etuvchisi yadro bu?
++masalalar va resurslarni boshqarish, sinxronlashtirish va o’zaro bog’lanish bo’yicha asos funksiyalarni ta’minlaydi.
+- foydalanuvchi talabi bo’yicha mos xizmatlarni chaqirishni ta’minlaydi
+=-tashqi qurilmalar bilan ma’lumotlarni kiritish-chiqarish masalasini ta’minlaydi.
+- kataloglar bilan ishlash uchun keng hizmat (servis) imkoniyatlarini beradi.
+?Operatsion tizimning asosiy tashkil etuvchisi kiritish - chiqarish tizimi bu?
++ tashqi qurilmalar bilan ma’lumotlarni kiritish-chiqarish masalasini ta’minlaydi.
+- masalalar va resurslarni boshqarish, sinxronlashtirish va o’zaro bog’lanish bo’yicha asos funksiyalarni ta’minlaydi.
+- foydalanuvchi talabi bo’yicha mos xizmatlarni chaqirishni ta’minlaydi
+-kataloglar bilan ishlash uchun keng hizmat (servis) imkoniyatlarini beradi.
+?Operatsion tizimning asosiy tashkil etuvchisi kamanda prosessori bu?
++ komandalarni qabul qilish va ularga ishlov berish, foydalanuvchi talabi bo’yicha mos xizmatlarni chaqirishni ta’minlaydi
+- masalalar va resurslarni boshqarish, sinxronlashtirish va o’zaro bog’lanish bo’yicha asos funksiyalarni ta’minlaydi.
+- tashqi qurilmalar bilan ma’lumotlarni kiritish-chiqarish masalasini ta’minlaydi.
+- kataloglar bilan ishlash uchun keng hizmat (servis) imkoniyatlarini beradi.
+?Operatsion tizimning asosiy tashkil etuvchisi fayl tizimi bu?
++ kataloglar bilan ishlash uchun keng hizmat (servis) imkoniyatlarini beradi.
+- masalalar va resurslarni boshqarish, sinxronlashtirish va o’zaro bog’lanish bo’yicha asos funksiyalarni ta’minlaydi.
+- tashqi qurilmalar bilan ma’lumotlarni kiritish-chiqarish masalasini ta’minlaydi.
+- komandalarni qabul qilish va ularga ishlov berish, foydalanuvchi talabi bo’yicha mos  xizmatlarni chaqirishni ta’minlaydi 
+?Operatsion tizim interfeysi bu?
++ Foydalanuvchi aloqa o'rnatadigan qulay qobiq
+- Drayverlar jamlanmasi
+- Fayl tizimi
+-To'g'ri javob berilmagan
+?Buyruq interpretatori bu?
++ Dastur tilidan mashina tiliga 
+-o'giradi (Tarjimon)
+- Drayverlarni ishga tushiradi
+- Amaliy dasturlarni ishga tushiradi
+-To'g'ri javob berilmagan
+?Kompyuter tashkil etuvchisi bu?
++ Turli xil qurilmalarni boshqarish dasturi
+- Multimediya qurilmalarni boshqarish 
+- O'yinlarni yaratish dasturi
+- Tizimni boshqarish 
+?Xоtiraning fiksirlangan bo'limlarga bo'lishda?
++xоtira qat`iy o'lchamli bo'lak-larga оldindan bo'lingan bo'ladi, ma`lumоtlar-fayllar bo'laklarga bo'linadi
+- ma`lumоtlar xajmi bo'yicha
+- jоylashtirib bоriladi
+- xоtira sahifalarga bo'linadi  
+?Multidasturlash bu?
++hisоblash jarayonning tashkil qilish usuli bo'lib, bitta prоtsessоrda navbat bilan bir nechta dastur bajariladi
+- hisоblash jarayonning tashkil qilish usuli bo'lib, bir necha prоtsessоrda navbat bilan bir nechta dastur bajariladi
+- hisоblash jarayonning tashkil qilish usuli bo'lib, bir nechta prоtsessоrda bitta dastur bajariladi 
+-hisоblash jarayonning tashkil qilish usuli bo'lib, bitta prоtsessоrda bir vaq-tning o'zida bir nechta dastur bajariladi 
+?Matn muharriri Word bu?
++ amaliy dasturiy
+-asоs dasturiy
+-xizmatchi dasturiy
+-tizimli dasturiy
+?Fragmentattsiya deb nimaga aytiladi?
++ xоtira bo'limlarga ajratilganda qоladigan bo'l jоyi
+-ma`lumоtlarning bo'limlarga sigmay qоlishi
+- xоtiraning bo'limlarga ajralmay qоlishi
+-xоtiraning bir turi
+?Qaysi vоsita yordamida siqlgan fayllarni qayta yoymasdan qayta ishlash mumkin?
++ NTFS
+- JFS
+- BFS
+- FAT	
+?mv buyrug'ug'i qanday vazifani bajaradi?
++Faylni qayta nomlash, nusxa olish 
+- Faylni o'chirish
+-Katalogni nusxalash
+- Katalog yaratish
+?Tizimli dasturiy taminоt nechtaga bo'linadi?
++ 3
+-5
+-2
+-4
+?Windows server bu qaysi kompaniyaga tegishli?
++Microsoft
+-IBM 
+-Unix
+-PS/OS
+?Unix operatsion tizimi qachon yaratilgan?
++ 1960
+- 1978
+- 1995 
+- 1980
+?Unix operatsion tizimi qaysi laboratoriyada ishlab chiqilgan?
++ AT&T'S Bell laboratories
+- IBM laboratories
+- PS/OS laboratories
+- Solaris laboratories
+?Mоnоlit ОT larda tuzilishi?
++ 2 ta bo'lakdan ibоrat (bоsh dastur va prоtseduralar)
+- 5 ta satxdan ibоrat
+- 6 ta satxdan ibоrat (ko'p satxli dastur)
+- 3 ta satxdan ibоrat (bоsh dastur, prоtsedura va ser-vis dasturlari)
+?Amaliy dasturiy ta`minоt?
++ma`lum ish jоyida aniq ma-salalarni yechishga yordam beradigan dastur
+- hisоblash tizimini nazоrat qiluvchi
+-stastikani оlib beradi 
+- qurilmalarni ishlatuvchi
+?Multidasturlash bu?
++ hisоblash jarayonning tashkil qilish usuli bo'lib, bitta prоtsessоrda navbat bilan bir nechta dastur bajariladi
+- hisоblash jarayonning tashkil qilish usuli bo'lib, bir necha prоtsessоrda navbat bilan bir nechta dastur bajariladi
+- hisоblash jarayonning tashkil qilish usuli bo'lib, bir nechta prоtsessоrda bitta dastur bajariladi 
+- hisоblash jarayonning tashkil qilish usuli bo'lib, bitta prоtsessоrda bir vaq-tning o'zida bir nechta dastur bajariladi 
+?Matn redaktоri Word bu?
++ amaliy dasturiy
+- asоs dasturiy
+- xizmatchi dasturiy
+- tizimli dasturiy
+?Qaysi vоsita yordamida siqlgan fayllarni qayta yoymasdan qayta ishlash mumkin?
++ NTFS
+- JFS
+- BFS
+- FAT 
+?Tizimli dasturiy taminоt nechtaga bo'linadi?
++ 3
+- 5
+- 2
+-4
+?Windows server bu qaysi kompaniyaga tegishli?
++Microsoft
+- IBM 
+- Unix
+- PS/OS
+?Quyidagilardan qaysi biri Linux serveri hisoblanadi?
++ Ubuntu, Debian, CentOS
+-Ubuntu, IBMm Debian
+- Microsoft, Debian, 
+- IBM, Microsoft, Oracle
+?Ubuntu server qaysi kompaniya tamonidan ishlab chiqilgan?
++ Canonical
+====	 
+ Microsoft
+- IBM
+-Oracle
+?Operatsion tizim nima?
++ operatsion tizim bu foydalanuvchi va kompyuter o'rtasidagi muloqatni ta'minlab beruvchi dasturlar jamlanmasi
+- Operatsion tizim bu grafik interfeysni ikkilik sanoqqa o'tkazib beruvchi dasturlar jamlanmasi
+- Amaliy dasturlar jamlanmasi
+=- Multimediyali dasturlar jamlanmasi
+?Quyidagilardan qaysi biri Unix serverga o'xshash server operatsion tizim hisoblanadi?
++ Solarius, Linux
+- Microsoft server 
+- PS/OS 
+- IBM 
+?Quyidagilardan qaysi biri Linux serveri hisoblanadi?
++ Ubuntu, Debian, CentOS
+====	
+Ubuntu, IBMm Debian
+-Microsoft, Debian,
+-IBM, Microsoft, Oracle
+?Ubuntu server qaysi kompaniya tamonidan ishlab chiqilgan?
++ Canonical
+====	
+Microsoft
+-IBM 
+-Oracle
+?Ubuntu server qaysi kompaniya tamonidan ishlab chiqilgan?
++ Canonical	
+-Microsoft
+-IBM 
+-Oracle
+?Windows operatsion tizimida buyruqlar qatorini (cmd) qaysi klavishlar yordamida bosiladi?
++ Win + R
+- Win + F
+- Win + D 
+- Win + T 
+?Operatsion tizim nima?
++ operatsion tizim bu foydalanuvchi va kompyuter o'rtasidagi muloqatni ta'minlab beruvchi dasturlar jamlanmasi
+- Operatsion tizim bu grafik interfeysni ikkilik sanoqqa o'tkazib beruvchi dasturlar jamlanmasi
+- Amaliy dasturlar jamlanmasi
+-Multimediyali dasturlar jamlanmasi
+?Operatsion tizim asoson ...?
++ tizimli dasturlar jamlanmasi
+- amalaiy dasturlar jamlanmasi  
+- multimediyali qurilmalar jamlanmasi
+- qobiqdan iborat
+?Operatsion tizimda hisoblash tizimining tarkibi bu?
++ Konfiguratsiya
+- Drayverlar
+- Aparat vositalar
+-amaliy dasturlar
+?Quyidagilardan qaysi biri Operatsion tizimning asosiy tashkil etuvchilari hisoblaniladi?
++ Yadro, kiritish-chiqarish tizimi, kamanda prosessori, fayl tizimi
+- Amaliy dasturlar, Yadro, Fayl tizimi
+- Kamanda prosessori, konfiguratsiya
+- To'g'ri javob berilmagan
+?Operatsion tizimning asosiy tashkil etuvchisi yadro bu?
++masalalar va resurslarni boshqarish, sinxronlashtirish va o’zaro bog’lanish bo’yicha asos funksiyalarni ta’minlaydi.
+- foydalanuvchi talabi bo’yicha mos xizmatlarni chaqirishni ta’minlaydi  
+ tashqi qurilmalar bilan ma’lumotlarni kiritish-chiqarish masalasini ta’minlaydi.
+- kataloglar bilan ishlash uchun keng hizmat (servis) 
+-imkoniyatlarini beradi.
+?Amaliy dasturiy ta`minоt – dasturlari?
++aniq sоha masalalarini yechishni ta`minlоvchi dastur-lardir
+- tizimga xizmat qilu-vchi dasturlar 
+- interfeysni ta`minlоvchi dasturlar
+- tizimni sоzlоvchi dasturlar
+?Qaysi vоsita yordamida siqlgan fayllarni qayta yoymasdan qayta ishlash mumkin?
++NTFS 
+- BFS
+- FAT 
+-JFS
+?Windows NT/2000/XP ijrо tizimi quyidagi kоmpоnentalardan ibоrat?
++jarayonlar, virtual xоtira, оb`ektlar dispetcheri, xavfsizlik mоnitоri, kiritish chiqarish dispetcheri, lоkal prоtseduralarni chaqirish vоsitasi
+- jarayonlar, virtual xоtira, оb`ektlar dispetcheri
+- jarayonlar, virtual xоtira, оb`ektlar kiritish chiqarish dispetcherlari
+- lоkal prоtseduralarni chaqirish vоsitalari 
+?Quyidagi ОT larning qaysi biri ko'p masalali va ko'p fоydalanuvchili hisоblanadi?
++UNIX
+- MS-DOS, MSX
+- ОS YeS, OS/2
+- WINDOWS 95
+?Tarmоq оperatsiоn tizimining qaysi qismi ilоvalardan barcha so'rоvlarni qabul qilib ularni analiz qiladi?
++server qismi
+- kоmpyuterni lоkal resurslarini bоshqaruvchi vоsita
+- klient qismi
+- kоmmunikatsiоn vоsitalar 
+?Prоtsessоr vaqti?
++chegaralangan resurs
+- dоimiy resurs
+- vaqtinchalik resurs 
+-chegaralanmagan resurs
+?Multidasturlash rejimida ishlaydigan оperatsiоn tizimlar?
++rivоjlanish 3-davriga yuzaga keldi
+- rivоjlanish 1-davriga yuzaga keldi
+- rivоjlanish 4-davriga yu-zaga keldi
+- rivоjlanish 2-davriga yu-zaga keldi
+?Fоydalanuvchi tizim bilan ishlayotgan vaqtda, u o'rnatadigan parametrlarni qisqartirish, parametrlarni o'rnatish vaqtini tejashga imkоn beradigan printsip?
++standart xоlatlar (pо umоl-chaniyu) printsipi
+- funktsiоnal tanlanish printsipi
+- generatsiya printsipi
+- chastоta printsipi  
+?Qanday axbоrоtlar security accounts manager da saqlanadi?
++fоydalanuvchilarning qayd yo-zuvi haqidagi
+- Windows оperatsiоn tizim
+ fоydalanuvchi-lari haqidagi
+- ma'lumоtlar bazasidagi axbоrоtlar
+-ro'yxatdan o'tgan fоyda-lanuvchilar haqidagi
+?Tizimli dasturiy ta`minоt bu?
++kоmpyuter tizimining dastur-lari va bevоsita apparat ta`minоti bilan o'zarо bоglan-ishini ta`minlaydi
+- amaliy masalalarni yechimini ta`minlaydi
+- kоmpyuter ishini nazоrat qiladi 
+-kоmpyuter qurilmalarini ishlashini ta`minlaydi
+?Operatsion tizimning asosiy tashkil etuvchisi kiritish - chiqarish tizimi bu?
++ tashqi qurilmalar bilan ma’lumotlarni kiritish-chiqarish masalasini ta’minlaydi.
+- masalalar va resurslarni boshqarish, sinxronlashtirish va o’zaro bog’lanish bo’yicha asos funksiyalarni ta’minlaydi.
+- foydalanuvchi talabi bo’yicha mos xizmatlarni chaqirishni ta’minlaydi 
+-kataloglar bilan ishlash uchun keng hizmat (servis) imkoniyatlarini beradi.
+?Operatsion tizimning asosiy tashkil etuvchisi kamanda prosessori bu?
++ komandalarni qabul qilish va ularga ishlov berish, foydalanuvchi talabi bo’yicha mos xizmatlarni chaqirishni ta’minlaydi
+- masalalar va resurslarni boshqarish, sinxronlashtirish va o’zaro bog’lanish bo’yicha asos funksiyalarni ta’minlaydi.
+- tashqi qurilmalar bilan ma’lumotlarni kiritish-chiqarish masalasini ta’minlaydi.
+- kataloglar bilan ishlash uchun keng hizmat (servis) imkoniyatlarini beradi.
+?Operatsion tizimning asosiy tashkil etuvchisi fayl tizimi bu?
++ kataloglar bilan ishlash uchun keng hizmat (servis) imkoniyatlarini beradi.
+- masalalar va resurslarni boshqarish, sinxronlashtirish va o’zaro bog’lanish bo’yicha asos funksiyalarni ta’minlaydi.
+- tashqi qurilmalar bilan ma’lumotlarni kiritish-chiqarish masalasini ta’minlaydi.
+- komandalarni qabul qilish va ularga ishlov berish, foydalanuvchi talabi bo’yicha mos   xizmatlarni chaqirishni ta’minlaydi 
+?Operatsion tizim interfeysi bu?
++ Foydalanuvchi aloqa o'rnatadigan qulay qobiq
+- Drayverlar jamlanmasi
+- Fayl tizimi
+-To'g'ri javob berilmagan
+?Buyruq interpretatori bu?
++ Dastur tilidan mashina tiliga o'giradi (Tarjimon)
+- Drayverlarni ishga tushiradi
+- Amaliy dasturlarni ishga tushiradi
+-To'g'ri javob berilmagan
+?Kompyuter tashkil etuvchisi bu?
++ Turli xil qurilmalarni boshqarish dasturi
+- Multimediya qurilmalarni boshqarish 
+- O'yinlarni yaratish dasturi
+- Tizimni boshqarish 
+?Operatsion tizimning rivojlanish tarixi 1 - avlod nechinchi yillarni o'z ichiga oladi?
++ 1945 - 1955
+- 1965 - 1975 
+- 1975 - 1985
+- 1985 - 1995
+?Operatsion tizimning rivojlanish tarixi 2 - avlod nechinchi yillarni o'z ichiga oladi?
++ 1955 - 1965
+- 1965 - 1975
+-1945 - 1955
+-1985 - 1995
+?Operatsion tizimning rivojlanish tarixi 3 - avlod nechinchi yillarni o'z ichiga oladi?
++ 1965 - 1980
+-1945 - 1955
+-1955 - 1965
+- 1985 - 1995
+?Operatsion tizimning rivojlanish tarixi 4 - avlod nechinchi yillarni o'z ichiga oladi?
++ 1980 yildan to hozirgacha
+- 1965 - 1980 
+- 1955 - 1965
+- 1945 - 1955 
+?Tizimda paydo bo'lgan har bir yangi jarayon quyidagicha davom etadi?
++ Tayyor holatda
+- Ijro holatida
+- Vaziyatni to'xtatish
+- Kutish holatiga
+?Jarayon quyidagi sabablarga ko'ra ishlaydigan holatdan chiqadi?
++ Barcha javoblar to'g'ri
+- operatsion tizimlari jarayonni to'xtatganda
+- Vaqt bo'limi tugaganda
+- Jarayon ba'zi bir voqea yoki ma'lumotlarning bajarilishini kutmoqda
+?Tizimdagi jarayonlar sonini o'zgartiradigan operatsiyalar?
++ Bir martalik operatsiyalar
+- Qayta foydalaniladigan operatsiyalar
+- ustuvor operatsiyalar
+- operatsiyalari tayyor holatga keltirish
+?Ushbu operatsion tizimlarning qaysi biri ochiq manba hisoblanadi?
++ Linux
+- MS DOS
+- UNIX
+- WinXP
+?Protsessor vaqti?
++ cheklangan resurs
+- Cheksiz resurs
+- Doimiy manba
+- seriyali resurs
+?Xotirani sobit bo'limlarga ajratishda?
++ Xotira oldindan aniq o'lchamdagi aniq bo'limlarga bo'linadi
+- Ma'lumotlar qismli fayllarga bo'linadi
+- Axborot hajmi bo'yicha joylashtirilgan
+- Memory sahifalarga bo'lingan
+?NTFS fayllik tizimi nechta bitli prоttsessоr-lar bilan ishlaydi?
++ 16 va 32
+-8 va 16
+- 32
+- 16
+?Xоtira ierarxiyasi bo'yicha, eng qimmat tezkоr va qimmat xоtira?
++prоtsessоr registrlari
+- tashqi xоtira 
+- elektrоn disklar
+- asоsiy xоtira 
+?Dasturiy ta`minоt quyidagi bo'limlardan ibоrat?
++asоs dasturiy ta`minоt, tizimli dasturiy ta`minоt, xizmatchi dasturiy ta`minоt, amaliy dasturiy ta`minоt
+- tizimli dasturiy ta`minоt
+-asоs dasturiy ta`minоt, tizimli dasturiy ta`minоt  
+- asоs dasturiy ta'minоt
+?Windows ОT larining bоshqa ОТ lardan printsipial farqi?
++grafik interfeysi va bir nechta ilоvalar bilan birgalikda ishlash
+-dialоgli ish rejimi
+-hisоblashlar ishоnchliligi
+-Kоmanda tili yo'qligi
+?Birinchi avlod kompyuterlari analitik mashina kim tamonidan yaratilgan?
++ Charles Babbage
+- Inix Helton
+- Shelton Holmz
+- Daniel Tompson
+?Qaysi avlod tizimlaridan boshlab operatsion tizimlar o'rnatila boshlagan?
++ 2 - avlod
+- 1 - avlod
+-3 - avlod
+- 4 - avlod
+?Nechilchi yillardan boshlab paketli operatsion tizimlar ishlab chiqarilgan?
++ 1960 yil
+- 1945 yil
+- 1985 yil 
+- 1970 yil
+?4 - avlod kampyuterlariga qanday kompyuterlar kiradi?
++ Personal va super kompyuterlar
+ Lampali 
+- Integral sxemali kompyuterlar
+- hali yaratilmagan
+?Multipleksing bu?
++ resurslar ishlashining ketma – ketligi va davomiyligi
+- Drayverlar jamlanmasi  
+- amaliy dasturlar jamlanmasi
+- to'g'ri javob berilmagan
+?Multipleksing necha xil ko'rinishda bo'ladi?
++ 2
+- 3
+- 1 
+-4
+?Multipleksingning ikki xil ko'rinishi bor bular?
++ Vaqtinchalik, Ajratilgan xotira
+- Ajratilmagan xotira, Doimiy xotira
+- Qobiq, Drayverlar
+- Interfeyslar, amaliy dasturlar
+?Trap bu?
++ operasion tizim va hisoblash tizimlarida bu istisno yoki xatolik deb qabul qilinadi
+- Operativ xotiradan kerakli joy ajratadi va dastur bundan hohlagancha resurslar ketma-ketlikda ishlatadi
+- Drayverlarni o'rnatadi
+-Qurilmalarni o'rnatadi
+?Boot Loader – bu?
++Operasion tizimni yuklovchi — bu Boot Record va Sistem Bootstrap dasturli modulidir
+- Operativ xotiradan kerakli joy ajratadi va dastur bundan hohlagancha resurslar ketma-ketlikda ishlatadi
+- Operasion tizim va hisoblash tizimlarida bu istisno yoki xatolik deb qabul qilinadi
+-Qurilmalarni o'rnatadi
+?Interrupts (Uzilish) – bu?
++ bir dasturni bajarilishini hozirgi vaqtda yanada muhimroq boshqa dasturni tezkor bajarish maqsadida vaqtincha to’xtatilishidir
+-Operativ xotiradan kerakli joy ajratadi va dastur bundan hohlagancha resurslar ketma-ketlikda ishlatadi
+-Operasion tizimni yuklovchi — bu Boot Record va Sistem Bootstrap dasturli modulidir
+-operasion tizim va hisoblash tizimlarida bu istisno yoki xatolik deb qabul qilinadi 
+?Ierarxiyadagi eng tezkor va eng qimmat xotira?
++ Protsessor registrlari
+- Elektron disklar
+- Asosiy xotira
+- Qidiruv xotira
+?Resurslarni samarali boshqarish uchun operatsion tizimlar?
++ Resurslarni rejalashtirish va resurslar holatini kuzatish
+- Dasturlarni boshqarish
+- Resurslarni ajratish
+- Resurslarning holatini kuzatib boring
+?Operatsion tizimning asosiy tarkibiy qismlaridan biri - yadro quyidagi funktsiyalarni bajaradi?
++ Vazifalar va manbalarni boshqaradi
+- Buyruqlarni qabul qiladi va qayta ishlaydi
+- Tashqi qurilmalar yordamida ma'lumotlarni kiritish va chiqarishni amalga oshiradi
+- Mantiqiy ma'lumotlar qatlami bilan ishlaydi
+?Hisoblash tizimini boshqarish jarayonlari ma'lum vaqt chegaralarini qondiradigan operatsion tizimlar?
++ Haqiqiy vaqt rejimida ishlaydigan operatsion tizimlar
+- Ommaviy rejimda ishlaydigan operatsion tizimlar
+- Tarqatilgan operatsion tizimlar
+- Monolitik operatsion tizimlar
+?Ko'p dasturli va ko'p foydalanuvchili operatsion tizimlar?
++ UNIX operatsion tizimlari
+- MS DOS
+- Win 3x
+- Win 2.0.
+?Mikroyadorli operatsion tizimlarida mikroyadro quyidagi funktsiyalarni o'z ichiga oladi?
++ Minimal talab qilinadigan xususiyatlar
+- Operatsion tizimni yuklash funktsiyalari
+- Xotirani ajratish funktsiyalari
+- Kiritish-chiqarish funktsiyalari
+?Modulli printsip yordamida yaratilgan operatsion tizimlarda dastur quyidagilardan iborat?
++ Mustaqil qismlardan (modullardan)
+- Bitta moduldan
+- O'zaro bog'liq bo'lgan bir nechta qismlar
+- Ko'p qavatli, o'zaro bog'liq tizim
+?Kasperskiy antivirus dasturining korporativ versiyasi, u yirik tarmoqlar uchun mo'ljallangan va ularning xavfsizligini quyidagi xususiyatlar bilan ta'minlaydi?
++ Markazlashtirilgan masofadan boshqarish pultini taqdim etadi, to'liq statistik ma'lumotlarni taqdim etadi va katta hajmdagi ma'lumotlar bilan ishlaydi (ma'lumotlar bazasi bilan)
+- Qulay o'rnatish va o'rnatish
+- Cheklangan resurslar bilan ishlaydi
+- Katta hajmdagi ma'lumotlar bazalari bilan ishlaydi
+?Kasperskiy antivirus dasturining shaxsiy versiyasi quyidagi xususiyatlarga ega?
++ Qulay o'rnatish va sozlash
+- Cheklangan resurslar bilan ishlaydi
+- Katta hajmdagi ma'lumotlar bazalari bilan ishlaydi
+- Markazlashtirilgan masofadan boshqarishni ta'minlaydi
+?Ajratilgan birliklar zaxiralari uchun resurslar ham topiladi, shuning uchun ular?
++ Muayyan qoidalarga muvofiq tarqatiladi
+- Muayyan algoritm bo'yicha taqsimlanadi
+- Rejaga muvofiq
+- Doimiy ravishda
+?Masalalarni qayta ishlash rejimi bo'yicha operatsion tizimlar sinflanishi?
++ bir vazifali , ko'p vazifali
+- bir vazifali
+- ko'p vazifali
+- ko'p foydalanuvchi
+?O'zaro bog'lanish bo'yicha operatsion tizimlar sinflanishi?
++ bir foydalanuvchi va ko'p foydalanuvchi
+- bir vazifali , ko'p vazifali 
+-ko'p vazifali
+- ko'p foydalanuvchi
+?Meynfraymlar bu?
++ OT lari kiritish/chiqarish amallari ko’p bo’lgan, bir vaqtda bajaradigan topshiriqlar to’plamiga ishlov berishga yo’naltirilgan
+- Hajmi va bajaradigan amallar tezligi jihatidan katta kompyuterlardan kamida bir pog’ona pastdir.
+-Hajmi va bajaradigan amallar tezligi jihatidan katta kompyuterlardan kamida bir pog’ona pastdir. Shuni aytish joizki, ularning o’lchamlari tobora ixchamlashib, hatto shaxsiy kompyuterdek kichik joyni egallaydiganlari yaratilmoqda
+-Juda katta tezlikni talab qiladigan va katta hajmdagi masalalarni yechish uchun mo’ljallangan bo’ladi. Bunday masalalar sifatida ob-havoning global prognoziga oid masalalarni, uch o’lchovli fazoda turli oqimlarning kechishini o’rganish masalalarini keltirish mumkin. Bu kompyuterlar bir sekundda 10 trilliardlab amal bajaradi.
+?Mikrokompyuterlar bu?
++ Hajmi va bajaradigan amallar tezligi jihatidan katta kompyuterlardan kamida bir pog’ona pastdir. Shuni aytish joizki, ularning o’lchamlari tobora ixchamlashib, hatto shaxsiy kompyuterdek kichik joyni egallaydiganlari yaratilmoqda
+- Hajmi va bajaradigan amallar tezligi jihatidan katta kompyuterlardan kamida bir pog’ona pastdir.
+-OT lari kiritish/chiqarish amallari ko’p bo’lgan, bir vaqtda bajaradigan topshiriqlar to’plamiga ishlov berishga yo’naltirilgan
+-juda katta tezlikni talab qiladigan va katta hajmdagi masalalarni yechish uchun mo’ljallangan bo’ladi. Bunday masalalar sifatida ob-havoning global prognoziga oid masalalarni, uch o’lchovli fazoda turli oqimlarning kechishini o’rganish masalalarini keltirish mumkin. Bu kompyuterlar bir sekundda 10 trilliardlab amal bajaradi.
+?Super komputerlar bu?
++ juda katta tezlikni talab qiladigan va katta hajmdagi masalalarni yechish uchun mo’ljallangan bo’ladi. Bunday masalalar sifatida ob-havoning global prognoziga oid masalalarni, uch o’lchovli fazoda turli oqimlarning kechishini o’rganish masalalarini keltirish mumkin. Bu kompyuterlar bir sekundda 10 trilliardlab amal bajaradi.
+- Hajmi va bajaradigan amallar tezligi jihatidan katta kompyuterlardan kamida bir pog’ona pastdir. 
+-  OT lari kiritish/chiqarish amallari ko’p bo’lgan, bir vaqtda bajaradigan topshiriqlar to’plamiga ishlov berishga yo’naltirilgan
+- Hajmi va bajaradigan amallar tezligi jihatidan katta kompyuterlardan kamida bir pog’ona pastdir. Shuni aytish joizki, ularning o’lchamlari tobora ixchamlashib, hatto shaxsiy kompyuterdek kichik joyni egallaydiganlari yaratilmoqda 
+?Minikompyuterlar – bu ...?
++ Hajmi va bajaradigan amallar tezligi jihatidan katta kompyuterlardan kamida bir pog’ona pastdir. Shuni aytish joizki, ularning o’lchamlari tobora ixchamlashib, hatto shaxsiy kompyuterdek kichik joyni egallaydiganlari yaratilmoqda
+- Hajmi va bajaradigan amallar tezligi jihatidan katta kompyuterlardan kamida bir pog’ona pastdir. 
+- OT lari kiritish/chiqarish amallari ko’p bo’lgan, bir vaqtda bajaradigan topshiriqlar to’plamiga ishlov berishga yo’naltirilgan
+- Juda katta tezlikni talab qiladigan va katta hajmdagi masalalarni yechish uchun mo’ljallangan bo’ladi. Bunday masalalar sifatida ob-havoning global prognoziga oid masalalarni, uch o’lchovli fazoda turli oqimlarning kechishini o’rganish masalalarini keltirish mumkin. Bu kompyuterlar bir sekundda 10 trilliardlab amal bajaradi.
+?Operatsion tizimlar tuzilishiga ko'ra sinflanishi?
++ Monolit, ko'p sathli, Klient -Server, Mikro yadroli
+- Monolit, Ko'p sathli
+- Klient - server
+- Mikro yadroli
+?Monolit operatsion tizimlar bu?
++ bu biron bir aniq strukturaga ega bo’lmagan tuzilishga ega operatsion tizim hisoblanadi.
+- Faqat sever bilan ishlovchi OT 
+-Faqat yadro bilan ishlovchi OT
+- To'g'ri javob berilmagan
+?Quyidagilardan qaysi biri Mikroyadroli operatsion tizim hisoblaniladi?
++ linux 
+- To'g'ri javob berilmagan 
+- Windows 
+- Solaris 
+?Tizimli chaqiruv-?
++ Operasion tizim va ishlayotgan dastur orasidagi interfeysni taminlab beradi
+- Xotiradan joy ajratib beradi
+- Xotirada saqlaydi
+- elektr manbaini ta'inlab beradi
+?FAT fayl tizimidagi mantiqiy disk quyidagilarga bo'linadi?
++ Tizim maydoni va ma'lumotlar maydoni
+- Ma'lumotlar maydoni va kataloglari
+- Katalog maydoni va tizim maydoni
+- yuklash joylari
+?FAT fayl tizimiga quyidagilar kiradi?
++ Barcha javoblar to'g'ri
+- manzilli mantiqiy disk bo'limlari
+- Diskdagi bo'sh joy
+- Diskdagi nuqsonli joylar
+?Fayl bilan ishlash dasturi?
++ Fayl menejeri
+- dastur menejeri
+- xotira menejeri
+- qurilmalar menejeri
+?Zamonaviy fayllarni boshqarish tizimlari?
++ NTFS
+- FAT
+- Super FAT
+- HPFS
+?Fayl tizimidan foydalanish?
++ Ma'lumotlarni qayta ishlash dasturlari bilan bog'laning va disk maydonini markaziy ravishda taqsimlash
+- disk maydoni ajratish
+- Ma'lumotlar bazasi bilan bog'lash
+- fayllari tarqatish
+?Zamonaviy operatsion tizimlarda xotira?
++ Har bir segment uchun sahifalar bo'limlari
+- O'zgaruvchan bo'limlarda
+- segmentlari
+- Ruxsat etilgan bo'limlar
+?Ochiq manbali operatsion tizimlarda?
++ Tizim kodlari ochiq, istalgan foydalanuvchi uni o'zgartirishi mumkin
+- Dastur kodlari ochiq, ammo ularni o'zgartirish mumkin emas
+- Tizim kodlari faqat mualliflar uchun ochiq
+- Dastur kodlari yopish
+?Ma'lumotlarning xotirada joylashishi?
++Segment
+- Yig'ma
+- Qatlam
+- Sahifa
+?Katta hajmga, samarali foydalanishga va alohida avtonom energiya manbasiga ega bo'lgan xotira deyiladi?
++Doimiy xotira
+- Ikkilamchi xotira
+- Protsessor registrlari
+- Elektron disklar
+?Zamonaviy operatsion tizimlardagi manbalar quyidagilarni anglatadi?
++ Protsessor vaqti, xotira, kirish va chiqish kanallari, tashqi qurilmalar, dastur modullari, axborot resurslari, xabarlar va signallar
+- Dastur modullari
+- Xabarlar va signallar
+- Axborot resurslari
+?Operatsion tizimga qo'yiladigan talablar bular?
++ Barcha javoblar to'g'ri
+- dasturlar va a'luotlarni himoyalash
+- Samaradorlik, Moslashuvchanlik,
+ Yangilanish
+- Ishonchlilik, Qulaylilik, aniqlik 
+?BIOS bu ?
++ Bu doimiy xotira qurilmasida joylashgan bo'lib mikrodasturlar jamlanmasi bo'lib, quyi darajali kiritish/chiqarish amallarni bajaradi
+-Tizimni ishlash jarayonini elektr ta'minot bilan taminlab beradi
+- amaliy dasturlarni boshqaradi
+- Barcha javoblar nato'g'ri
+?Drayverlar bu? 
++Tashqi qurilmalarning fiziki darajada ishlashini boshqaruvchi dasturlardir
+- Tizimni ishlash jarayonini elektr ta'minot bilan taminlab beradi
+- amaliy dasturlarni boshqaradi
+- Bu doimiy xotira qurilmasida 
+joylashgan bo'lib mikrodasturlar
+- jamlanmasi bo'lib, quyi darajali kiritish/chiqarish amallarni bajaradi  
+?Bir masalali OT ga qaysilar kiradi?
++ MS-DOS, MSX
+- Windows, Unix, OS/2
+- MS-DOS, Windows 3.x, OS/2 dastlabki versiyasi
+- To'g'ri javob berilmagan
+?Ko'p masalali OT ga qaysilar kiradi?
++ Windows, Unix, OS/2
+- MS-DOS, MSX 
+- MS-DOS, Windows 3.x, OS/2 dastlabki versiyasi
+- To'g'ri javob berilmagan
+?Bir foydalanuvchilik OT ga qaysilar kiradi
++ MS-DOS, Windows 3.x, OS/2 dastlabki versiyasi
+- Windows, Unix, OS/2
+- MS-DOS, MSX  
+- To'g'ri javob berilmagan
+?Ko'p foydalanuvchilik OT ga qaysilar kiradi?
++ Windows, Unix, OS/2
+- MS-DOS, MSX  
+- MS-DOS, Windows 3.x, OS/2 dastlabki versiyasi
+- To'g'ri javob berilmagan
+?Operatsion tizim qobiqlari?
++ Foydalanuvchi uchun tizim funksiyalaridan unumli foydalanish interfeysini ta'inlab beruvchi dasturlar
+-Xotirani boshqarish qurilmasi
+- Tashqi qurilmani boshqarish qurilmasi
+- To'g'ri javob berilmagan
+?Quyidagi dasturlardan qaysi birlari grafik muxarrir hisoblanadi?
++ Paint, Adobe Photoshop 
+- Word
+- Excel
+- MS-DOS, MSX 
+?FAT32, Ext2, NTFS — bu …?
++ Paint, Adobe Photoshop  
+- Word
+- Excel
+- MS-DOS, MSX 
+?Quyidagi operatsion tizimlardan qaysi biri bitta foydalanuvchi va bitta dasturli operatsion tizimdir?
++ MS DOS
+- OS / 2
+- Linux
+- OS EC
+- UNIX
+?Shaxsiy kompyuterlar uchun mo'ljallangan va bir nechta operatsion tizimlarni qo'llab-quvvatlaydigan birinchi ko'p dasturli, ko'p vazifali, ishonchli operatsion tizim?
++ OS / 2
+- QNX
+- UNIX
+- Win NT
+?UNIX operatsion tizimining osongina ko'chirilishi yoki ko'chirilish xususiyati sababi?
++ Operatsion tizim kodlari yuqori darajadagi tilda yozilgan (masalan, C)
+- kodlari assambleya tilida yozilgan
+- Ko'p foydalanuvchi tizimi
+- Ko'p dasturli tizim
+?Tarmoq operatsion tizimlari funktsiyalarning ajratilishiga qarab tasniflanadi?
++ Bir martalik tarmoq OT va maxsus serverlarga ega OT
+- korporativ va mahalliy tarmoq
+- LAN va WAN
+- Korxona va bo'limlar tarmog'i
+?Tarmoq operatsion tizimlari ... .. qismlardan iborat?
++ To'rt
+- Ikki
+- Uch
+- Besh
+?Tarmoq operatsion tizimi deganda keng tushuniladi?
++ Xabar almashish va resurslarni birgalikda ishlatish uchun o'zaro ta'sir qiluvchi individual kompyuterlarning operatsion tizimlari to'plami yagona qoidalar - protokollar
+- Shaxsiy kompyuterning uni tarmoqda ishlashini ta'minlaydigan operatsion tizimlari
+- Boshqa kompyuterga kirishga imkon beruvchi operatsion tizimlar
+- Boshqa kompyuterlarga resurslarni etkazib beradigan operatsion tizimlar
+?Foydalanuvchiga u yoki bu turga kirishga imkon beradigan huquqlar to'plami deyiladi (NTFS fayl tizimida)?
++ Shaxsiy ruxsatnomalar
+- standart qarorlari
+- Maxsus tasdiqlashlar
+- Tashqi tasdiqlash
+?Fayllarni boshqarish tizimi quyidagi funksiyalarni bajaradi?
++ fayl operatsiyalari va foydalanuvchi interfeysi funktsiyalari
+- diskdan tashqari qurilmalar bilan fayl sifatida ishlash
+- diskdan tashqari qurilmalar bilan ishlash jarayonlarni boshqaradi
+- foydalanuvchi interfeysi va fayllar bilan ishlashni amalga oshiradi 
+?Boshqarish mexanizmlari bilan protsessor vaqtining 90 foizini egallaydigan va nisbatan past ko'rsatkichlarga ega bo'lgan eng xavfsiz operatsion tizimlar quyidagilar?
++ A sinf
+- sinf B
+- 3-sinf
+- 4-sinf
+?Yuqori mahsuldorlikka ega fayl tizimi
++ HPFS
+- FAT
+- NTFS
+- VFAT
+?Windows operatsion tizimining boshqa operatsion tizimlardan tubdan farqi nimada?
++ GUI va bir nechta dasturlarni ishlatish qobiliyati
+- Hisoblashning ishonchliligi
+- Buyruq tili yo'qligi
+- Dialog operatsiyasi yo'qligi
+?Shaxsiy kompyuterlar uchun mo'ljallangan va bir nechta operatsion tizimlarni qo'llab-quvvatlaydigan birinchi ko'p dasturli, ko'p vazifali, ishonchli operatsion tizim?
++ OS / 2
+- QNX
+- UNIX
+- Win NT
+?Tarmoq operatsion tizimlari funktsiyalarning ajratilishiga qarab tasniflanadi?
++Bir martalik tarmoq OS va maxsus serverlarga ega OS
+- korporativ va mahalliy tarmoq
+- LAN va WAN
+- Korxona va bo'limlar tarmog'i
+?Tarmoq operatsion tizimlarini yaratishda bir nechta yondashuvlar mavjud bular?
++ Mahalliy operatsion tizimlar va qobiq, tarmoq funktsiyalari boshidanoq hisobga olingan
+- Mahalliy va Shell
+- Client va Server
+- Ob'ektga yo'naltirilgan yondashuv
+?Tarmoq operatsion tizimining masofaviy manbalar va xizmatlarga kirishni ta'minlovchi qismi?
++Mijozlar qismi
+- Server qismi
+- Aloqa qismi
+- Mahalliy qism
+?O'z resurslarini ommaviy ravishda taqdim etadigan tarmoq operatsion tizimining bir qismi?
++ Server qismi
+- mijoz qismi
+- Aloqa qismi
+- Mahalliy qism
+?Tor ma'noda tarmoq operatsion tizimlari?
++Shaxsiy kompyuterning tarmoqda ishlashini ta'minlaydigan operatsion tizimlari
+- Xabar almashish va resurslarni umumiy qoidalar asosida almashish maqsadida o'zaro ta'sir qiluvchi alohida kompyuterlarning operatsion tizimlari to'plami - protokollar
+- Boshqa kompyuterga kirishga imkon beruvchi operatsion tizimlar
+- Operatsion tizimlari Boshqa kompyuterlarga resurslarni etkazib berish
+?Vazifalari: uni ko'rish, qo'shish, o'qish, yozish va o'zgartirish (NTFS fayl tizimida) bu?
++standart qarorlari
+- Shaxsiy tasdiqlash
+- Maxsus tasdiqlashlar
+- Tashqi tasdiqlash
+?NTFS fayl tizimi?
++ Yangi texnologik fayl tizimi
+- Juda ishonchli
+- disk maydonidan samarali foydalanadi
+- To'g'ri javob yo'q
+?Haqiqiy vaqtdagi operatsion tizimlar ana shunday tizimlardir bu?
++Kiruvchi ishlarni belgilangan vaqt oralig'ida qayta ishlashni oshirib yubormaslik
+- Dastur ob'ektning hozirgi holatiga qarab tanlanadi
+- Dastur rejalashtirilgan ish jadvallari asosida tanlanadi
+- Har xil texnologik ob'ektlar va jarayonlarni boshqaradi
 
-
-Variant 17
-
-Havoni changdan tozalashda necha usul qo’llaniladi?	===  Quruq va ho’l tozalash usullari
-Hayot faoliyati xavfsizligi»  fani nimani o’rgatadi?	===  Inson faoliyati davomida ularning xavfsizligini taminlashni o’rgatadi.
-
-Xavflar kelib chiqish sabablariga ko’ra necha xil bo’ladi?	===   Tabiiy, texnogen, ekologik
-
-Xavf nima?
-	===   Inson sog’ligiga bevosita yoki bilvosita  va boshqa   yo’llar bilan zarar  yetkazadigan  ko’ngilsiz hodisalar
-«Hayot faoliyati havfsizligi» fani qaysi fanlar bilan
-uzviy bog’liq?	===   Ergonomika, texnik estetika, mehnat fiziologiyasi,          mehnatni ilmiy asosda tashkil etish  va  mehnat gigiyenasi
-
-Ergonomika nima?
-	===  Qulay ish o’rnini tashkil etish;
-Tavakkalni aniqlash qanday yo’llar bilan olib boriladi?	===   Statistik, andozalash,  ekspert,  jamoatchilik    yo’llari bilan
-Variant 18
-
-Xavfsizlikni taminlash yo’llari qaysilar?	===  Boshqaruv, yo’naltirish (aniqlash), texnik, tashkiliy   yo’llar.
-Xavfsizlikni taminlashni yo’naltirish yo’llari   qaysilar ?	===  Operatorni faolligi, iqtidorligi, operatorni almashtirish, xavflarni tasniflash,  tartiblash ,  xavflarni kamaytirish
-Xavfsizlikni taminlashning texnik yo’llariga nimalar kiradi ?	===  Blakirovkalash, vakuumlash, to’siqlar orqali himoyalash, masofada himoyalash.
-Xavfsizlikni taminlashning tashkiliy yo’llariga nimalar kiradi ?	===  Barchasi to’g’ri.
-
-Xavfsizlikni taminlashni boshqarish yo’llari qaysilar ?	===  Barchasi to’g’ri.
-Hayot faoliyati xavfsizligi qaysi  masalalarni hal qiladi?	===  Hammasi to’g’ri.
-
-Xavflar necha bosqichda o’rganiladi?	===  3 bosqichda;
-
-
-Variant 19
-
-Mu’tadil xayotiy faoliyat sharoiti ko’rsatkichlarini aniqlang?
-	===  18-20 gradus harorat, 30-60 foiz namlik va 760 mm.simob
-ustuniga teng bo’lgan bosim;
-Zaxarli moddalarning odam tanasi va to’qimalariga ta’sirniga ko’ra   necha guruhga ajratish mumkin?	===  9 guruxga;
-Chang zarrachalari   kattaligi bo’yicha necha turga bo’linadi?	===  4 turga;
-Katta changlarning o’lchamini ko’rsating?	===  10 mk. dan katta;
-Mikroskopik changlarning o’lchamini ko’rsating?	===   0,25- 1 mk.;
-Ultromikroskopik changlarning o’lchamini ko’rsating?	===   0,25 mk dan kichik.
-Organizm uchun eng xavfli changlarning o’lchamini ko’rsating?	===   4-5  mk.;
-
-Asabga ta’sir ko’rsatuvchi zaharli moddalarni ko’rsating?	===  Benzin, kerasin, spirt, amiak,  nikatin va boshqalar;
-Organizmni  kuydiruvchi zaharli moddalarni ko’rsating?	===  Barcha turdagi kislatalar va ishqorlar;
-Mexnat fiziologiyasi nimani o’rganadi?
-	===   Inson ish faoliyatida tanada yuz beradigan o’zgarishlarni;
-“Komfort uchburchagi” nima?
-	===   Me’yoriy harorat, bosim va  namlik;
-Inson uchun eng zaharli changlar guruxini ko’rsating?	===   Barcha kimyoviy changlar;
-Moddalarning ruxsat etilgan konsentrasiyasiga ko’ra  eng xavfli           (0, 01 mg. / metr kub) moddani ko’rsating	===    Simob bug’i;
-Zaharli moddalar xavflilik darajasiga ko’ra necha guruhga bo’linadi?	===   4 guruhga;
-“Fotokolorometriya” usulida nima aniqlanadi?
-	===   Zararli moddalarning havodagi miqdori;
-“Gazoxromatografiya” va “Spektroskopiya” usullarida  qanday
-kattaliklar aniqlanadi?	===   Zararli moddalarning havodagi miqdori;
-“Xayot faoliyati xavfsizligi” fanining tizimli- strukturaviymodeli qaysi bilimlarni o’z ichiga oladi?	===   Umumiy, tibbiy –biologik, tabiiy sharoitlar bilan bog’liq  bilimlar va texnik-texnologik;
-
-
-
-
-
-1. »Hayot faoliyati xavfsizligi»  fani nimani o‘rgatadi?
-A)	===  Inson faoliyati davomida ularning xavfsizligini taminlashni o‘rgatadi.
-B)	Xavf-xatarni o‘rganish uchun chora-tadbirlar tuzishni o‘rgatadi.
-C)	Mehnat qilish jarayonida insonning xavfsizligini  taminlashni o‘rgatadi.
-D)	Texnikaning ishlatishda xavfsizligini taminlashni o‘rgatadi.
-2.Xavflar kelib chiqish sabablariga ko‘ra necha xil bo‘ladi?
-A)	===   Tabiiy, texnogen, ekologik
-B)	Texnogen
-C)	Ekologik
-D)	Tabiiy
-3. Xavf nima?
-A)	===   Inson sog‘ligiga bevosita yoki bilvosita  va boshqa   yo‘llar bilan zarar  yetkazadigan  ko‘ngilsiz hodisalar
-B)	Ko‘chki
-C)	Suv toshqini
-D)	Zilzila
-4.  «Hayot faoliyati havfsizligi» fani qaysi fanlar bilan
-uzviy bog‘liq?
-A)	===   Ergonomika, texnik estetika, mehnat fiziologiyasi,
-mehnatni ilmiy asosda tashkil etish  va  mehnat gi
-giyenasi
-B)	Iqtisodiy nazariya
-C)	Tabiiy fanlar
-D)	Gumanitar fanlar
-5. Tavakkalni aniqlash qanday yo‘llar bilan olib boriladi?
-A)	===   Statistik, andozalash,  ekspert,  jamoatchilik
-yo‘llari bilan
-B)	Andozalash yuli bilan
-C)	Ekspert
-D)	Statistik
-6.   Xavfsizlikni taminlash yo‘llari qaysilar?
-A)	Yo‘naltirish (aniqlash) yo‘llari
-B)	Texnik yo‘llar
-C)	===  Boshqaruv, yo‘naltirish (aniqlash), texnik, tashkiliy   yo‘llar.
-D)	Boshqaruv va tashkiliy yo‘llar
-7. Xavfsizlikni taminlashni yo‘naltirish yo‘llari
-qaysilar ?
-A)	Operatorni faolligi, iqtidorligi.
-B)	Operatorni almashtirish,
-C)	Xavflarni tasniflash, tartiblash, xavflarni kamaytirish,
-D)	===  Operatorni faolligi, iqtidorligi, operatorni almashtirish, xavflarni tasniflash,  tartiblash ,  xavflarni kamaytirish.
-8. Xavfsizlikni taminlashning texnik yo‘llariga nimalar kiradi ?
-A)	Blakirovkalash ,  vakuumlash.
-B)	To‘siqlar orqali himoyalash.
-C)	Masofada himoyalash, mahkamlash, puxtalash.
-D)	===  Blakirovkalash, vakuumlash, to‘siqlar orqali himoyalash, masofada himoyalash.
-9. Xavfsizlikni taminlashning tashkiliy yo‘llariga nimalar kiradi ?
-A)	Vaqt bo‘yicha chegaralash
-B)	Axborot, me'yorlash,  xodimlar tanlash
-C)	Zahiralash
-D)	===  Barchasi to‘g‘ri.
-10. Xavfsizlikni taminlashni boshqarish yo‘llari qaysilar ?
-A) Moslik, nazorat, qarshi aloqa
-V) Javobgarlik,  rejalik
-S)  Rag‘batlantirish, samaradorlik, boshqarish
-D)  ===  Barchasi to‘g‘ri.
-11.  Hayot faoliyati xavfsizligi qaysi  masalalarni hal qiladi?
-A)	Xavflarni birday (umumlashtirish) deb hisoblashni, yoki ularning   qiyofasini bilib olib  koordinati va miqdoriy xususiyatini ko‘rsatishni
-B)	Zarrari va foydasini solishtirish asosida xavflardan himoya qilishni
-C)	Paydo bo‘lishi mumkin bo‘lgan salbiy xavflarni yo‘qotishni
-D)	===  Hammasi to‘g‘ri.
-12. Mehnatni ilmiy asosda tashkil etishning asosiy yunalishlarini ko‘rsating?
-A)	Gigiyenik.
-B)	Fiziologik.
-C)	Psixologik va estetik
-D)	===  Barchasi to‘g‘ri
-13.  Kremniy oksidi changidan qanday kasallik paydo
-bo‘ladi?
-A)	===   Silikoz
-B)	Antrokoz
-C)	Alyuminoz
-D)	Silikatoz
-14. Ko‘mir oksidi changidan qanday kasallik paydo bo‘ladi?
-A)	Silikoz
-B)	===   Antrokoz
-C)	Alyuminoz
-D)	Silikatoz
-15. Alyuminy oksidi changidan qanday kasallik paydo
-bo‘ladi?
-A)	Silikoz
-B)	Antrokoz
-C)	===  Alyuminoz
-D)	Silikatoz
-16. Silikatlar ta'siridagi changdagi qanday kasallik paydo
-bo‘ladi?
-A)	Silikoz
-B)	Antrokoz
-C)	Alyuminoz
-D)	===  Silikatoz
-17. Hayotiy faoliyat xavfsizligini boshqarish vositalariga
-qaysilar kiradi?
-A)	Xalq ommasini  manfaati
-B)	Kasbni tanlash va o‘rganish
-S)   Insonda xavfsizlik xulq madaniyatini tarbiyalash,
-boshqaruvchi shaxslarga      ruhiy    ta'sir,  jamoa va
-shaxsiy himoya vositalari
-D)===  Barchasi to‘g‘ri.
-18. Favqulodda vaziyat nima?
-A)	Xavflar va xatarlar bilan bog‘liq vaziyat
-B)	Fojia va falokatlar bilan bog‘liq vaziyat
-S)    Falokat va ekologik ta'sir bilan  boglik vaziyat
-D)===   Bu ma'lum xududda halokat, falokat, tabiiy va eko
-logik ofat, epidemiya,   epizootiya,  epitotiyalar na
-tijasida sodir bo‘lgan vaziyat.
-19. Hayot faoliyati xavfsizligi fanining nazariyalari ni
-malar?
-A)	Har qanday faoliyatda yashirish xavf bor va  kishining hayotida xavflar uzluksizligini  ta'minlashi.
-B)	Xavflar zamon va makonda noaniqligi ya'ni, bu shunday ko‘chki, uning yuzaga chiqishi uchun ma'lum sharoit mavjud bo‘lishligi
-C)	Yashirin xavflarni yuzaga chiqish sharoiti sabab deb ataladi, bular har vaqt mavjud va  ma'lum yoki noma'lum bo‘lishini, sabablarini bilish, ularning o‘xshashlik tomonlarini    aniqlay olish favqulodda vaziyatlarni oldini olishning asoslari
-D.===  Hammasi to‘g‘ri
-20. Favqulodda vaziyatlardan himoyalash tadbirlari nima
-lar?
-A)	O‘tmishdagi favqulodda vaziyatlarni tahlil qilish
-B)	Tayyorgarlik ishlarini o‘tkazish
-C)	Favqulodda vaziyatlar davridagi xarakatlarga tayyor
-garlik ko‘rish   oqibatlarni  tugatish
-D)  ===   Barcha javoblar to‘g‘ri.
-
-21. Kelib chiqish sabablariga qarab favkulodda vaziyatlar
-necha xil bo‘lishi mumkin?
-A)	Tabiiy tusdagi favqulodda vaziyatlar
-B)	Texnogen tusdagi favqulodda vaziyatlar
-C)	Antrapogen, ekologik, ijtimoiy, siyosiy kelishmovchiliklar
-D)	===   Barcha javobdar  to‘g‘ri.
-22.Favqulodda vaziyatlar xavfini tarqalish tezligi bo‘yicha
-necha xil bo‘ladi?
-A)	Uchta
-B)	Ikkita
-C)	Beshta
-D)	===   To‘rtta..
-23. Tarqalish xududiga qarab favqulodda vaziyatlar necha xil
-bo‘ladi?
-A)	Lokal (cheklangan obyektda).
-B)	Mahalliy
-C)	Regional (Respublika xududida)
-D)	===   Mahalliy,  regional,  milliy,  lokal, global.
-24.Favqulodda vaziyatlar paydo bo‘lishi sabablari nimalar?
-A)	Og‘irlik kuchlari, yer aylanishi, haroratlar farqi tasirlari ostida paydo bo‘ladigan tez   kechadigan tabiiy jarayonlar oqibatida.
-B)	Konstruksiyalar yoki inshootlar, ashyolarning zanglanishi, eskirishi, fizik-texnik ko‘rsatgichlarning pasayishiga olib keladigan tashqi tabiiy  omillar tasiri.
-C)	Inshootlarning loyihasidagi, ishlab chiqarish texnologik jarayonlarning  inshoot ashyolariga tasiri
-D)	===  Barcha javoblar to‘g‘ri.
-25.Favqulodda vaziyatlar necha bosqichga  ega?
-A)	Bir bosqichga
-B)	Ikki bosqichga
-C)	Uch bosqichga
-D)	===  To‘rt bosqichga.
-26. O‘zbekiston Respublikasi xududida qaysi favqulodda va
-ziyatlar yuz berishi mumkin?
-A)	Faqat zilzilalar, sel, suv toshqinlari va boshqa gidrometerologik hodisalar
-B)	Kimyoviy xavfli, portlash va yong‘in xavfi mavjud  bo‘lgan   ob'yektlardagi    avariya va falokatlar
-C)	O‘tkir zararli moddalarining temir yo‘lda va boshqa transport vositalarida tashish   paytidagi avariya va falokatlar.
-D)	===   Keltirilgan barcha javoblar to‘g‘ri
-27. Zilzilalarning oqibatlarini kamaytirish chora-tadbir-
-lariga nimalar kiradi?
-A)	Ogohlantirish
-B)	Zilzilabardosh binolar ko‘rish
-C)	Seysmik rayonlashtirish va  inshootlarning zilzilaga bardoshligini oshirish bo‘yicha   tadbirlar  majmuasini ishlab chiqish
-D)	===  Zilzilaning  geofizik, geologik xossalaini tahlil qilish, oldindan qayerda va   qachon zilzila bo‘lish ehtimoli borligini aniqlash, ogohlantirish.
-28. Gidrotexnik inshootlarning buzilishiga nimalar sabab
-bo‘lishi mumkin?
-A)	Xavfli tabiat hodisalari tabiiy ofatlar, uskunlarning eskirishi
-B)	Loyihalash va ko‘rilishdagi xatolar. Ekspluatatsiya qoidalarining buzilishi
-C)	Portlashlar
-D)	===  Hammasi to‘g‘ri..
-29. Yong‘in natijasida portlashlarning kelib chiqishiga  ni
-malar  sabab bo‘ladi?
-A)	Faqat  yonuvchi modda
-B)	Faqat xavf harorat
-C)	Uchqun-alanga
-D)	===   Moddalarning yonuvchanligi, yuqori harorat, alanga.
-30. Qurilish ashyolari o‘tga chidamligigi bo‘yicha nega turga
-bo‘linadi?
-A)	Yonmaydigan va og‘ir yonadigan
-B)	Yonmaydigan
-C)	Yonmaydigan, og‘ir yonadigan, yonuvchan
-D)	===   Yonmaydigan, og‘ir yonadigan, yonuvchan, tutab yonadigan.
-31. Portlash nima?
-A)	Gazlarning qattik qisilishi
-B)	Yonuvchi moddaga gaz aralashmasi bilan sodir bo‘ladigan hodisa
-C)	Radioaktiv moddalarni noto‘g‘ri ishlatish natijasida sodir bo‘ladigan   hodisalar
-D)	===   Chegaralangan xududda , katta miqdordagi quvvatning   ajralib chiqishidir.
-32. Portlatuvchi omillarga nimalar kiradi?
-A)	Kimyoviy (portlovchi moddalar)
-B)	Yadroli (yadro zaryadli  qurollar)
-C)	Mexanik uslubdagi (yuqori bosim bilan ishlaydigan jihozlar va inshootlar). Elektromagnit (uchqun razryadi), tovushli va boshqa quvvatlar
-D)	===   Barchasi to‘g‘ri.
-33. O‘zbekiston Respublikasida mehnat muhofazasini nazorat
-qiluvchi tashkilotlarga       qaysilar kiradi?
-A)	O‘zbekiston Respublikasi mehnat va aholini ijtimoiy muhofaza qilish  vazirligi
-B)	Respublika ichki ishlar vazirligining yong‘indan muhofaza qilish bosh  boshqarmasi
-C)	O‘zbekiston Respublikasi  Sog‘liqni saqlash vazirligining sanitariya-Epidemiologiya boshqarmasi, O‘zbek-iston Respublikasi energetika va   elektrlashtirish Davlat nazorati.
-D)	===   Barchasi to‘g‘ri
-34.  Mehnat qonunligini buzilishi uchun qanday  javobgar
-liklar mavjud?
-A)	Faqat  ma'muriy jinoiy
-B)	Faqati jinoiy modda
-C)	Moddiy, jinoiy
-D)	===  Ma'muriy, jinoiy, moddiy.
-35. Yo‘riqnomalar necha xil bo‘ladi?
-A)	Kirish yo‘riqnomasi
-B)	Ish joyidagi va davriy yo‘riqnomalar
-C)	Faqat davriy yo‘riqnoma
-D)	===   Kirish, ish joyidagi, davriy va navbatdan tashqari yo‘riqnomalar.
-36. Ishchilar bilimi qachon tekshiriladi?
-A)	Dastlabki yo‘riqnomadan keyin
-B)	Malaka oshirgandan keyin
-C)	Baxtsiz hodisadan keyin
-D)	===   A va B javoblar to‘g‘ri.
-37.Inson faoliyati necha turga bo‘linadi?
-A)	Aqliy faoliyat
-B)	Jismoniy faoliyat
-C)	===   Aqliy  va jismoniy faoliyat
-D)	Og‘ir va yengil mehnat
-38. Mehnatni to‘g‘ri tashkil qilish yo‘nalishlari necha xil
-bo‘ladi?
-A)	Gigiyenik yo‘nalish
-B)	Fiziologik va psixologik yo‘nalish
-C)	Estetik  va gigiyenik yo‘nalish
-D)	===  Gigiyenik, fiziologik, psixologik, estetik.
-39. Insonning eshitish organi necha gersdagi tovushlarni
-eshitishi mumkun?
-A)	15 gs
-B)	20000 gs
-C)	20000 gs dan   katta
-D)	===  16-20000 gs gacha
-40. Shovqin,   titrashga  qarshi   kurash usullarini
-ko‘rsating?
-A)	Shovqin manbai bo‘lgan mashina va mexanizmlarni ayrim xonalarga joylashtirish.
-B)	Sershovqin sexlarni ham shovqin sexlardan ajratib joylashtirish.
-C)	Kuchli tebranishli  sershovqin joylarda ishlayotgan ishchilar sonini kamaytirish, shaxsiy himoya vositalaridan keng foydalanish.
-D)	===  B va V javoblar to‘g‘ri.
-41 Ishlab chiqarishdagi  yoritish sistemalari necha xil
-bo‘ladi?
-A)	Tabiiy
-B)	Sun'iy va tabiiy
-C)	Aralash va tabiiy
-D)	===   Tabiiy, sun'iy va aralash.
-42. Vazifasiga qarab suniy yoritish necha xil bo‘ladi?
-A)	Ish joylarini yoritish.
-B)	Avariya yoritilishi.
-C)	Maxsus yoritish.
-D)	===  Avariya va maxsus yoritish.
-43. Sanoat chang necha xil bo‘ladi?
-A)	Tabiiy.
-B)	Suniy.
-C)	Aralash.
-D)	===  Tabiiy va suniy.
-44. Zaharli moddalarni odam tanasiga ko‘rsatadigan tasiri
-ga karab necha xil bo‘ladi?
-A)	Asab zaharlanishi, jigar zaharlanishi
-B)	Ferment zaharlanish, kuyduruvchi zaharlanish
-C)	Alergen zaharlanishi, konsegren zaharlanish,  mutagen zaharlanish, zaharlanish
-D)	===  Barcha javoblar to‘g‘ri
-45. Kasbiy zaharlanishga qarshi kurash qaysi yo‘nalishlarda
-olib boriladi?
-A)	Texnologik jarayonlarda zaharli moddalar ajralishini bartaraf qilish
-B)	Texnologiya va zarur uskuna-moslamalarni takomillashtirish
-C)	Sanitariya va gigiyena tadbirlari, sanitariya davolash, sog‘lomlashtirish tadbirlariga doir qonunga amal qilish.
-D)	===  Barcha javoblar to‘g‘ri.
-46. Ishlab chiqarish muhitida meteriologik sharoitlar ni
-malarga bog‘liq?
-A)	Havo harorati va namlikka
-B)	Nisbiy namlik va havo bosimiga
-C)	Havo bosimi va hararotiga
-D)	===  Havo tezligi, havo harorati, nisbiy namlik va  havo bosimiga.
-47. Sanoat korxonalarida xonalar necha xil bo‘ladi?
-A)	Oddiy
-B)	Issiq
-C)	Iliq
-D)	===  Oddiy, issiq
-48. Yil fasllari necha xil bo‘lishi mumkin?
-A)	Issiq
-B)	Sovuq
-C)	O‘zgaruvchan
-D)	Issiq, sovuq, o‘zgaruvchan.
-49. Ish kategoriyasi necha xil bo‘lishi mumkin?
-A)	Yengil, o‘rtacha.
-B)	O‘rtacha va og‘ir
-C)	Og‘ir va yengil.
-D)	===  Yengil, o‘rtacha va og‘ir.
-50. Shovqinga qarshi kurash usullari nimalardan iborat?
-A)	Shovqinni ajratib chiqaradigan  manbani  kamaytirish.
-B)	Shovqinni tarqalish yo‘nalishini o‘zgartirish.
-C)	Sanoat korxonalari xonalariga akustik ishlov berish.
-D)	===  Barcha javoblar to‘g‘ri.
-51. Shovqinga qarshi qaysi himoya vositalari mavjud?
-A)	Vkladishlar va moslamalar.
-B)	Naushniklar va himoya vositalari.
-C)	Shlemlar va to‘siqlar.
-D)	===  Shlem va naushnik va boshqalar.
-52. Shovqinlar kelib chiqish sababiga ko‘ra qaysi turlarga
-ajratiladi ?
-A)	Mexanik, shovqin.
-B)	Aerodinamik shovqin.
-C)	Gidrodinamik shovqin.
-D)	===   Elektr magnit, mexanik, aerodinamik gidrodinamik shovqinlar.
-53. O‘zgaruvchi elektromagnit maydonlar inson organizmiga
-qanday ta'sir kiladi?
-A)	Elektr va magnit maydonlarini kuchlanishi.
-B)	Energiya oqimining intensivligi tebranish  darajasiga.
-C)	Nurlanishning tananing ma'lum yuzasida to‘planishi va inson organizmning shaxsiy xususiyatiga bog‘liq.
-D)	===   Barcha javoblar to‘g‘ri.
-54. Erganomika fani nimani o‘rgatadi?
-A)	Insonning mexnat faoliyatini.
-B)	Xavfsiz sharoitni yaratishni.
-C)	Mehnat unumdorligini oshirishni.
-D)	===  Erganomika insonning mehnat faoliyati jarayonida qulay, xavfsiz sharoitlarini yaratish mehnat unumdorligini oshirishga bog‘liq bo‘lgan imkoniyatlarini o‘rgatadi.
-E)	Faqat  mehnat sharoitini o‘rgatadi.
-55. Insonning psixologik faoliyati necha guruxga bo‘linadi?
-A)	Psixologik jarayonlar (bilimlarni jamlash va hayotiy tajribaga ega bo‘lish)
-B)	Psixologik xossalar (zukkolik, zakovatlilik, xis- tuyg‘u, iroda, odob-ahloq)
-C)	Psixologik holatlar (psixologik jarayonlarga foydali va foydasiz bog‘lanish)
-D)	===  Psixologik jarayonlar, xossalar, holatlar.
-56. Ishlab chiqarish changi necha xil bo‘ladi?
-A)	Ko‘rinadigan (10 mk dan) katta.
-B)	Mikroskopik (kattaligi 0,25-1mk)
-C)	Ultromikroskopik (0,25 mk dan kichik)
-D)	===  Turli kattalikda organik va noorganik changlar.
-57. Havo muhitidagi zaharli moddalarga yo‘l qo‘yilgan
-miqdori nimalarga asoslanadi?
-A)	Moddaning fizik-kimyoviy xossalariga
-B)	Eksperimental tekshirish natijalariga
-C)	Ishlab chiqarish, gigiyenik kuzatuv ma'lumotlariga
-D)	===   Fizik, kimyoviy va boshqa ma'lumotlarga.
-58. Davlat standartiga asosan  zaharli  moddalarning   orga-
-nizmga ta'sir ko‘rsatishiga  qarab  qanday  sinflarga
-bo‘linadi?
-A)	O‘ta yuqori sinfga
-B)	O‘rtacha xavfli sinfga
-C)	Kam xavfli sinfga
-D)	===  YUqori, kam va o‘rtacha xavfli.
-59. Chang tutqichlar va filtrlarning yong‘in xavfsizligi
-qo‘yiladigan talablar   ko‘rsating?
-A)	Portlash jihatdan xavfli changni tutib qoladigan kameralarni binodan tashqariga joylashtirish.
-B)	Yonuvchi yoki portlashga xavfli chang mavjud bo‘lgan o‘tkazgichlarni  yong‘in chiqqanda o‘z-o‘zidan yopiladigan klapinlar bilan jihozlash
-C)	O‘t olgan changni tezda uchirish uchun kameralarni suv sepadigan moslama bilan jihozlanish
-D)	===   Texnik va konstruktiv jihozlar va moslamalar bilan ta'minlash.
-60. Avariya shamollatish vositalari qachon o‘rnatiladi?
-A)	Halokat yuz berganda
-B)	Texnologik jarayon buzilganda
-C)	To‘satdan ko‘p miqdorda zararli yoki zaharli gazlar paydo bo‘lganda
-D)	===  Doimo inson bo‘ladigan, halokat yuz berganda yoki texnalogik jarayon buzilganda to‘satdan  ko‘p miqdorda zararli yoki zaharli  gaz va bug‘lar paydo bo‘lishi mumkin bo‘lgan ishlab  chiqarish xonalariga o‘rnatiladi.
-61. Qaysi xollarda shamollatish qurilmalaridan yong‘in
-chiqish mumkin?
-A)	Ventilyatorning elektr dvigatelaridan uchqun chiqishi qanday yoki qisqav tutashuv bo‘ladi.
-B)	Xarakatlanayotgan havodagi moddalar o‘zaro kimyoviy ta'sirlashganda chiqadigan issiqlik quvvati
-C)	Statik elektr, ventilyator yoki dvigatellar podshipniklarini qizishi.
-D)	===   Uchqun chiqishi, havodagi kimyoviy reaksiya va  nosozlik natijalari.
-62. Nima maqsadda blakirovka qilinadi?
-A)	Texnalogik jarayon va uskunalarini noto‘g‘ri boshqarishga barham berish.
-B)	Xavf paydo bo‘lganda ishlayotgan uskunani darhol to‘xtatish.
-C)	Ayrim mexanizm va detallarning xavfli mintaqadan tashqariga xarakatlanishiga imkoniyat yaratish uchun.
-D)	===   Barcha javoblar to‘g‘ri.
-63. Rangli signallar necha xil bo‘ladi?
-A)	===  Qizil (taqiqlash), sariq (ogohlantirish), yashil (xavfsizlik), ko‘k (ko‘rsatma).
-B)	Qizil (taqiqlash).
-C)	Sariq (ogohlantirish), yashil (xavfsizlik).
-D)	Ko‘k (ko‘rsatma).
-64. Xavfli zona deb nimaga aytiladi?
-A)	Uskuna o‘rnatilgan zonaga
-B)	Inson sog‘ligiga zarar tegadigan zonaga
-C)	Halokat va falokatli joylarga
-D)	===  Inson hayotiga yoki sog‘ligiga doimiy yoki vaqti-vaqti bilan xavf to‘g‘diruvchi joyga.
-65.Xavfsizlik masofalari nima uchun kerak?
-A)	Texnologik uskunalarga xizmat ko‘rsatishda mehnat xavfsizligini ta'minlash, falokatlarni oldini olish, bino va inshoatlarning yong‘in xavfsizligini ta'minlash.
-B)	Ob'yektlarni xavfsizligini ta'minlash.
-C)	Asbob-uskunalarni  joylashtirish.
-D)	===   Mehnat xavfsizlikni ta'minlash, tegishli asboblarni joylashtirish.
-66. Jarohatlovchi omillar nimalar?
-A)	Mashina va dastgohlarni xarakatlanuvchi kesimlari, qayishlar, barabanlar, shkivlar.
-B)	Tishli ish shesternalar,  shneklar, issiq yuzalar, zaharli kimyoviy moddalar matolarini pardozlashda ishlatiladigan kislota, ishkor va boshqa moddalar.
-C)	Ish joylarda to‘siqsiz ishlash.
-D)	===  Barcha javoblar to‘g‘ri.
-67. Ish joylarining balandligi yer sathidan necha metr maso
-fada bo‘ladi.
-A)	===  1,0 m.
-B)	2,0 m.
-C)	1,6 m.
-D)	2,5 m
-68. Yuk ko‘tarish mexanizmlarida ishlovchi  ishchilar necha
-yoshda bo‘lishi lozim?
-A)	16 yoshda
-B)	===  16-18 yoshda
-C)	20 yoshda
-D)	30 yoshda
-69. Gaz balonlar qaysi hollarda falokatga olib keladi?
-A)	Balonlarning tayyorlanish sifati pastligi.
-B)	Gaz bilan me'yordan ortiq to‘ldirilishi.
-C)	===  Tayyorlash, tashish va saqlash vaqtida xavfsizlik qoidalarining buzilishi.
-D)	Materialning sifatsizligi.
-70. Tok urishning eng og‘ir  darajasini ko‘rsating.
-A)	Muskullar keskin qisqarishi natijasida odam tok ta'siridan chiqib ketadi va hushini  yo‘qotadi.
-B)	Muskullar keskin qisqarishi natijasida odam tok ta'siridan chiqib ketadi va hushini yo‘qotadi. Muskullar keskin qisqarishi natijasida odam hushini yo‘qotadi, ammo yurak va nafas olish faoliyati ishlab turadi.
-C)	Muskullar keskin qiskarishi natijasida odam hushini yo‘qotadi, ammo yurak va nafas olish faoliyati buziladi, hushini yo‘qotib, nafas olish tizimi yoki yurak urishi to‘xtab qoladi.
-D)	===   Muskullar keskin qisqarishi natijasida odam xushini yo‘qotadi, nafas olish faoliyati ishlab turadi, hushini yo‘qotib, nafas olish tizimi yoki yurak urishi to‘xtab qoladi. Klinik o‘lim holati yuz beradi bunda insonda hech qanday hayot alomatlari ko‘rinmaydi.
-71. Elektr tokidan jarohatlanishning oldini olishga qaysi
-chora-tadbirlar kiradi?
-A)	Kuchlanish ostida bo‘lgan o‘tkazgichlarni qo‘l yetmaydigan qilib o‘tkazish.
-B)	Elektr tarmoqlarini alohida joylashtirish, elektr qurilmalar korpusida elektr tokining hosil bo‘lishiga qarshi xavfsizlik chora-tadbirlarni belgilash.
-C)	Maxsus elektr muhofazalash tizimlaridan foydalanish, elektr qurilmalarini xavfsiz ishlatishning tashkiliy choralarini kullash.
-D)	===  Barcha  javoblar to‘g‘ri.
-72. Sanoat korxonalari odamlar uchun tok urishi xavflilik
-darajasi bo‘yicha necha sinfga  bo‘linadi?
-A)	to‘rt sinfga; yengil xavfli, xavfli, o‘ta xavfli,   xavfsiz,
-B)	uch sinfga; xavfsiz, xavfli, o‘ta xavfli.
-C)	===  besh sinfga; xavfsiz,  xavfli,  o‘ta xavfli,  yuqori xavfli,  yengil xavfli.
-D)	Ikki sifga; xavfli va xavfsiz.
-73. Yashin qaytargich nima uchun kerak?
-A)	Elektrostatik zaryadlar xavfini yo‘qotish uchun
-B)	Binolarni himoya qilish uchun
-C)	===  Yong‘in chiqmasligi, himoya qilish, zaryadlarni yo‘qotish uchun
-D)	Qishloq xo‘jaligi ekinlarni himoya qilish uchun.
-74. O‘tni o‘chirish uchun qaysi usullar ishlatiladi?
-A)	Yonayotgan joyni ko‘p miqdorda issiqlik yutuvchi materiallar yordamida sovitish.
-B)	Yonayotgan materialni atmosfera havosidan ajratib qo‘yish.
-C)	Yonayotgan joyga kirayotgan havo tarkibidagi kislorod miqdorini kamaytirish maxsus kimyoviy vositalar qo‘llash.
-D)	===  Barcha javoblar tug‘ri.
-75. Moddalar o‘zidan-o‘zi yonishga moyilligi bo‘yicha necha
-sinfga bo‘linadi?
-A)	Bir sinfga (tabiiy o‘simliklar).
-B)	Ikki sinfga (torf va ko‘mir).
-C)	Uch sinfga  (yog‘ va moylar).
-D)	===  To‘rt sinfga tabiiy o‘simliklar, torf va ko‘mir, yog‘ va moy, kimyoviy moddalar.
-76. Havoni changdan tozalashda necha usul qo‘llaniladi?
-A)	Quruq tozalash usuli
-B)	===  Quruq va ho‘l tozalash usullari
-C)	Yarimquruq tozalash
-D)	Yarim ho‘l tozalash.
-77. Korxona bosh loyihasi  nima?
-A)	Mavjud bo‘lgan va ko‘riladigan binolar
-B)	Asosiy yo‘l va yo‘llaklar
-C)	Ko‘kalamzorlashtirish maydon yuzasini  malum masshtabda ifodalanishi
-D)	===  Korxona bosh loyihasi mavjud bo‘lgan va ko‘riladigan barcha bino, inshootlar, asosiy yo‘l va yo‘laklar, ko‘kalamzorlashtiriladigan maydon yuzini malum masshtabda ifodalangan chizmalari.
-78. Korxona bosh loyihasida qaysi omillar yoritiladi?
-A)	Korxonaning ishchi kuchi va suv taminoti.
-B)	Elektr, xom ashyo taminoti.
-C)	Temir yo‘li va transport aloqalari.
-D)	===  Ishchi kuchi, elektr, xom-ashyo bilan taminlash, temir yo‘l, transport aloqasi, havo oqimi tezligi, shovqindan himoya qilish.
-79. Korxona maydonidagi binolar oraligidagi yullarning
-eni necha metr bo‘lishi kerak
-A)	3 metr.
-B)	4 metr.
-C)	===  5 metr.
-D)	1 metr.
-80. Ishlab chiqarish binolari orasidagi masofa yong‘in
-xavfsizligi bo‘yicha necha metr    bo‘lishi   mumkin?
-A)	9 metr.
-B)	8 metr.
-C)	12 metr.
-D)	===   9-12 metr.
-81. Sanitariya - maishiy xizmat ko‘rsatish binolar tarkibiga
-qaysilar kiradi?
-A)	Dam olish, ovqatlanish  xonalari
-B)	Uy va ish kiyimlarni saqlash, zararsizlantirish xonalari.
-C)	Tuzatish, yuvinish, yuvish xonalari.
-D)	===  Uy va ish kiyimlarini saqlash, zararsizlantirish, tuzatish, yuvish, yuvinish va boshqalar.
-82. Korxonaning maishiy binolari qanday joylashtiriladi?
-A)	===  Alohida
-B)	Korxonaning yoniga qo‘shilmagan holda
-C)	Korxonaning  yuqori qavatlarida
-D)	Korxonaning yer to‘lasida
-83. Karroziyadan qaysi xavflar paydo bo‘lishi mumkin?
-A)	Asbob- uskun, kommunikatsiyalarning buzilishiga
-B)	Sinish, avariya.
-C)	Portlash, yengin sodir bo‘lishi.
-D)	===  Asbob-uskuna,  kommunikatsiyalarning buzilishi, sinishi,  avariya, portlash va yong‘in sodir bo‘lishi.
-84. Kasaba uyushma qo‘mitasi texnik inspektorining  vazifa-
-si  nimalardan iborat?
-A)	Korxonada mehnatni muhofoza qilish qoidalari bajarilayotganligini, baxtsiz hodisaga uchraganlar hisobga olinayotganligini nazorat qiladi,
-B)	Og‘ir yoki o‘lim bilan tugagan baxtsiz hodisalarni komissiya a'zolari bilan birga tahlil qiladi
-C)	Mehnat muhofaza qilish qoida va me'yorlarini buzganlarni javobgarlikka tortish maqsadida huquqni muhofaza qilish organlarga ma'lumot beradi.
-D)	===  Mehnatni muhofaza qilish qoidalari, baxtsiz hodisalarga uchraganlar hisobga  olish, og‘ir yoki o‘lim bilan tugagan hodisalarni tahlil qilish,  mehnatni muhofaza qilish qoida va me'yorlarni buzganlarni javobgarlikka tortish uchun tegishli organga ma'lumot berish.
-85. Baxtsiz hodisalarni oldini olish qaysi rahbar xodim
-zimmasida bo‘ladi?
-A)	===  Ma'muriyat rahbariga
-B)	Bosh muxandisga
-C)	Hayot faoliyat xavfsizligi muxandisiga
-D)	Sex boshlig‘iga
-86. Shikastlanishlar og‘ir-yengilligiga qarab qaysi turlarga
-bo‘linadi?
-A)	Yengil-mehnat qobiliyati yo‘qolmaydigan.
-B)	O‘rtacha-mehnat qobiliyati bir necha kunlab, oylab
-yo‘qotiladigan.
-C)	Og‘ir-mehnat qobiliyatini mutlaqo yo‘qotiladi.
-D)	===   Yengil, o‘rtacha va og‘ir.
-87. Toliqishni qanday oldini olish mumkin?
-A)	Xavftani davomiyligini qisqartirish.
-B)	===  Ko‘p mehnat talab qiladigan ishlarni mexanizatsiya
-lashtirish, yarim avtomat va avtomatlashgan texnolo-
-giya jarayonlariga o‘tish, yangi texnologiyalarni joriy
-etish,
-S)   Ishlab chiqarish muhitini birmuncha qo‘lay sharoitga
-keltirish.
-D)    Yangi texnologiyalarni joriy etish.
-88. Ishlab chiqarish  jarayoniga mashq qilish  qanday ta'sir
-qiladi?
-A)	Mashq jarayonida ishdagi hatti-xarakatlar takomillashadi.
-B)	Muntazam mashqlar tanada qator ijobiy siljishlari yuz berishiga olib keladi, mushak kuchi va chidamlilik oshadi, yurak-tomirlari va nafas olish tizimlari faoliyati yaxshilanadi.
-C)	Aqliy mehnatda mashqlar  diqqat, iroda kabilar takomillashadi.
-D)	===  Barcha javoblar to‘g‘ri.
-89. Mehnat maromi nima?
-A)	Bir maromdagi mehnat-smena maboynida bir tekisda bajaradigan mehnatdir.
-B)	Bir maromda mehnat-hafta maboynida bir tekisda bajaradigan mehnatdir.
-C)	Bir maromdagi mehnat-oy, yil davomida bir tekisda bajariladigan mehnatdir.
-D)	===  Bir maromda mehnat - smena, hafta, oy, yil maboynida bir tekisda bajariladigan  mehnatdir.
-90. Sanoat korxonalarida qaysi gazlar ishlatiladi?
-A)	Siqilgan.
-B)	Suyultirilgan.
-C)	Eritilgan.
-D)	===  Siqilgan, suyuqtirilgan, eritilgan.
-91. Bosim miqdoriga qarab barcha apparatlar necha guruhga
-bo‘linadi?
-A)	Ikki guruhga (16-50 atm.)
-B)	Uch guruhga (16-100 atm.)
-C)	===  To‘rt guruhga: past (6 atm. gacha), o‘rta (16 dan 50 atm. gacha), ko‘tarilgan  (100 atm gacha) va  yuqori bosimda ishlaydigan.
-D)	Besh guruhga
-92. Balonlarni portlashiga nimalar sabab bo‘lishi mumkin?
-A)	Balonlar noto‘g‘ri foydalanish.
-B)	Suyultirilgan gaz bilan to‘ldirib yuborish.
-C)	Ularni to‘lib ketishi, quyosh nuri ta'siri.
-D)	===  Noto‘g‘ri foydalanish, texnika xavfsizligi va ekspluatatsiya talablariga rioya qilmaslik.
-93. Xavfli yuklarga nimalar kiradi?
-A)	===  Portlovchi moddalar, suyultirilgan, siqilgan, eritilgan gazlar, radiaktiv moddalar    va yengil alangalanuvchi suyuqliklar.
-B)	Yengil alangalanuvchi suyuqliklar yengil alangalanuvchi modda va materiallar,
-oksidlovchi moddalar, zaharli moddalar.
-C)	Radiaktiv moddalar, ko‘ydiruvchi va yemiruvchi moddalar
-D)	Faqat  radiaktiv moddalar.
-94. Issiq suv, bug‘ va gaz quvurlarining  avariyaga o‘chrash-
-ishiga  nima sabab bo‘ladi?
-A)	Quvurlar nosozlikini mavjudligi
-B)	Quvurlarni loyixalashda materiallarini noto‘g‘ri tanlanishi.
-C)	===  Qurilish-montaj ishlarida loyihada ko‘rsatilgan me'yorlardan chetga chiqish, quvurlardan foydalanishda texnologiya rejimlarini buzish, vaqtida sifatli ta'mirlash ishlarini olib bormaslik, gidravlik zarbalar, tekshirish asbob-uskunalari o‘z vaqtida sifatli texnika ko‘rigidan o‘tkazmaslik.
-D)	Faqat ekspluatatsiya talablariga rioya qilmaslik.
-95. Ma'muriy javobgarlik necha turga bo‘linadi?
-A)	Uch turga: ahloqiy (ogohlantirish), mablag‘ va pul undirish, ahloq tuzatish ishlari, ma'muriy-qamoq  jazosi, vazifasidan chetlatish.
-B)	Ikki turga:  vazifasidan chetlatish,  qamoq jazosini  berish.
-C)	===  To‘rt turga: mablag‘ va pul undirish, ogohlantirish, qamoq  jazosi berish,  past lavozimga o‘tkazish.
-D)	Bitta turga;  ya'ni ma'muriy qamoq jazosini berish.
-96. Rejadan tashqari instruktaj qaysi vaqtda o‘tkaziladi?
-A)	Texnologik terminlar o‘zgarsa
-B)	Baxtsiz hodisa yuz bersa
-C)	Ishda uzilish sodir bo‘lsa
-D)	===  Texnologik sharoit o‘zgarsa, baxtsiz hodisa va boshqa hollarda.
-97. Xavfsiz mehnat qilish sharoitini yaratish qaysi tizimni
-vazifasi?
-A)	===  Mehnat muhofazasini boshqarish tizimi va korxona rahbari.
-B)	Mamuriy rahbari
-C)	Muxandis texnik xodimlar
-D)	Nazorat organlari.
-98. Mehnat xavfsizligi standartlar sistemasiga  (MXSS)
-nimalar kiradi?
-A)	===  Tashkiliy-uslubiy standartlar, xavfsizlik talablari uskunalari standartlari, ishchilarning himoya vositalariga bo‘lgan talablar standartlari
-B)	Tashkiliy uslubiy standartlar
-C)	Ishlab chiqarish uskunalariga  xavfsizligi talablari standarti
-D)	Ishchilarning himoya vositalariga bo‘lgan talablari standarti.
-99. Birinchi o‘t o‘chirish moslamalarini ko‘rsating?
-A)	Yong‘in kranlari.
-B)	Yong‘in gidrantlari.
-C)	===  Yong‘in krani, gidrant va щitlar.
-D)	Kran gidranti
-100. Avariya-qutqaruv ishlari qachon amalga oshiriladi?
-A)	Portlash ruy bergan hollarida.
-B)	Yong‘in gidrantlari bo‘zulganda .
-C)	Suv toshqini ro‘y berganda.
-D)	===  Tabiiy va texnogen turdagi favqulodda vaziyatlarda.
-
-
-        </pre>
+    </pre>
     </div>
-    
 </body>
 </html>
