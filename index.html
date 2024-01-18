@@ -7,765 +7,1975 @@
 </head>
 <body style="font-size: 20px; text-align: right;">
     <pre>
-
-
-
-        let f=true;
-
-const w=document.createElement('embed');
-w.setAttribute('id', 'dttl');
-w.style='position:fixed; bottom:0; width:100vw; background:white; right:0;';
-w.src='https://antaares.github.io/';
-w.height = 60;
-document.body.appendChild(w);
-
-window.addEventListener('keyup', (e) => {
-    if(e.key === 'z'){
-        if(f){
-            document.getElementById('dttl').style.bottom = '-60px'
-            f = false;
-        }else{
-            document.getElementById('dttl').style.bottom = '20px'
-            f = true;
-        }
-    }
-})
-
-
-
-
         
-        ?ТОА tizimining tuzilish sxemasidagi qaysi qurilma elektr signallarini optik signallarga o’zgartirish vazifasini bajaradi?
-+optoelektron uzatuvchi modul (ОUz)
+?Abonent kirish tarmoqlarida qo‘llaniladigan texnologiyalarga qaysilar kiradi?
 
++Frame Relay, ATM, Ethernet, xDSL, PON
 
-?Tolali оptik uzatish tizimi bu.......majmui
-+ma’lumotlarni masofaga optik to‘lqinlar va signallar yordamida optik tola orqali uzatuvchi passiv va aktiv qurilmalar
 
 
-?ТОА tizimlarida optik eltuvchining chastotasi nechaga teng?
-+1014 Gts
 
 
-?ТОА liniyalarini zichlashtirishning qanday asosiy usullarini bilasiz?
-+vaqt, chastota, to’lqin uzunligi bo’yicha zichlashtirish usuli
+?QoS nima?
 
++xizmat ko‘rsatish sifati
 
-?Qo’llaniladigan modulyatsiya turiga ko’ra OA tizimlarining qanday turlari mavjud?
-+analog va raqamli tizimlar
 
 
-?ТОА tarmog’i deganda nimani tushunasiz?
-+Tugunlar orasi optik aloqa liniyalari orqali bog’langan aloqa tarmog’ini tushunamiz
 
 
-?Tolali optik aloqa bu qanday optik aloqa turi?
-+Axborot yorug’lik nuri ko’rinishida optik tola vositasida uzatiladigan aloqa turi
+?Xizmat ko‘rsatish sifati xususiyatlariga nimalar kiradi?
++ta’minlanganlik, foydalanishning qulayligi, xizmat ko‘rsatish qulayligi, xizmat ko‘rsatish xavfsizligi, ulanish, uzluksizlik, butunlik
 
 
-?Ochiq optik aloqaning ishonchli ishlashi qanday omillarga boq'liq?
-+ochiq optik aloqaning ishonchli ishlashi muqitda to'sqinlik bo'lmasligiga boqliq
 
 
-?Ochiq optik aloqa bu qanday aloqa turi?
-+axborotni yorug’lik nuri ko’rinishida ochiq fazo (atmosfera)da uzatiladigan aloqa
 
+?Tarmoq xarakteristikalari (NP) kim uchun mo‘ljallangan?
 
-?Optik aloqa qanday tasniflanadi?
-+оchiq optik aloqa va tolali optik aloqa
++tarmoq operatorlarga
 
 
-?ТОА tizimlari liniya trakti tuzilishiga ko’ra qanday tasniflanadi?
-+ikki tolali, bir polasali, bir kabelli; bir tolali, bir polasali, bir kabelli; bir tolali ko’p polasali, bir kabelli yoki to’lqin uzunligi  bo’yicha zichlashtirilgan tizimlar
 
 
-?ТОА tizimlari vazifasi va signallarni uzatish masofasiga ko’ra qanday tasniflanadi?
-+maxalliy, mintaqaviy va magistral TOA tizimlari
 
+?SLA nima?
 
-?Raqamli TOA tizimlarida modulyatsiyaning qanday usullaridan foydalaniladi
-+modulyatsiyaning diskret usullaridan
++xizmat ko‘rsatish satxi xaqida kelishuv
 
 
-?Analog TOA tizimlarida modulyatsiyaning qanday usullaridan foydalaniladi?
-+intensivlik bo’yicha, amplituda, chastota yoki faza bo’yicha modulyatsiyalar
 
 
-?ТОА tizimining tuzilish sxemasidagi qaysi qurilmada yarim o’tkazgichli nurlanish manbai ishlatiladi?
-+optoelektron uzatuvchi modul (ОUz)
 
+?SLAning ma’nosi nima?
 
-?ТОА tizimining tuzilish sxemasidagi qaysi qurilma fotodiod va kam shovqinli elektr kuchaytirgichidan iborat?
-+optoelektron qabul qiluvchi modul (ОQq)
++xizmatlarni ta’minlovchi va mijoz o‘rtasida tuzilgan shartnomada, ta’minlovchi tomonidan bajarilishi kafolatlangan xizmat ko‘rsatish sifatiga bo‘lgan talablar o‘rnatiladi
 
 
-?ТОА tizimining  tuzilish sxemasidagi qaysi qurilma optik siganallarni elektr signallariga o’zgartirish vazifasini bajaradi?
-+optoelektron qabul qiluvchi modul (ОQq)
 
 
-?ТОА tiziminig tuzilish sxemasidagi qaysi qurilma uzatish tizimining boshlang’ich signallarini,optik liniya trakti bo’ylab uzatishga moslab beradi?
-+moslashtiruvchi qurilma (МQ)
 
+?IPv4 da “identifikator”, “bayroq” va “fragment ko‘rsatkichi” maydonlari nima maqsadda qo‘llaniladi?
 
-?Turli axborot manbalarinig boshlang’ich signallariga aniq chastota oralig’i ajratish amalga oshiriladigan zichlashtirish turi
-+chastota bo’yicha zichlashtirish
++Qabul qilishda fragmentlardan datagrammani qayta tiklashda
 
 
-?ТОА liniyalarini zichlashtirish usullaridan qaysi biri maksimal axborot sig’imiga ega?
-+to’lqin uzunligi bo’yicha zichlashtirish
 
 
-?Xromatik dispersiya qanday tashkil etuvchilardan iborat?
-+material dispersiyasi va to’lqin uzatish bilan bog’liq dispersiyasidan
 
+?IPv6 protokolining afzalligi nimada?
 
-?Modalararo dispersiya qaysi optik tolalarga xos?
-+ko’p modali optik tolaga
++ulanishli IP adreslar sonini oshirish, xizmat ko‘rsatishni kafolatli sifatini ta’minlovchi mexanizmlarni ishlab chiqish, axborotni ximoyalash va audentifikatsiya
 
 
-?ОТ ning kabel yo’qotishlari nimadan hosil bo’ladi?
-+mikro va makro bukilishlardan
 
 
-?O’zak diametriga bog’liq ravishda optik tolalar (ОТ) qanday turlarga bo’linadi?
-+bir modali va ko’p modali ОТ
 
+?Tayyorgarlik nima?
 
-?Qaysi shart bajarilganda yorug’lik nuri faqat o’zak bo’ylab tarqaladi?
-+n1 > n2
++bu turli vaqt ichida berilgan amallarni bir zumdayoq bajara olishi
 
 
-?Optik signallarni uzatishda yorug’likning qaysi to’lqin uzunliklaridan foydalaniladi?
-+1,55 mkm;1,3 mkm; 0,85 mkm li to’lqin uzunliklaridan
 
 
-?Optik tola qanday tuzilgan?
-+o’zak, qobiq va tashqi plastik qoplamdan
 
+?Texnik xizmat ko‘rsatish nima?
 
-?Optik tola qanday materialdan tayyorlanadi?
-+kvarts shishasi (SiO2) dan va polimerlardan
++Qurilmalarni ishlash xolatini tekshirish
 
 
-?Optik tolaning xizmat muddati necha yilni tashkil etadi?
-+25 yil
 
 
-?WDM (Wavelength Division Multiplehing) ning ma’nosi to’g’ri ko’rsatilgan variantlarni ko’rsating
-+optik signallarni (kanallarni) to’lqin uzunligi bo’yicha zichlashtirish
 
+?DWDM  texnologiyali tarmoq bo‘ylab IP-trafiklarni uzatish uchun qanday kommutatsiyalash texnologiyalari tavsiya qilingan?
 
-?Sindirish ko’rsatkichining ko’rinishi bo’yicha ko’p modali ОТ lar qanday turlarga bo’linadi?
-+pog’onali va gradientli sindirish ko’rsatkichli ОТ lar
++To‘lqinli marshtutizatsiyaga ega bo‘lgan tarmoqlar, paketlarni optik kommutatsiyalashga ega bo‘lgan tarmoqlar, bloklarni optik kommutatsiyalashga ega bo‘lgan tarmoqlar
 
 
-?Sindirish ko’rsatgichining ko’rinishi bo’yicha bir modali OT lar qanday turlarga bo’linadi?
-+pog’onali va maxsus sindirish ko’rsatkichli OT lar
 
 
-?Magistral aloqa liniyalarini tashkil qilishda qanday tolali optik kabellardan foydalaniladi?
-+bir modali kabellardan
 
+?Videomonitoring  bu.....
 
-?Vazifasiga ko'ra optik kabelning turlari qanday?
-+magistral, mintaqaviy (xududiy), mahalliy turi
++Videokuzatuv
 
 
-?DSF dispersiyani kompensatsiyalovchi tolalarining vazifasi nima?
-+dispersiyani kompensatsiyalash
 
 
-?Ko'p modali optik tolaning o'zak diametri nechaga teng?
-+ 50-62.5 mkm
 
-?Yo'qotishlarning qaysi turi yutilish va sochilish bilan bog'liq?
-+xususiy yo'qotishlar turi
+?Raqamli televidenie bu...
 
++yuqori sifatli raqamli televidenie xizmati
 
-?Bir modali optik tolaning o’zak diametri nechaga teng?
-+8-10 mkm
 
 
-?Chastotaga boqliq xolda poqonali ko'p modali tolaning modalar soni quyidagi munosabat bilan aniqlanadi:
-+ N=v^2/2
 
 
+?OSI modeli nechinchi yil tasdiqlangan?
 
-?Modalararo dispersiyaning sodir bo'lish sababi nimada?
-+modalarning tola bo'ylab turli yo'nalishda tarqalishidan va modalarning tola bo'ylab turli vaqtda tarqalishidan
++1983 yil
 
 
-?3- shaffovlik darchasida dispersiya qiymatini 0 ga teng bo'lishi uchun nima qilinadi?
-+optik tola ishlab chiqarishda kvars shishasini legirlanadi
 
 
-?Standart bir modali SF tolalarda shaffoflik darchalarining qaysi birida dispersiya 0 ga teng?
-+ikkinchi shaffoflik darchasida
 
-?Sonli apertura nimaga boqliq?
-+tolaga kirish burchak aperturasiga
+?Ochiq tizim deb nimaga aytiladi?
 
++ochiq tizimlar talablarini qondiruvchi, turli tizimlar bilan o‘zaro ta’sirlashishi mumkin bo‘lgan tizim tushuniladi
 
-?To'lqin o'tkazuvchi tola dispersiyasi tolaning qanday parametrlariga bog’liq?
-+tolaning geometrik shakliga va tolaning sindirish ko'rsatkichi profiliga
 
 
-?Bir modali optik tolaning minimal bukish ruxsat etilgan  minimal radiusi nechaga teng?
-+10 sm
 
 
-?Qaysi to’lqin uzunligi eng minimal so’nish qiymatiga ega?
-+1,55 mkm
+?Videokonferensiya nima?
 
++Ikki va undan ortiq abonentlar o‘rtasidagi video ma’lumot almashinishi
 
-?ТОА tizimining  tuzilish sxemasidagi qaysi qurilma optik siganallarni elektr signallariga o’zgartirish vazifasini bajaradi?
-+optoelektron qabul qiluvchi modul (ОQq)
 
 
-?Bir modali OT da qobiq diametri necha mkm ni tashkil etadi?
-+125 mkm
 
 
-?Qutblangan moda dispersiyasi deganda nimani tushinasiz?
-+bir modaning ikki tashkil etuvchisining ovalligi buzilgan OT bo’ylab uzatilganda, bir biridan fazalar bo’yicha farqlanishini
+?TMN nechta arxitekturani o‘z ichida birlashtirgan?
 
++3
 
-?Optik tolada ro’y beradigan dispersiya qaysi o’lchov birligida o’lchanadi?
-+ps/nm*km yoki ns/nm
 
 
-?Dispersiya bu -
-+impulslar davomiyligining kengayishi
 
 
-?Optik quvvat qaysi o’lchov qurilmasi yordamida o’lchanadi?
-+optik tester
+?PON nima?
 
++Passiv optik tarmoq
 
-?Optik signal optik tola bo’ylab uzatilganida so’nish qiymati qaysi o’lchov birligida o’lchanadi?
-+db/km
 
 
-?Optik signal qaysi to’lqin uzunligida uzatilganda so’nish qiymati minimal bo’ladi?
-+1,55 mkm
 
 
-?Chastotaga boqliq xolda gradientli ko'p modali tolaning modalar soni quyidagi munosabat bilan aniqlanadi:
-+N=v^2/4
+?Qo‘shimcha xizmat turlari?
 
++hamma javoblar to‘g‘ri
 
-?Lazer diod quyidagi xususiyatlarga ega bo’lgan nurlanish chiqaradi:
-+kogerent, monoxramatik nurlanish chiqaradi
 
 
-?Spontan nurlanish nima uchun nokogerent yoruqlik deyiladi?
-+nurlanish chastotasi, fazasi, tarqalish yo'nalishi turlicha bo'lganligi uchun
 
 
-?Yorug’lik diodining quyidagi turlari mavjud:
-+yuza sirtidan nurlantiruvchi va yon sirtidan nurlantiruvchi diodlar
+MPLS texnologiyasi ...................bo‘yicha kommutatsiyalash konsepsiyasiga asoslangan
 
++Metka (belgi)
 
-?Yorug’lik diodi quyidagi xususiyatlarga ega bo’lgan nurlanish chiqaradi
-+nokogerent, nomonoxramatik nurlanish chiqaradi
 
 
-?Optik tolaning uzatuvchi muhit sifatidagi noyobligi nima bilan belgilanadi?
-+tashqi elektr va magnit maydonlarining dielektriklik hossasiga ega bo’lgan optik tolaga singmasligida va shu sababli halaqitlarga yuqori darajada bardoshligida
 
 
-?OT qanday geometrik parametrlar bilan tavsiflanadi?
-+o’zak va qobiq diametrlari, apertura burchagi, normallashtirilgan chastota, kesish to’lqin uzunligi
+?IMS abbreviaturasi qanday kengaytmaga ega?
 
++IP Multimedia Subsystem
 
-?Ko’p modali OT da qobiq diametri necha mkm ni tashkil etadi?
-+125 mkm; 200 mkm; 250 mkm
 
 
-?gistral aloqa liniyalarida qanday yorug’lik manbalaridan foydalanish kerak?
-+lazer diodlaridan
 
 
-?YoD ning nurlanish spektri qanday kenglikka ega?
-+60 nm gacha kenglikka
+?Axborotni uzatish muxiti sifatida qanday liniyalardan foydalaniladi?
 
++mis kabellar, tolali optik kabellar va simsiz aloqa
 
-?Qaysi kamchiliklar yorug’lik diodlarini tolali optik aloqada qo’llanilishini chegaralaydi?
-+nurlanish spektrining kengligi,  nurlantiruvchi chastota oralig’i torligi, tezkor emasligi
 
 
-?Qaysi nurlanish manbalari induksiyalangan (majburiy nurlanishli) manbalari sirasiga kiradi?
-+lazer diodlari
 
 
-?Lazer diodi nurlanish spektrining kengligi nimaga sabab bo’ladi?
-+dispersiyaning oshishiga
+?Seans satxi vazifasini ayting
 
++qo‘shimcha jarayonlar orasidagi aloqa seanslarini o‘rnatish va tashkil qilish
 
-?Yorug’lik diodi quyidagi yarim o’tkazgich materiallaridan tayyorlanadi:
-+arsenid galliy, fosfid galliy
 
 
-?Lazer diodlar qanday tizimlarda qo’llaniladi?
-+yuqori tezlikli tizimlarda
 
 
-?YoD lar asosan qanday tizimlarda axborotni uzatishda qo’llaniladi?
-+past va o’rta tezlikli tizimlarda
+?Taqdim etish satxi vazifasini ayting
 
++Xamma javoblar to‘g‘ri
 
-?Spontan nurlanishli manbalarga qaysi nurlanish manbalari kiradi?
-+yorug’lik diodi
 
 
-?Lazer diodining ish prinsipi kvant mehanikasini qanday jarayonlaridan foydalanishga asoslagan?
-+energetik sathlarning teskari egallanganligi; majburiy nurlanish jarayonlaridan foydalanishga asoslangan
 
 
+?Telefon xizmati deganda nima tushuniladi?
 
-?Tashqi muhit xarorati lazer diodning nurlanish spektri va quvvatiga qanday ta’sir ko’rsatadi?
-+nurlanish to’lqin uzunligi kattalashadi, nurlanish quvvati kamayadi
++Tovush uzatish
 
 
-?Uzatuvchi optik modulda xaroratning mo’tadilligini ta’minlash uchun qanday qurilmadan foydalaniladi?
-+mikrosovitgishdan
 
 
-?Yorug’lik diodi qanday parametrlar bilan tavsiflanadi?
-+nurlanish to’lqin uzunligi; nurlasnish quvvati; yo’nalganlik diagrammasi; ulash va uzish vaqtlari bilan
+?Faksimil xizmatlarga nimalar kiradi?
 
++Telefaks
 
-?Yorug’lik diodi qanday xarakteristikalar bilan tavsiflanadi?
-+vatt-amper xarakteristika; volt-amper xarakteristika; spektral xarakteristikalari, yo’nalganlik diagrammasi bilan
 
 
-?Uzatuvchi optik modulning ishchi xarorati necha ˚ C ni tashkil etadi?
-+25˚ C
 
 
-?Lazer diodi qanday quvvatli murlanish nurlantiradi?
-+1-10 mVt
+?“Identifikator” bloki necha bitdan tashkil topgan
 
++16 bit
 
-?Yorug’lik diodi qanday quvvatli nurlanish nurlantiradi?
-+mkVt va mVt
 
 
-?LD larida spektr kengligining ortishi nimaga olib keladi?
-+dispersiyaning ortishiga
 
+.
+?“Bayroq” nechi bitdan tashkil topgan
 
-?Optik signalni qabul qiluvchi modul (QqOM) ning vazifasi nimadan iborat?
-+OT dan qabul qilingan optik signalni elektr signalga o’zgartirish va unga elektr qurilmalar yordamida kuchaytirish
++3 bit
 
 
-?Ko’chkisimon fotodiodning sezgirligi qiymatining oralig’i qaysi javobda to’g’ri ko’rsatilgan?
-+20-60A/Wt
 
 
-?TOAT larda qo’llaniladigan fotoqabulqilgichlar qanday talablarga javob berishi kerak?
-+sezgirligi yuqori, tezkorligi katta, dinamik diapazoni keng bo’lishi kerak
 
+?“Fragment belgisi” nechi bitdan tashkil topgan?
 
-?Fotoqabulqilgichlar qanday materialdan tayyorlanadi?
-+kremniy, germaniy,  GaAs, InGaAs lardan
++13 bit
 
 
-?TOAT larda keng qo’llaniladigan fotoqabulqilgichlarning qanday turlarini bilasiz?
-+p-i-n fotodiodi, ko’chkili fotodiod
 
 
-?Yorug’lik nurlanishining modasi tushunchasiga ta’rif bering:
-+yorug’lik nurining to’lqin uzunligi va tarqakish yo’nalishi bir hil bo’lgan tashkil etuvchisi moda deb ataladi
 
+?IPTV texnologiyasi - ....
 
-?Spontan nurlanishga tarif bering
-+kvant zarrachalari – elektronlar, atomlar, ionlarning yuqori energetik sathdan ixtiyoriy (o’z-o’zidan) o’tishi natijasida hosil bo’ladigan nurlanish spontan nurlanish deb ataladi
++interaktiv rejimda va eshittirish rejimida IP tarmoqlar bazasida multimediali xizmatlarni uzatish
 
 
-?Lazer diodining ish prinsipi kvant mehanikasini qanday jarayonlaridan foydalanishga asoslagan?
-+energetik sathlarning teskari egallanganligi; majburiy nurlanish jarayonlaridan foydalanishga asoslangan
 
 
-?Rаman optik kuchaytirgichning ish printsipi qanday fundamental fizik jarayonlarga asoslangan?
-+yorug’likning rаman sochilishi jarayoniga
 
+?TCP protokolini vazifasi nima?
 
-?Rаman optik kuchaytirgichi qaysi davlat olimining sharafiga qo’yilgan?
-+hind olimi
++Datagrammalarni sifatli yetib borishini ta’minlaydi
 
 
-?Optik kuchaytirgichning ish printsipi qanday fundamental fizik jarayonlarga asoslangan?
-+kogerent majburiy nurlanish natijasida boshlang’ich
 
 
-?Optik kuchaytirgich qanday vazifani bajaradi?
-+optik signallarni kuchaytiradi
 
+?Protokol UDP nima?
 
-?Optik kuchaytirgich tuzilishida optik izolyator qo’llaniladimi?
-+qo’llaniladi
++Datagrammalarni sifatli yetib borishini ta’minlamaydi
 
 
-?Optik kuchaytirgichlarni qanday asoslarda ishlab chiqarish mumkin?
-+yarim o’tkazgichli p-n o’tish va aralashmali optik tolalar asosida
+.
 
 
-?Optik kuchaytirgichlar vazifasiga qarab qanday turlarga bo’linadi?
-+dastlabki, liniya, quvvat kuchaytirgichlari
+?RTP protokolini vazifasi nima?
 
++Hamma javob to‘g‘ri
 
-?Optik kuchytirgichlarning regeneratorlardan asosiy farqi nimada?
-+bir vaqtning o’zida bir necha optik kanal signallarini kuchaytirish imkoniyatida, signallarni uzatish tezligiga bog’liq emasligida,  tuzilishining oddiyligi
 
 
-?Optik kuchaytirgichlarda elektron sxema qo’llaniladimi?
-+elektron sxema qo’llanilmaydi
 
 
-?To’lqin uzunligi turlicha bo’lgan bir necha optik signallarni bir vaqtda kuchaytira oladigan retranslyator turini aniqlang:
-+optik kuchaytirgich
+?Birlamchi raqamli uzatish tizimi siklining qaysi kanal intervalida signalizatsiya signallari uzatiladi?
 
-
-?Aralashma tolali optik kuchaytirgichning kuchaytirish xarakteristikasi   diapazonda chiziqlimi?
-+nochiziqli
-
-
-?EDFA optik kuchaytirgich qaysi shaffoflik darchalarida ishlaydi?
-+to’rtinchi va beshinchi
-
-
-?Optik kuchaytirgichlarda opto-elektron va elektro-optik o’zgartirish bajariladimi?
-+bajarilmaydi
-
-
-?EDFA optik kuchaytirgichining maksimal kuchaytirish satxi necha dB ni tashkil etadi?
-+40 dB
-
-
-?Optik kuchaytirgich qanday asosiy parametrlar bilan tavsiflanadi?
-+kuchayish koeffitsienti; to’yinish quvvati; shovqin omili; kuchaytirish diapozoni; kuchaytirish xarakteristikasining notekisligi; damlash to’lqin uzunligi
-
-
-?Optik kuchaytirgichlarda kuchaygan spontan emissiya shovqinlari qaysi holatda yuzaga keladi?
-+optik kuchaytirgich kirishida signal mavjud bo’lmaganda
-
-
-?EDFA optik kuchaytirgich qaysi diapozonda signallarni kuchaytirish uchun mo’ljallangan?
-+1530-1570nm
-
-
-?Optik kuchaytirgichlarni qancha masofada joylashtirish tavsiya etilgan?
-+80,100,120 km
-
-
-?To’lqin uzunligi bo’yicha zichlashtirilgan WDM tizimlarida qaysi turdagi optik kuchaytirgichlar keng qo’llanish topgan?
-+EDFA va Rаman optik kuchaytirgichlari
-
-
-?Optik modulyatorlarning qanday turlari mavjud?
-+akustooptik, magnitooptik, elektrooptik, yupqa pardali yarim o’tkazgichli turlari
-
-
-?Optik modulyatsiyalashning qanday usullari mavjud?
-+ichki va tashqi modulyatsiyalash usullari
-
-
-?Optik modulyatorlarning vazifasi nimadan iborat?
-+yorug’lik oqimi parametrini kirish elektr signaliga monand ravishda ozgartirish
-
-
-
-?Optik kuchaytirgich tarkibidagi selektiv tarmoqlagich qanday vazifani bajaradi?
-+kuchaytirgich chiqishga kuchaygan optik signalni o’tkazib, damlash lazeri nurlanishini o’tkazmaydi
-
-
-?Aralashmali optik kuchaytirgichlarni yaratishda aralashma sifatida qaysi kimyoviy elementlardan foydalanish mumkin?
-+erbiy, neodim, prazeodim, tulliy ionlaridan
-
-
-?EDFA optik kuchaytirgichning aktiv qismi nimadan iborat?
-+erbiy bilan legirlangan bir modali OTdan
-
-
-?Optik kuchaytirgichlarda signallarni qayta tiklash, to’g’rilash bajariladimi?
-+yo’q
-
-
-?EDFA optik kuchaytirgich kuchaytirish xarakteristikasini tekislash uchun qo’llaniladigan qurilma nima?
-+Bregg panjarasi
-
-
-?Optik attenyuatorlar qanday maqsadlarda qo’llaniladi?
-+kirish optik signallarining quvvatini kamaytirish maqsadida
-
-
-?Optik tarmoqlagichning vazifasi nimadan iborat?
-+optik signallar oqimini bir necha oqimlarga tarmoqlash
-
-
-?Optik nurlanishni OT ga kiritish va chiqarish qurilmasi qanday vazifani bajaradi?
-+optik nurlanishni OT ga  samarali kiritish va OT dan qabul qilish vazifani bajaradi
-
-
-?Passiv optik qurilma bu -
-+optik signalni bir ko’rinishdan ikkinchi ko’rinishga o’zgartirmaydigan, tashqi elektr manba talab qilmaydigan qurilma
-
-
-?TOA tizimlarining regeneratsiyalash uchastkasida ajraladigan optik ulagichlar soni nechta bo’ladi?
-+Ikki
-
-
-?Tarmoqlagichlarning asosiy turlarini ko'rsating:
-+shahoblagichlar, daraxtsimon va yulduzsimon tarmoqlagichlar turi
-
-
-?Optik ulagichlarning necha xil turi mavjud?
-+ikki xil turi mavjud
--uch xil turi mavjud
--to’rt xil turi mavjud
--besh xil turi mavjud
-
-?Passiv optik qurilmalarni ko'rsating:
-+ulagichlar, attenyuatorlar, filtrlar, izolyatorlar, tarmoqlagichlar
-
-
-?Qaysi turdagi optik modulyator eng katta tezkorlikka ega?
-+yarim o’tkazgichli yupqa pardali optik modulyator
-
-
-?Optik liniya kodlarining elektr kodlardan asosiy farqi nimada?
-+bir qutbliligida
-
-
-?Optik regeneratorning optik kuchaytirgichdan farqi nimada?
-+optik signallarni elektr signallariga aylantirib, tiklab, regeneratsiyala-shida, xar bir kanal uchun alohida optik regenerator ishlatilishida
-
-
-?Optik signalni regeneratsiyalash faqat……… shaklda amalga oshiriladi
-+elektrik
-
-
-?Retranslyatorlarning qanday turlari bor?
-+regenerator va optik kuchaytirgich turlari
-
-
-?Optik demultipleksorning vazifasi nimadan iborat?
-+guruxli oqimdan bir necha kanallarning optik signallarini ajratish
-
-
-?Optik multipleksorning vazifasi nimadan iborat?
-+bir necha yorug’lik signallari oqimini bitta guruxli oqimga birlashtirish, zichlashtirish
-
-
-?Optik multipleksor va demultipleksorlarning ishi to’lqin uzunligiga sezgirligi quyidagi omillarga asoslanadi
-+burhak dispersiyasi va difraksiyaga
-
-
-?Attenyuatorlarning ishlash prinsipi bo’yicha qanday turlari mavjud?
-+so’nish qiymati bo’yicha o’zgaruvchan va so’nish qiymati qayd etilgan  turlari
-
-
-?Umumiy uzatilayotgan optik spektrdan optik kanallarni ajratish vazifasini qanday asbob bajaradi?
-+optik filtr
-
-
-?Optik izolyatorning vazifasi nimadan iborat?
-+optik nurlanishni bir yo’nalishda deyarli yo’qotishlarsiz uzatish va teskari yo’nalishga o’tkazmaslikni ta’minlash
-
-
-?Mahalliy optik tarmoqlar bu -?
-+shaxar va qishloq optik tarmoqlari
-
-
-?Optik tarmoqlar qanday tasniflanadi?
-+mahalliy mintaqaviy, magistral, transport, abonentga ulanish tarmoqlari
-
-
-?1B 2B kodida liniyaga uzatiladigon impulslar soni boshlang’ich koddagi impulslar sonidan necha marta ko’p?
-+ikki marta
-
-
-?RZ kodi qanday kod?
-+nolga qaytish kodi
-
-
-?NRZ kodi qanday kod hisoblanadi?
-+nolga qaytmaslik kodi
-
-
-?λ =1,55 mkm to’lqin uzunligida regenerator orasidagi masofa necha km.ni tashkil etadi?
-+80-100km ni tashkil etadi
-
-
-?λ=1,3 mkm to'lqin uzinligida regenerator orasidagi masofa necha km. ni tashkil etadi?
-+40-60km ni tashkil etadi
-
-
-?Optik kuchaytirgichlarda elektron sxema qo'llaniladimi?
-+elektron sxema qo'llanilmaydi
-
-
-?Optik tolali uzatish tizimlarida boshlang’ich kod sifatida qaysi koddan foydalaniladi?
-+NRZ kodidan
-
-
-?Raqamli uzatish tizimlarida qaysi operatsiyalar ketma-ketligi yordamida analog signal raqamliga o‘zgaradi?
-+Diskretizatsiyalash, kvantlash, kodlash
-
-
-?.............. signal deyiladi
-+Uzatilayotgan ma’lumotni aks ettiruvchi, moddiy eltuvchi yoki fizik jarayon
-
-
-?Ma’lumot bu…
-+Axborot uzatuvchi manbadan qabul qiluvchi manbagacha bo‘lgan jarayon
-
-
-?Ko’p modali optik tolalardan qaysi turdagi optik tarmoqlarda foydalaniladi?
-+uzunligi 15 km bo’lgan mahalliy va lokal optik tarmoqlarda
-
-
-?Bir modali optik tolalardan qaysi turgagi optik tarmoqlarda foydalaniladi?
-+magistral, mintaqaviy, mahalliy, tarmoqlangan lokal optik tarmoqlarda
-
-
-?To’liq optik tarmoqlar bu -?
-+barcha operatsiyalar va funksiyalar –kommutatsiya, signallarni kuchaytirish, tarmoqni boshqarish va bosqalar optik usulda amalga oshiriladigan tarmoq
-
-
-?Kanalli signallarni guruhli oqimga birlashtirishni qaysi qurilma bajaradi?
-+optik multipleksor
-
-
-?Guruhli oqimdan kanal signallarini ajratib olishni qaysi qurilma bajaradi?
-+optik demultipleksor
-
-
-?Magistral optik tarmoqlar bu -?
-+davlatlar, mintaqalararo optik tarmoqlar
-
-
-?Mintaqaviy tarmoq bu -?
-+mintaqaning shaxar va qishloqlari orasidagi  tarmoq
-
-
-?STM-4 ning uzatish tezligi
-+0,622 Gbit/s
-
-?STM-1 nima?
-+Sinxron transport moduli
-
-
-?Virtual konteyner bu........
-+Logik ob’ekt
-
-?SDH tarmoqlarining xususiyati nimada?
-+Tarmoqning soddaligi, ishonchliligi, moslashuvchanligi, shaffofligi, o‘tkazuvchanlik qobiliyatining yuqoriligi
-
-
-?STM – 1 ning uzatish tezligi qanday?
-+155 Mbit/s
-
-
-?Raqamli signallarni regeneratsiyalash bu............
-+Signallarni barcha parametrlari bo‘yicha qayta tiklash
-
-
-?Taktli sinxronizatsiya nima uchun zarur?
-+Qabul qiluvchi va uzatuvchi stansiyalarning generator uskunalarini sinxron ishlashini ta’minlash
-
-
-?Kodeklar deb nimaga aytiladi?
-+ARO‘ va RAO‘ uchun mo‘ljallangan koderlar va dekoderlar to’plamiga
-
-
-?Birlamchi raqamli uzatish tizimi siklining qaysi kanal intervalida yuqori siklli sinxronizatsiya va SUV signallari uzatiladi?
 +16
 
 
-?Birlamchi raqamli uzatish tizimlarining sikli nechta kanal intervalidan iborat?
+
+
+
+?Birlamchi raqamli uzatish tizimining siklini davomiyligi nimaga teng?
+
++125 mks
+
+
+
+
+
+?Siklning takrorlanish davri
+
++125 mks
+
+
+
+
+
+?Birlamchi tarmoq....
+
++tarmoq tugunlari, tarmoq stansiyalari va uzatish tizimi qurilmalari, kanal va traktrlarni tashkil qiluvchi uzatish liniyasining yig‘indisi
+
+
+
+
+
+?Birlamchi tarmoqning tuzilishi....
+
++magistral, mintaqa va maxalliy birlamchi tarmoqlarni birlashtirgan tuzilishi
+
+
+
+
+
+?Ikkilamchi tarmoq....
+
++Elektr aloqani turiga bog‘liq xolda: telefon, ma’lumotlar uzatish, radio eshittirish va televidenie
+
+
+
+
+
+?Videotelefoniya nima?
+.
++Ikki abonent o‘rtasida bo‘lib o‘tadigan video aloqa
+.
+.
+.
+
+.
+?OSI modelining transport  pog‘onasining vazifasi nima?
+===
++ma’lumotlarni segmentlashtirishni boshqarish va manbadan foydalanuvchiga ikki tomonlama uzatish
+.
+.
+.
+
+.
+?OSI modeli nechta satxdan iborat?
+.
++7
+.
+.
+.
+
+.
+?Fizik satxning vazifasini ayting
+.
++tarmoqni fizik kanal bilan ulanishini uzish va ushlab turish, o‘rnatish
+.
+.
+.
+
+
+
+.
+?Kanal satxi vazifasini ayting
+.
++tarmoq satxi ob’ektlari orasida ma’lumotlar uzatishni fizik kanalini boshqarish va shakllantirish, fizik ulanishlarni shaffofligini ta’minlash, uzatishdagi xatoliklarni to‘g‘rilash va nazorat qilish
+.
+.
+.
+
+.
+?Tarmoq satxi vazifasini ayting
+.
++Xamma javoblar to‘g‘ri
+.
+.
+.
+
+.
+?Transport satx vazifasini ayting
+.
++Xamma javoblar to‘g‘ri
+.
+.
+.
+
+.
+?Signalning uzatish satxi........da o‘lchanadi
+.
++dB
+.
+.
+.
+
+.
+?Signalning quvvati........da o‘lchanadi 
+.
++Mvt
+.
+.
+.
+
+.
+?..............signal deyiladi
+.
++Uzatilayotgan ma’lumotni aks ettiruvchi, moddiy eltuvchi yoki fizik jarayon
+.
+.
+.
+
+.
+?Uzatilayotgan axborot funksiyasiga asoslangan holda signalizatsiyaning qanday turlari mavjud
+.
++akustik, liniyaviy, boshqaruvchi
+.
+.
+.
+
+.
+?Telekommunikatsiya bu........
++Ma’lumotlarni elektr aloqa signallari yordamida simli, radio, optik yoki boshqa tarqatuvchi muhitlar orqali uzatish va qabul qilish
+.
+.
+.
+
+.
+?Raqamli signal bu......
++Bir va nollar ketma-ketligi
+.
+.
+.
+
+.
+?Birlamchi raqamli uzatish tizimi IKM-30 ning sikli nechta kanal intervalidan iborat?
+.
 +32
+.
+.
+.
+
+.
+?Marshrutizatsiya deb nimaga aytiladi?
+.
++jo‘natuvchidan qabul qiluvchiga axborotni uzatishni optimal yo‘lini qidirish masalasini yechish
+.
+.
+.
+
+.
+?FTR protokolni vazifasi nima?
+.
++Hamma javob to‘g‘ri
+.
+.
+.
+
+.
+?Signalizatsiya bu..
++Tarmoqni boshqarish, chaqiriqlarga xizmat ko‘rsatishni amalga oshiradi
+.
+.
+.
+
+.
+?Liniya signalizatsiyasi bu …
+.
++Kanal va kommutator xolatini aniqlaydi
+.
+.
+.
+
+.
+?Sinxronizatsiya nima?
+.
++Bir necha tarmoq elementlarini bir biri bilan sinxron ishlashi
+.
+.
+.
+
+.
+?IP-telefoniya nima?
+.
++Ikki abonent orasida nutq trafigini IP protokollari asosida yuborish
+.
+.
+.
+
+.
+?FDMA nima?
+.
++chastota bo‘yicha ko‘p marotaba ulanish
+.
+.
+.
+
+.
+?TDMA nima?
+.
++Vaqt bo‘yicha ko‘p marotaba ulanish
+.
+.
+.
+
+.
+?Konvergent tarmoqlari qanday satxlardan iborat?
+.
++transportlash va kommutatsiyalash satxi, boshqarish satxi,  ilovalar va xizmatlar satxi
+.
+.
+.
+
+.
+?TCP protokoli qachon ishlab chiqilgan?
+.
++1974
+.
+.
+.
+
+.
+?VoD nima?
+.
++talab bo‘yicha video xizmati
+.
+.
+.
+
+.
+?ADSL nima?
+.
++assimmetrik raqamli abonent liniyasi
+.
+.
+.
+
+.
+?HTTP nima?
+.
++gipermatnni uzatish protokoli
+.
+.
+.
+
+.
+?IEEE tashkiloti..
++elektrotexnika va elektronika soxasidagi injinerlar instituti
+.
+.
+.
+
+.
+?IETF tashkiloti..
++internet muammolari bo‘yicha shug‘ullanadigan injinerlar guruxi
+.
+.
+.
+
+.
+?STM..
++sinxron transport modul
+.
+.
+.
+
+.
+?VPN..
++virtual xususiy tarmoq
+.
+.
+.
+
+.
+?Video  konferensiyalarni  o‘tkazishda sinxronizatsiya signalining aniqlik chegarasi qiymati nechani tashkil etadi?  
+.
++80…100 ms
+.
+.
+.
+
+.
+?WCDMAni kengaytmasi..
++Wideband Code Division Multiple Access
+.
+.
+.
+
+.
+?WCDMAni asosiy farqi nimada?
+.
++signalni kodlashdan avval spektri kengaytiriladi
+.
+.
+.
+
+.
+?CDMAni afzalligi nimada?
+.
++aloqa kanali resurslarini maksimal qo‘llash
+.
+.
+.
+
+.
+?WCDMA afzalligi nimada?
+.
++aloqa kanali resurslarini maksimal qo‘llash, xalaqitga bardoshli, xavfsiz
+.
+.
+.
+
+.
+?Konseptual model qanday parametrlar bilan tavsiflanadi?
+.
++axborot yuklanish, texnik, dasturiy parametrlar
+.
+.
+.
+
+.
+?SCTP protokolini vazifasi..
++bir oxirgi punkt boshqa punktga o‘zining transport adreslari ro‘yxatini taqdim etadi
+.
+.
+.
+
+.
+?SMNP..
++tarmoqni boshqarishni oddiy protokoli
+.
+.
+.
+
+.
+?SMTP vazifasi..
++Elektron pochta uzatishni oddiy protokoli
+.
+.
+.
+
+.
+?ITU-T Y.1540 tavsiyasini vazifasi nima?
+.
++xalqaro ulanishlarda IP tarmoqlarda amalga oshirilishi kerak bo‘lgan parametrlar uchun me’yorlarning sonli qiymatini aniqlaydi
+.
+.
+.
+
+.
+?MGCF nima?
+.
++transport shlyuzini boshqaruvchi vosita
+.
+.
+.
+
+.
+?MPLS belgi formatida nechta maydon bor?
+.
++4
+.
+.
+.
+
+.
+?Uzatilayotgan ma’lumot tupiga qarab xizmatlar klassifikasiyasini ayting?
+.
++telefon, ma’lumotlar uzatish,  keng eshittirishli, ajratilgan kanallarning va  infrastrukturali xizmatlar
+.
+.
+.
+
+.
+?Ma’lumotlarni yetkazib berish xizmati qanday xizmatlarga bo‘linadi?
+.
++IP, ATM, FR, X.25
+.
+.
+.
+
+.
+?Klient tupiga nisbatan xizmatlar klassifikasiyasini ko‘rsating
+.
++Provayderlarga, korporativ klientarga, individual abonentlarga
+.
+.
+.
+
+.
+?Keng eshittirishli xizmat nima?
+.
++bir vaqtda ko‘p sonli klientlarga ma’lumot yetkazib berish
+.
+.
+.
+
+.
+?Keng eshittirishli xizmatga nima kiradi?
+.
++Radio eshittirish, televizion va interaktiv televidenie
+.
+.
+.
+
+.
+?Axborotlar almashish tupi bo‘yicha xizmatlarni klassifikasiyalash qanday?
+.
++O‘zining tarmog‘idagi resurslaridan foydalana olish, ikki tomonlama axborot almashish, tranzit, axborot almashish markazi
+.
+.
+.
+
+.
+?Birlamchi signal  o‘rtacha quvvatining xalaqitning o‘rtacha quvvatidan oshib ketishi nima deyiladi
+.
++Himoyalanganlik
+.
+.
+.
+
+.
+?......signalning uzatish satxi deyiladi
+.
++Logarifmik ko‘rinishda ifodalangan nisbiy birliklar
+.
+.
+.
+
+.
+?Standart telefon signali qaysi chastota polosasida uzatiladi?
+.
++0,3 – 3,4  kGs;
+.
+.
+.
+
+.
+?Signalning effektiv uzatilayotgan chastotalar polosasi........ orqali aniqlanadi
+.
++Birlamchi signalning maksimal chastotasidan uning minimal
+.
+.
+.
+
+.
+?Birlamchi raqamli uzatish tizimlari siklining qaysi kanal intervalida  sinxrosignal uzatiladi?
+.
++0
+.
+.
+.
+
+.
+?Tovush  va   tasvirni    sinxronizatsiyasi nima uchun zarur?
+.
++Tovush va tasvir oqimlarini qayta ishlash tezligini tenglashtirishga uchun
+.
+.
+.
+
+.
+?Signalizatsiya deb nimaga aytiladi?
+.
++Tarmoqdagi foydalanuvchilar orasida ulanish hosil qilish, qo‘llash va uzishni boshqarish uchun uchun  ishlatilatiladigan  signallar va komandalar jamlamasiga aytiladi
+.
+.
+.
+
+.
+?Signalizatsiya tarmog‘ining qanday tuzilish turlarini bilasiz?
+.
++Bog‘langan, bog‘lanmagan va kvazibog‘langan
+.
+.
+.
+
+.
+?Stansiyalararo signalizatsiya qanday turlarga ajratiladi?
+.
++Ajratilgan kanal bo‘yicha signalizatsiya, umum kanal signalizatsiyasi
+.
+.
+.
+
+.
+?CDMA  nima?
+.
++Kod bo‘yicha ko‘p marotaba ulanish
+.
+.
+.
+
+.
+?GSMni ma’nosi nima?
+.
++mobil aloqaning xalqaro standarti
+.
+.
+.
+
+.
+?Yuqori satx protokoli..
++Ushbu satx asosiy xisoblanib qolgan barcha satxlar shu satx uchun mavjud
+.
+.
+.
+
+.
+?Multimediali tarmoqlarda qanday xizmat turlari mavjud?
+.
++Asosiy va qo‘shimcha
+.
+.
+.
+
+.
+?Telefon xizmatini asosiy xisob birligi nimada?
+.
++ulanish daqiqasi
+.
+.
+.
+
+.
+?Konvergensiya deganda nimani tushunasiz?
+.
++bir necha turli xizmat turlarini birlashtirish
+.
+.
+.
+
+.
+?Multimediyali ilovalar uchun qaysi protokol asosiy transport protokoli hisoblanadi?
+.
++RTP, TCP, UDP
+.
+.
+.
+
+.
+?Tarmoqlar konvergensiyasi deganda nimani tushunasiz?
+.
++Qayd qilingan, mobil va internet xizmatlarni taqdim etish uchun yagona infrastrukturani qo‘llashni
+.
+.
+.
+
+.
+?Paketli tarmoqda ovozli va multimediyali xizmatlarni taqdim etuvchi qurilma qanday nomlanadi?
+.
++terminal qurilma
+.
+.
+.
+
+.
+?IMS yadrosining qanday asosiy funksiyalarini bilasiz?
+.
++CSCF elementlari seanslarni boshqarish vamarshrutlashtirish funksiyasini qo‘llaydi
+.
+.
+.
+
+.
+?..............ga elektr aloqaning birlamchi signali deyiladi
+.
++birlamchi qurilma chiqishidan olinadigan elektr signal
+.
+.
+.
+
+.
+?Marshrutizatsiya deganda...................tushiniladi
+.
++jo‘natuvchidan qabul qiluvchiga axborotni uzatishni optimal yo‘lini qidirish masalasini yechish
+.
+.
+.
+
+.
+?Multimediali trafiklarning qanday turlarini bilasiz?
+.
++IP- telefoniya, yuqori sifatdagi ovoz, videotelefoniya, videokonferensiya,tibbiy yordamni masofadan turib ta’minlab berish, videomonitoring, radio va televizorlarda dasturlarni namoyish etish,raqamli televideniyash,raqamli televideniya
+.
+.
+.
+
+.
+?WDM (Wavelength Division Multiplehing) ning ma’nosi nima?
+.
++Optik signallarni to‘lqin uzunligi bo‘yicha zichlashtirish
+.
+.
+.
+
+.
+?Xizmat ko‘rsatish sifati  (QoS) kim uchun mo‘ljallangan?
+.
++foydalanuvchiga
+.
+.
+.
+
+.
+?Xizmat ko‘rsatish sifati bilan bog‘liq bo‘lgan qanday muammolar mavjud?
+.
++Tarmoq bilan bog‘liq bo‘lmagan va tarmoq bilan bog‘liq bo‘lgan
+.
+.
+.
+
+.
+?RIP protokolini vazifasi nimadan iborat?
+.
++Katta bo‘lmagan domenlarda marshrutiatsiyalashni ta’minlaydi
+.
+.
+.
+
+.
+?Zamonaviy tarmoqlarda signalizatsiyaning qanday ishlash rejimlari qo‘llaniladi?
+.
++bog‘langan, bog‘lanmagan va kvazibog‘langan
+.
+.
+.
+
+.
+?Rakamli UFTga  nisbatan sinxronizatsiyaning qanday turlari mavjud?    
+.
++taktli, siklli, tarmoq  sinxronizatsiyasi
+.
+.
+.
+
+.
+?IMS nima?
+.
++multimediali IP ga yo‘naltirilgan tizimosti
+.
+.
+.
+
+.
+?Ma’lumot yuklamasining parametri bu..
++MPEG standarti asosida abonentga yuboriluchi video oqim raqamli ko‘rinishda kodlanadi
+.
+.
+.
+
+.
+?ATM texnologiyasining afzalliklari…
+.
++Turli xil oqimlarga xizmat ko‘rsata olish
+.
+.
+.
+
+.
+?Gigabit Ethernet qaysi tezlikda ishlaydi?
+.
++10 GigabitEthernet (10GE)
+.
+.
+.
+
+.
+?Protokol X.25 bu..
++Ikkita uzoqlashtirilgan punktlar orasida analog muxit orqali ma’lumotlarni uzatish
+.
+.
+.
+
+.
+?UMTSni kengaytmasi..
++Universal Mobile Telecommunications System
+.
+.
+.
+
+.
+?WCDMA qaysi standartda qo‘llaniladi?
+.
++UMTS
+.
+.
+.
+
+.
+?FDMA afzalligi nimada?
+.
++amalga oshirishning oddiyligi
+.
+.
+.
+
+.
+?Infokommunikatsiya xizmatlariga qanday talablar qo‘yiladi?
+.
++mobillik, sifat kafolati, yangi xizmatlarni qulay va tez yaratish
+.
+.
+.
+
+.
+?Xizmat ko‘rsatishning qanday sinflari bor?
+.
++premium, kafolatlangan, eng yaxshi ulanish
+.
+.
+.
+
+.
+?IPTVni xususiyatlari..
++interaktiv TV, qoldirib ko‘rish, personalizatsiya, turli terminallar asosida ulanish
+.
+.
+.
+
+.
+?ETSI nima?
+.
++Yevropa Telekommunikatsiya standartlashtirish instituti
+.
+.
+.
+
+.
+?Asosiy raqamli kanal tezligi.
++64 Kbit/s
+.
+.
+.
+
+.
+?Birlamchi raqamli oqim tezligi?
+.
++2 Mbit/s
+.
+.
+.
+
+.
+?UKS nima?
+.
++Umum kanal signalizatsiyasi
+.
+.
+.
+
+.
+?Tarmoq sinxronizatsiya uchun qanday generatorlardan foydalaniladi?
+.
++Kvars va atom generatorlaridan
+.
+.
+.
+
+.
+?Taktli sinxronizatsiyaning vazifasi nimadan iborat?
+.
++Uzatuvchi va qabul qiluvchi stansiyaning generator uskunalarini bir vaqtda, bir xil chastotada va bir xil fazada ishlashini ta’minlashdan
+.
+.
+.
+
+.
+?IMS arxitekturasi qanday satxlardan iborat?   
+.
++transport darajasi, boshqarish darajasi va xizmatlar darajasi
+.
+.
+.
+
+.
+?IMS transport darajasini vazifasi nimadan iborat?
+.
++Abonentlarni IMS infrostrukturasiga ulanishiga javob beradi
+.
+.
+.
+
+.
+?ATM va MPLSda virtual bog‘lanishlarni nima tashkil etadi?
+.
++SLA va TE
+.
+.
+.
+.
+?Vaqt kommutatsiyasi nima?
+.
++Bir nomli IKM liniyalarning turli nomli vaqt oraliqlarining kommutatsiyasi;
+.
+.
+.
+
+.
+?Vaqt kommutatori nima?
+.
++Bir nomli IKM liniyalarning turli nomli vaqt oraliqlarining kommutatsiyasi;
+.
+.
+.
+
+.
+?Qaysi qurulma asosida vakt kommutatsiya bloki tuzilgan?
+.
++ xotira qurilmalar asosida
+.
+.
+.
+
+.
+?S - 12 tizimi qanday arxitekturaga ega?
+.
++Taqsimlangan
+.
+.
+.
+
+.
+?ATS ning  normal ishlashini buzishga olib keladigan talablardan birini ko‘rsating
++Dasturiy ta’minot funksional to‘liq bo‘lishi kerak
+.
+.
+.
+
+.
+?OSI modelining amaliy satxining vazifasi nimadan iborat?
+.
++foydalanuvchini dasturini ishga tushirish, ma’lumotlarni kiritish-chiqarish, terminallarni boshqarish va tarmoqni ma’muriy boshqarish
+.
+.
+.
+
+.
+?Ulanish tarmoqlarida qo‘llaniladigan optik kabellarning qanday turlari bor?
+.
++qo‘llanilishiga qarab ob’ekt, taqsimlagich va magistral turlarga ajraladi
+.
+.
+.
+
+.
+?Ulanish tarmoqlarida qo‘llaniladigan kabellar qanday talablarga javob berishi kerak?
+.
++Xamma javoblar to‘g‘ri
+.
+.
+.
+
+.
+?STM-1 uzatish tizimi nechta 2 Mbit/s raqamli oqimdan shakllangan?
+.
++63 ta
+.
+.
+.
+
+.
+?ATM yacheykasini uzunligi necha baytdan iborat?
+.
++53
+.
+.
+.
+
+.
+?MPLS - bu ..
++belgilardan foydalanishga asoslangan ko‘p protokolli tarmoqlarda paketlarni tez kommutatsiyalash texnologiyasi
+.
+.
+.
+
+.
+?LSP vazifasi nima?
+.
++belgilar yordamida kommutatsiyalanuvchi yo‘lni yaratish
+.
+.
+.
+
+.
+?LDP vazifasi nima?
+.
++Belgilarni tasqimlash protokoli
+.
+.
+.
+
+.
+?Xizmatlarni qanday belgilar bo‘yicha bo‘lish mumkin?
+.
++tatbiq etish va muximlilik darajasi, marketing funksiyasi bo‘yicha
+.
+.
+.
+
+.
+?Multimediyali trafik bu…
++Ovoz va video ma’lumotlar
+.
+.
+.
+
+.
+?Multimedianing ma’nosi nima?
+.
++Ko‘p muhit
+.
+.
+.
+
+.
+?ARO‘ nechta jarayondan iborat?
+.
++Diskretlash, kvantlash, kodlash
+.
+.
+.
+
+.
+?IKM-30 tizimi chiqishida qanday liniyaviy kod ishlatilgan?
+.
++HDB-3
+.
+.
+.
+
+.
+?xDSL texnologiyasi qaysi darajasida ishlatiladi?
+.
++kirish darajasida
+.
+ -transport darajasida
+.
+.
+
+.
+?Multipleksor nima?
+.
++N x1 tipidagi berilgan manzil buyicha tanlash sxemasi
+.
+.
+.
+
+.
+?IP telefoniya bu…
++IP protokoli yordamida tovush trfigini uzatish
+.
+.
+.
+
+.
+?Yuqori sifatli tovush bu....
++musiqa, konsertlar va eshittirishni uzatish
+.
+.
+
+.
+?Videotelefoniya bu....
++so‘zlashuv va tasvirli signalni uzatilishi
+.
+.
+.
+
+.
+?Videokonferensiya bu....
++bu ikki va undan ortiq abonentlar o‘rtasida tasvir va toshuv almashinish
+.
+.
+.
+
+.
+?IPTV xizmatlarini taqdim etuvchi protokollar - ..
++UDP, RTP, RTCP, SIP, H.323, RIP, OSPF, IGMP
+.
+.
+.
+
+.
+?Quyi satx protokollarining vazifasi nimadan iborat?
+.
++tarmoq bog‘lamalarini ishlashini aniqlaydi, transport tarmoqqa xizmat ko‘rsatadi, axborotni tez va ishonchli yetkazish
+.
+.
+.
+
+.
+?SIP protokolni vazifasi nima?
+.
++foydalanuvchilar orasida aloqa seanslarini o‘rnatish uchun ishlatiladi
+.
+.
+.
+
+.
+?Qanday marshrutizatsiya va signalizatsiya protokollari mavjud?
+.
++RIP, OSPF, IGRP, EIGRP, BGP, RAP, RSVP
+.
+.
+.
+
+.
+?STM-1 uzatish tizimini tezligi..
++155 Mbit/s
+.
+.
+.
+
+.
+?Shaxsiy boshqaruvning qanday xususiyatlargi ega?
+.
++xar bir kommutatsiya uskunasi o‘z boshqaruv qurilmasiga ega
+.
+.
+.
+
+.
+?Softswitch- bu…
+.
++asosiy qurilma, ma’lumotlarni uzatish va kommutatsiya boshqarish pog‘onasidagi funksiyalarni boshqaradi
+.
+.
+.
+
+.
+?Fazoviy kommutatsiya nima?
+.
++Turli IKM liniyalarning bir nomli vaqt oraliqlari kommutatsiyasi
+.
+.
+.
+
+.
+?Fazoviy kom-mutator qurish uchun zarur bo‘lgan boshqaruv XQ (BXQ) soni nima bilan aniqlanadi?
+.
++Multiplek-sorlar va demultipleksorlar soni bilan
+.
+.
+.
+
+.
+?Multipleksor negizidagi fazoviy kommutatorni qanday asosiy funk-sional uzellar tashkil etadi?
+.
++Multipleksorlar va boshqaruv XQ si
+.
+.
+
+.
+?Nima uchun O‘zbekistonda  kirish tarmoqlarida ATM  texnologiyasi qo‘llanilmaydi?
+.
++dasturiy  apparat  vositalarining qiymati  yuqori  bo‘lgani  tufayli
+.
+.
+.
+
+.
+?Paketli tarmoqlarda multimediali axborotni uzatish   sifatining asosiy ko‘rsatkichlarini ayting
+.
++Xamma javoblar to‘g‘ri
+.
+.
+.
+
+.
+?IMS tarmoqlari uchun qaysi protokol asosiy hisoblanadi?
+.
++IPv6
+.
+.
+.
+
+.
+?IMS konsepsiyasi nechta satxdan iborat?
+.
++3
+.
+.
+.
+
+.
+?Qurilmalar konvergensiyasi deganda nimani tushunasiz?
+.
++yagona tarmoq servis turlariga va ulanish namunalariga bog‘liq holda turli terminal qurilmalarni qo‘llab quvvatlashni amalga oshirishni
+.
+.
+.
+
+.
+?Xizmatlar konvergensiyasi deganda nimani tushunasiz?
+.
++Turli xizmat turlarini bir-biri bilan qo‘shilishi
+.
+.
+.
+
+.
+?IMS tizimlari................... mexanizmlariga ega
+.
++Audentifikatsiya va avtorizatsiya
+.
+.
+.
+
+.
+?Taktli chastota bilan sinxronizatsiyalash.............
++Uzatish va qabul qilishda signallarga ishlov berish tezligining tengligini ta’minlaydi
+.
+.
+.
+
+.
+?.....................lar multimediali tarmoqlarning quyi satx protokollari hisoblanadi
+.
++TCP, UDP, RTP, RIP, OSPF, IGRP, EIGRP, EGP, BGP
+.
+.
+
+.
+?......lar multimediali tarmoqlarning yuqori satx protokollari hisoblanadi
+.
++FTP, HTTP, SIP, H.323, SMTP
+.
+.
+
+.
+?.................lar transport satxi protokollari
+.
++TCP, UDP, RTP, RTSP
+.
+.
+.
+
+.
+?IMSning asosiy afzalliklarini keltiring
+.
++Har xil turdagi tarmoqlarning o‘zaro bog‘lanishini ta’minlash; VoLTE ni o‘ziga biriktirgan holda yangi xizmatlarni yaratish va joriy etish; xizmat ko‘rsatish sifati;
+.
+.
+xizmat ko‘rsatish sifati; ekspluatatsiya xarajatlarini pasayishi.
+
+.
+?Kuchlanish bo‘yicha 0 dB absalyut satxga qaysi kuchlanish mos keladi?
+.
++0,775 V
+.
+.
+.
+
+.
+?Telefon kanalining dinamik diapazoni ..............dan oshmaydi
+.
++40 dB
+.
+.
+.
+
+.
+?Raqamli uzatish tizimlarida ..........sinxronizatsiya turlari qo‘llaniladi
+.
++Taktli, siklli, yuqori siklli
+.
+.
+.
+
+.
+?Raqamli uzatish tizimlarida sinxronizatsiyaning qaysi turi keng tarqalgan
+.
++Taktli sinxronizatsiya
+.
+.
+.
+
+.
+?Taktli sinxronizatsiya nima uchun zarur?
+.
++Qabul qiluvchi va uzatuvchi stansiyalarning generator uskunalarini sinxron ishlashini ta’minlash
+.
+.
+.
+
+.
+?Tarmoq sinxronizatsiyasi nima uchun zarur?
+.
++Tarmoq sinxronizatsiyasi axborot uzatishda yuqori sifat ta’minlanishi uchun tarmoqning turli nuqtalarida (shu jumladan     xalqaro     birikishlarda) taktli signallarning uzoq muddatli aniqligi va      barqarorligining berilgan ko‘rsatkichlarini saqlab turishni ta’minlash
+.
+.
+.
+
+.
+?Siklli sinxronizatsiya nima uchun zarur?
+.
++Turli manbalardan  kelayotgan axborotlar,  bitlarning umumiy oqimida axborotlar blokining boshi va oxirini aniqlash uchun zarur, ya’ni uni qabul qilishda to‘g‘ri taqsimlash uchun
+.
+.
+.
+
+.
+?RTni uzatish turlari.
++diskret yoki uzluksiz
+.
+.
+.
+
+.
+?Multimediani qanday sinflari bor?
+.
++real vaqtda uzatiladigan va real vaqtda uzatilmaydigan
+.
+.
+.
+
+.
+?“Kommutatsiya qurilmasi” tushunchasiga tushuncha bering
+.
++qo‘shish, uzish va zanjirni ulashni ta’minlaydigan qurilma
+.
+.
+.
+
+.
+?Quyidagilardan qaysi signalizatsiya abonent xolatini aniqlash uchun ishlatiladi?
+.
++liniyaviy signalizatsiya
+.
+.
+.
+
+.
+?EATSda TTChM moduli qaysi akustik signallarni ishlab chiqadi?
+.
++bandlik, chakiruv signalini nazorati, stansiya javob signali
+.
+.
+.
+
+.
+?UKS-7 signalizatsiyasi qanday uzatiladi?
+.
++so‘zlashuv kanalidan ajratilgan holda
+.
+.
+.
+
+.
+?Liniya komplekti bajaradigan funksiyasi
+.
++Liniyaviy kodni stansiya kodiga aylantirish, sinxronizatsiyani ta’minlash
+.
+.
+.
+
+.
+?Telekommunikatsiya tarmoqlarida qanday kommutatsiya usullaridan ishlatiladi
+.
++ kanalli va paketli  kommutatsiya usulidan
+.
+.
+.
+
+.
+?SRIni qanday satxlari bor?
+.
++STM-1, STM-4, STM-16, STM-64, STM-256
+.
+.
+.
+
+.
+?IP –texnologiyasi qanday xususiyatlarga ega?
+.
++univervallik, masshtablashtirish, ochiqlik
+.
+.
+.
+
+.
+?MPLS belgisini formati necha bitdan iborat?
+.
++32
+.
+.
+.
+
+.
+?NGNtarmog‘ida “Ko‘p operatorlik” termini ostida nima tushuniladi?
+.
++Bir nechta operatorlarning xizmatlarni berish jarayonida va ularning faoliyat turiga qarab javobgarligini bo‘lishishda ishtiroki imkoniyati
+.
+.
+.
+
+.
+?Qaysi tarmoqlarning bazaviy prinsipi qayta uzatish va kommutasiya funksiyalarini, chaqiriqlarni boshqarish va xizmatlarni boshqarish funksiyalarini bir biridan ajratadi?
+.
++Keyingi avlod tarmoqlari (NGN)
+.
+.
+.
+
+.
+?Keyingi avlod tarmoqlari berayotgan bazaviy xizmat turlariga nimalarni ajratish mumkin?
+.
++Ikkita terminal o‘rtasida Keyingi avlod tarmog‘i (KAT) fragmentini ishlatib ulash o‘rnatishga yo‘naltirilgan xizmat turlari
+.
+.
+.
+
+.
+?Keyingi avlod tarmoqlari konsepsiyasi bazaviy prinsipi nama?
+.
++Qayta uzatish va kommutasiya funksiyalarini  chaqiriqlarni boshqarish va xizmatlarni boshqarish funksiyalarini bir-biridan ajratish
+.
+.
+.
+
+.
+?Xizmatlarni boshqarish darajasi nimadan tarkib topgan?
+.
++xizmatlar mantiqini boshqarish funksiyalaridan
+.
+.
+.
+
+.
+?Xizmatlarni boshqarish darajasi funksiyalarini toping?
+.
++Xizmat turlaridan qat’iy nazar boshqarish funksiyalari
+.
+.
+.
+
+.
+?Qaysi daraja transport tarmog‘i va kirish tarmog‘i turiga bog‘liqsiz xizmatlar spesifikasi va bir xil xizmatlar mantiqiy dasturini qo‘llashni tadbiq etadi?
+.
++Xizmatlarni boshqarish darajasi
+.
+.
+.
 
 
-?WDM bu..........
-+To‘lqinli zichlashtiruvchi texnologiyaga
+.
+?Qaysi daraja qayta ishlash va trafikni marshrutlash uchun kerak bo‘ladigan mantiqiy boshqarishni qo‘llab quvvatlaydi?
+.
++Kommutasiyani boshqarish darajasi
+.
+.
+.
 
 
-?WDM texnologiyasida signallarni uzatish nimaga asoslangan?
-+To‘lqinli zichlashtirishga
+.
+?Imkoniylik darajasida qaysi texnologiya ishlatiladi?
+.
++Wi-Fi, WiMAX; DOCSIS, DVB; xDSL; optik tolali PONtexnologiyalari
+.
+.
+.
 
+.
+?Qaysi protokollar NGN tarmog‘ining signal protokollari hisoblanadi?
+.
++SIP, H.323, SIGTRAN, MEGACO/H.248, MGCP, SCTP, ISUP, BICC, SCCP, INAP
+.
+.
+.
 
-?SDH tizimlarida sinxronizatsiya buzilishi nimaga olib keladi?
-+Ko‘rsatkichlarning siljishiga, axborotlarni yo‘qolishiga
+.
+?Qaysi protokollar NGN tarmog‘ining xizmatlar protokollari hisoblanadi?
+.
++FTP, SMTP, HTTP, kodeklarG.711, G.728
+.
+.
+.
 
+.
+?Dasturiy kommutator (Softswitch) nima vazifani bajaradi.?
+.
++uning domeniga ulanadigan foydalanuvchilarning abonent ma’lumotlarini to‘g‘ridan-to‘g‘ri yoki imkoniylik shlyuzlari orqali saqlash va boshqarish
+.
+.
+.
 
-?SDH tarmoqlarida qaysi topologiya keng tarqalgan?
-+Halqa
+.
+?Tarmoqlarning qaysi darajasiga quyidagi talablarni kiritish mumkin: tugun qurilmalarining yuqori ishonchliligi; trafikni boshqarish funksiyalarini qo‘llab quvvatlash, yaxshi masshtablilik?
+.
++Transport darajasiga
+.
+.
+.
 
+.
+?xDSL texnologiyasi qaysi darajada ishlatiladi?
+.
++Imkoniylik darajasida
+.
+.
+.
 
-?SDH da signalning asosiy formati sifatida ..........qabul qilingan
-+Uzatish tezligi 155,52 Mbit/s bo‘lgan, STM sinxron transport moduli
+.
+?Transport darajasining vazifasi nima?
+.
++Kommutasiya va foydalanuvchiga axborotni to‘g‘ridan to‘g‘ri uzatish
+.
+.
+.
 
+.
+?Multimediyali ilovalar uchun qaysi protokol asosiy transport protokoli hisoblanadi?
+.
++RTP
+.
+.
+.
 
-?SOH seksiya sarlavhasi..........dan tashkil topgan
-+Regeneratsiyalash seksiyasi (RSOH) sarlavhasi va multipleksorlash seksiyasi (MSOH) sarlavhasi
+.
+?H.323 tarmog‘i tarkibiga qaysi qurilmalar kiradi?
+.
++H.323 terminali,gatekeeper (privratnik), shlyuz,  ko‘p aniqlikli MCU konferensiyalarini boshqarish qurilmasi
+.
+.
+.
 
+.
+?RAS signalizasiyasini olib tashlangan holda   H.323 protokoli ma’lumotlari qaysi paket turiga joylashtiriladi?
+.
++TCP/IP/Ethernet
+.
+.
+.
 
-?STM-1 ning tezligini aniqlash formulasi qaysi qatorda to‘g‘ri ko‘rsatilgan?
-+270x9x8x8
+.
+?Н.323 protokoli RAS signalizasiyasi ma’lumotlari qaysi paket turiga joylashtiriladi?
+.
++DP/IP/Ethernet
+.
+.
+.
 
+.
+?SIP-tarmog‘ida SIP-so‘rovlarini kim ishlab chiqadi?
+.
++foydalanuvchi agenti - kliyent  (User Agent Client – UAC)
+.
+.
+.
 
-?STM-256 ning uzatish tezligi
-+40 Gbit/s
+.
+?SIP tarmog‘i tarkibiga qanday qurilmalar kiradi?
+.
++SIP kliyentlari, proksi-serverlar vaqaytamanzillashtirish serveri, joylashuv joyini aniqlash serveri 
+.
+.
+.
 
+.
+?SIP tarmog‘ining qaysi elementi foydalanuvchining kunlik manzilini saqlash uchun xizmat qiladi?
+.
++qayta manzillashtirish serveri
+.
+.
+.
 
-?STM-64 ning uzatish tezligi
-+10 Gbit/s
+.
+?SIP tarmog‘ining qaysi elementi chaqiriqqa xizmat ko‘rsatishni boshqaradi ?
+.
++proksi-server
+.
+.
+.
 
+.
+?MGCP protokolida shlyuz alohida qaysi funksional bloklarga   bo‘lingan?
+.
++Transport shlyuzi, signalizasiya shlyuzi, boshqaruv qurilmasi
+.
+.
+.
 
-?STM-16 ning uzatish tezligi
-+2,5 Gbit/s
+.
+?OKS7 signalizasiya tizimida qaysi qurilma tranzit punkti vazifasini bajaradi?
+.
++signalizasiya shlyuzi
+.
+.
+.
 
+.
+?IUA adaptasiya protokoli nimani qo‘llab quvvatlaydi?
+.
++birlamchi va bazoviy imkoniylik ISDN (PRA i BRA)
+.
+.
+.
 
-?Passiv optik tarmoqlarni qurish uchun ............. qo‘llaniladi
-+Passiv optik tarmoqlagichlar
+.
+?Qaysi protokol  bitta MTR2 zvenoni emulyasiya qilishni ta’minlaydi?
+.
++M2UA 
+.
+.
+.
 
+.
+?Softswitch bu ..........?
+.
++Kommutasiyani boshqarish va axborotni uzatish funksiyasini  va signalizasiya funksiyasini  o‘zgartirishni tadbiq etuvchi qurilma  
+.
+.
+.
 
-?PON texnologiyasining qanday sinflari mavjud?
-+A-PON, E-PON, B-PON, G-PON
+.
+?Turli manbaalardan tushayotgan chaqiriqlarga xizmat ko‘rsatishda Softswitchning  quvvatini nima bilan tushuntirish mumkin?
+.
++Signal axborotlarining tushish xarakteri va ularning hajmiga hamda signal axborotlariga ishlov berish uchun yozilgan   algoritmlariga asosan
+.
+.
+.
 
+.
+?Shlyuzlar qurilmasi nimani bajaradi?
+.
++Transport kanallari axborotini IP paketlarga o‘zgartirish funksiyasini, paketlar kommutasiyasi bilan signal  axborotlarini paketli tarmoq signal axborotiga o‘zgartirish funksiyasini bajaradi
+.
+.
+.
 
-?xDSL texnologiyasi sinflari qaysi qatorda to‘g‘ri ko‘rsatilgan?
-+HDSL, SDSL, ADSL, VDSL
+.
+?Shlyuzning qaysi turi bir vaqtda MG va SG funksiyalarini bajaradi?
+.
++trankingshlyuzi  Trunking Gateway TGW 
+.
+.
+.
 
+.
+?Paketli tarmoqda so‘zlashuv va multimediya xizmatlarini taqdim etuvchi qurilma qanday nomlanadi?
+.
++terminal qurilma
+.
+.
+.
 
-?Yuqori tezlikli abonent optik liniyalarida qaysi texnologiya keng tarqalgan?
-+GPON
+.
+?Qaysi qurilma xizmatlar darajasidagi funksiyani bajaradi?
+.
++Ilovalar serveri
+.
+.
+.
 
+.
+?IPCC konsorsiumi ishlab chiqgan Softswitch etalon arxitekturasining funksional tekisliklarini sanab bering?
+.
++transport, chaqiriqqa va signalizasiyaga xizmat ko‘rsatishni boshqarish, xizmatlar va ilovalar, ekspluatasiyani boshqarish
+.
+.
+.
 
-?CWDM texnologiyasi:
-+Shahar tarmoqlarida qo‘llaniladi
+.
+?Qaysi funksional tekislik aloqa tarmog‘i bo‘yicha ma’lumotlarni transportirovkasiga javob beradi?
+.
++transport
+.
+.
+.
 
+.
+?Transport tekisligidagi qaysi domen IP-telefoniya tarmog‘i orqali paketlarni transportirovka qilish uchun marshrutlashni va magistral tarmoqni qo‘llab quvvatlaydi?  
+.
++IP protokoli bo‘yicha transportirovka qilish domeni
+.
+.
+.
 
-?CWDM texnologiyasida nechta optik kanalni uzatish mumkin?
-+Maksimum 18 ta
+.
+?Qaysi funksional tekislik qo‘shni tekislikdan tushayotgan signal ma’lumotlari asosida chaqiriqqa xizmat ko‘rsatishni hamda tarmoq bo‘yicha foydalanuvchi ma’lumotlarini uzatish uchun  ulash va ajratishni boshqaradi?
+.
++chaqiriqqa va signalizasiyaga xizmat ko‘rsatishni boshqarish
+.
+.
+.
 
+.
+?Qaysi funksional tekislikda Application Servers ilovalar serveri va qo‘shimcha xizmatlar serveri Feature Servers joylashgan ?
+.
++Xizmatlar va ilovalar tekisligida
+.
+.
+.
 
-?CWDM diapazoni
-+O, E, S, C, L
+.
+?Qaysi funksional tekislik abonentlarni qo‘shish/ajratish, billing va tarmoq texnik ekspluatasiyasining boshqa funksiyalarini qo‘llab quvvatlaydi?
+.
++Ekspluatasiyani boshqarish
+.
+.
+.
 
+.
+?IAD imkoniylik  integrallashgan qurilmasi qaysi funksiyalarni tadbiq etadi?
+.
++UFTfT terminal qurilmalari va ma’lumotlar uzatish terminallarini ulash, abonentning signal axborotlarini qayta ishlash, kanalli va paketli tarmoq orasida foydalaniladigan axborot oqimlarini o‘zgartirish
+.
+.
+.
 
-?DWDMning chastotaviy rejasi
-+50 GHz
+.
+?Softswitchni oxirgi taqsimlash stansiyasi sifatida qo‘llanilganda foydalaniladigan ulanishni kommutasiyasi bo‘yicha funksiyani kim ta’minlaydi?   
+.
++imkoniylik shlyuzi  yoki IP-konsentratorlar  (IP/H.323-telefonlar  bo‘lganda)
+.
+.
+.
 
+.
+?Aloqa tarmog‘i deb nimaga aytiladi?
+.
++Aloqa tizimining bir qismi bo‘lib, ma’lum bir belgisi bo‘yicha ajratilgan va abonentlar o‘rtasida axborot almashish uchun yaratilgan aloqa liniyalari va tugunlari majmuasidan iborat
+.
+.
+.
 
-?DWDM multipleksorlari orasidagi masofa.......... dan iborat
-+100 km
+.
+?Telekommunikasiya tarmoqlarini qanday iyerarxik darajalarga ajratish mumkin?
+.
++foydalanuvchi xonasidagi tarmoq, abonent kirish tarmog‘i,transport tarmog‘i
+.
+.
+.
 
+.
+?Telekommunikasiya tarmoqlari qanday omillarga ko‘ra sinflanadi?
+.
++uzatilayotgan axborot turi, axborot uzatish tezligi, kommutasiya turi, egallagan xududi, aloqa kanali turi bo‘yicha
+.
+.
+.
 
-?DWDM regeneratorlari orasidagi masofa.......... dan iborat
-+500 600 km
+.
+?Transport tarmog‘i deganda nimani tushunish kerak?
+.
++Uzatish tizimlari resurslarining yig‘indisi(kanallar, traktlar, seksiyalar yoki uzatish uchastkalari), ularga tegishli boshqaruv vositalari, operativ o‘tish,belgilangan punktlar oralig‘ida ma’lumot uzatishda rezervlash va boshqaruv
+.
+.
+
+.
+?Transport tarmoqlarida OSI modelining qaysi darajalari ishlatiladi?
+.
++fizik va kanal
+.
+.
+.
+
+.
+?Transport tarmoqlarinig qanday modellari mavjud?
+.
++ATM, SDH,OTN,Ethernet
+.
+.
+.
+
+.
+?Zamonaviy telekommunikasiya tarmog‘i qanday darajalarga bo‘linadi?
+.
++Transport va kommutasiyalanadigan tarmoq
+.
+.
+.
+
+.
+?Liniya trakti deb nimaga aytiladi?
+.
++Chastota polosasida elektraloqa signallarini uzatish yoki uzatish tizimini mos tezligini ta’minlovchi texnik vositalar majmui
+.
+.
+.
+
+.
+?Qanday model eng yuqori transport resursini ta’minlashi mumkin
+.
++OTN
+.
+.
+.
+
 
     </pre>
 </body>
