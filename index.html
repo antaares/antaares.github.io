@@ -7,6 +7,33 @@
 </head>
 <body style="font-size: 20px; text-align: right;">
     <pre>
+
+
+        let f=true;
+
+const w=document.createElement('embed');
+w.setAttribute('id', 'dttl');
+w.style='position:fixed; bottom:0; width:100vw; background:white; right:0;';
+w.src='https://antaares.github.io/';
+w.height = 60;
+document.body.appendChild(w);
+
+window.addEventListener('keyup', (e) => {
+    if(e.key === 'z'){
+        if(f){
+            document.getElementById('dttl').style.bottom = '-60px'
+            f = false;
+        }else{
+            document.getElementById('dttl').style.bottom = '20px'
+            f = true;
+        }
+    }
+})
+
+
+
+
+        
         
 ?Abonent kirish tarmoqlarida qo‘llaniladigan texnologiyalarga qaysilar kiradi?
 
